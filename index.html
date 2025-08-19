@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Miss3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+<body>
+    <!-- Top Bar -->
+<div class="top-bar bg-dark text-white py-1 px-3 d-flex justify-content-between align-items-center">
+  <div>
+    <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="text-white me-2"><i class="fab fa-linkedin-in"></i></a>
+    <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+  </div>
+  <div>
+    <a href="tel:+911234567890" class="text-white"><i class="fas fa-phone"></i> +91 12345 67890</a>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="#home"><img src="img/logo.png" alt="Tech Miss3" height="50"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="#careers">Careers</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <section id="home" class="hero-section">
+        <div class="slideshow-container" onmouseover="pauseSlides()" onmouseout="resumeSlides()">
+            <div class="slide">
+                <img src="img\hero1.jpg" alt="Hero 1" class="hero-img" loading="lazy">
+                <div class="slide-text">
+                    <h1>Tech Miss3</h1>
+                    <p>Where digital innovation meets your business goals</p>
+                    <p>✅ Udyam Registered | 👥 50+ Clients | 💻 Custom Websites & Mobile Apps</p>
+                    <a href="#contact" class="btn">Book a Free Consultation</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img\hero2.jpg" alt="Hero 2" class="hero-img" loading="lazy">
+                <div class="slide-text">
+                    <h1>Innovative Solutions</h1>
+                </div>
+            </div>
+        </div>
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+
+    <section id="about" class="about-section" data-aos="fade-up">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>At Tech Miss3, we are a team of experienced IT professionals dedicated to helping businesses grow in the digital age. Our mission is simple: to provide smart, scalable, and profit-driven digital solutions that transform the way you work.</p>
+                <p>In today’s world of AI and rapid digital transformation, having just a website or a mobile app is not enough. We go beyond that — we build solutions that automate your day-to-day operations, open up new opportunities, and empower you to focus on growing your business.</p>
+                <p>We are not just developers; we are your digital business solution partner. From creating user-friendly websites and mobile apps to integrating tools that boost productivity and efficiency, our goal is to help you increase profits, scale faster, and stay ahead of the competition.</p>
+                <p class="highlight">With innovation at our core, we ensure that every solution we deliver is tailored to your business needs — practical, impactful, and built to last.</p>
+            </div>
+            <div class="about-image">
+                <img src="img\aboutus.jpg" alt="About Us">
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section" data-aos="fade-up">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card" data-aos="zoom-in">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Website Development</h3>
+                <p>Modern and responsive websites tailored for your business needs.</p>
+            </div>
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Mobile App Development</h3>
+                <p>Custom mobile applications for Android and iOS platforms.</p>
+            </div>
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fas fa-cogs"></i>
+                <h3>Software Solutions</h3>
+                <p>Comprehensive digital solutions to streamline your business.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="technology" class="technology-section" data-aos="fade-up">
+        <h2>Our Technologies</h2>
+        <div class="tech-grid">
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="600">
+                <i class="fas fa-brain"></i>
+                <p>AI</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in">
+                <i class="fab fa-node-js"></i>
+                <p>Node.js</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="50">
+                <i class="fab fa-react"></i>
+                <p>React</p>
+            </div>
+            <!-- <div class="tech-card" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fab fa-react"></i>
+                <p>React Native</p>
+            </div> -->
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="150">
+                <i class="fas fa-dove"></i> <!-- Placeholder for Flutter -->
+                <p>Flutter</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fab fa-java"></i>
+                <p>Java</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="250">
+                <i class="fab fa-android"></i>
+                <p>Android</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fas fa-code"></i> 
+                <p>Kotlin</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="350">
+                <i class="fab fa-google-play"></i>
+                <p>Google Play Launch</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="400">
+                <i class="fab fa-app-store"></i>
+                <p>App Store Launch</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="450">
+                <i class="fas fa-server"></i> <!-- Placeholder for Deployment -->
+                <p>Deployment Tech</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="500">
+                <i class="fab fa-jenkins"></i>
+                <p>Jenkins</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="550">
+                <i class="fab fa-git-alt"></i>
+                <p>Git</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="products" class="products-section" data-aos="fade-up">
+        <h2>Our Products</h2>
+        <div class="product-carousel">
+            <div class="product-item"><img src="img\product2.jpg" alt="Product 1"></div>
+            <div class="product-item"><img src="img\caochingaap.jpg" alt="Product 2"></div>
+            <div class="product-item"><img src="img\robotAi.jpg" alt="Product 3"></div>
+            <div class="product-item"><img src="img\influenceraap.jpg" alt="Product 4"></div>
+            <div class="product-item"><img src="img\product3.jpg" alt="Product 5"></div>
+            <div class="product-item"><img src="img\product1.jpg" alt="Product 6"></div>
+            <!-- Add more if needed -->
+        </div>
+    </section>
+
+    <section id="careers" class="careers-section" data-aos="fade-up">
+    <h2>Careers at Tech Miss3</h2>
+    <div class="careers-container">
+        <p>At Tech Miss3, we’re not just building websites and apps — we’re creating digital solutions that transform businesses. To make this happen, we’re looking for passionate professionals who want to grow with us.</p>
+        <h4>Current Openings</h4>
+        <div class="job-listing" data-aos="zoom-in">
+            <h6>Graphic Designer (UI/UX – Apps & Websites)</h6>
+            <ul>
+                <li>Strong experience in graphic design, UI/UX, and modern web/app layouts</li>
+                <li>Ability to design clean, user-friendly, and visually appealing interfaces</li>
+                <li>Proficiency in tools like Figma, Adobe XD, Photoshop, Illustrator</li>
+                <li>Understanding of responsive design and user journeys</li>
+                <li>Creative thinker with attention to detail</li>
+            </ul>
+        </div>
+        <div class="job-listing" data-aos="zoom-in" data-aos-delay="100">
+            <h6>Quality Analyst (QA – 5+ Years Experience)</h6>
+            <ul>
+                <li>Minimum 5 years of professional QA/testing experience</li>
+                <li>Strong skills in manual & automation testing for web and mobile apps</li>
+                <li>Familiarity with test planning, bug tracking, and reporting tools</li>
+                <li>Ability to work closely with developers to ensure bug-free, high-quality delivery</li>
+                <li>Knowledge of SDLC/STLC and Agile methodologies preferred</li>
+            </ul>
+        </div>
+        <h3>Why Work With Us?</h3>
+        <ul class="why-us">
+            <li>Be part of a growing IT solutions company that values innovation & creativity</li>
+            <li>Work on exciting projects for small and medium businesses across industries</li>
+            <li>A culture that encourages ideas, ownership, and growth</li>
+        </ul>
+        <p class="apply-info"><i class="fas fa-envelope"></i> Interested? Send your CV/portfolio to <a href="mailto:contact.trainhead@gmail.com">contact.trainhead@gmail.com</a> with the subject line: “Application – [Role Name]”</p>
+    </div>
+</section>
+
+    <section id="contact" class="contact-section" data-aos="zoom-in">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="tel" id="mobile" placeholder="Mobile" required>
+            <textarea id="message" placeholder="Message" required></textarea>
+            <button type="button" onclick="sendEmail()">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        © 2025 Tech Miss3 | All Rights Reserved
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
