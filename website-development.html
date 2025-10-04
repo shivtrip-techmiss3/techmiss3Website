@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tech Miss3 offers modern, responsive web-based business solutions tailored to your digital needs.">
+    <title>Web Based Business Solutions - Tech Miss3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="service-style.css"> <!-- overrides for this page -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Top Bar -->
+<div class="top-bar bg-dark text-white py-1 px-3 d-flex justify-content-between align-items-center">
+    <div>
+        <a href="https://www.facebook.com/profile.php?id=61580662049886" class="facebook me-2" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/techmiss3" class="instagram me-2" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/techmiss3" class="twitter me-2" target="_blank">
+            <i class="fab fa-x"></i>
+        </a>
+        <a href="whatsapp://send?phone=919380729681" class="whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+    <div>
+        <a href="tel:+919380729681" class="text-white me-2">
+            <i class="fas fa-phone"></i> +91 9380729681
+        </a>
+    </div>
+</div>
+
+
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Tech Miss3" height="50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#careers">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Web Based Business Solutions Section -->
+    <section id="web-based-business" class="service-detail-section" data-aos="fade-up">
+        <div class="container">
+            <h1 class="text-center fw-bold" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3); font-size: 3rem;">Web Based Business Solutions</h1>
+            <div class="row mt-5">
+                <div class="col-md-6" data-aos="fade-right">
+                    <img src="img/2835143.jpg" alt="Web Solutions" class="img-fluid">
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <h3 class="fw-bold" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">Enhance Your Digital Presence</h3>
+                    <p>Tech Miss3 provides comprehensive web-based business solutions designed to modernize your operations and drive growth. Our expert team builds websites and platforms that not only look great but also improve efficiency and engagement.</p>
+                    <p>We combine creativity with technology, delivering solutions that automate processes, enhance customer experience, and support your business goals.</p>
+                    <div>
+                        <i class="fas fa-check text-black me-2"></i> Custom-designed websites with modern aesthetics<br>
+                        <i class="fas fa-check text-black me-2"></i> Fully responsive layouts for all devices<br>
+                        <i class="fas fa-check text-black me-2"></i> SEO-friendly solutions to improve visibility<br>
+                        <i class="fas fa-check text-black me-2"></i> CMS and e-commerce integrations for seamless management
+                    </div>
+                    <button class="btn custom-btn-black mt-3" onclick="scrollToContact()">Request a Consultation</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Showcase -->
+    <section class="additional-showcase mt-5" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center fw-bold" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.2); font-size: 2rem;">See Our Expertise in Action</h2>
+            <div class="row mt-5">
+                <div class="col-md-6" data-aos="fade-right">
+                    <img src="img/html-css-collage-concept-with-person.jpg" alt="Web Design Example" class="img-fluid">
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <p>Check out our portfolio showcasing a variety of successful projects — from dynamic corporate websites to e-commerce platforms and interactive web applications. Each project demonstrates our commitment to quality, innovation, and client success.</p>
+                    <button class="btn custom-btn-black mt-3" onclick="scrollToContact()">View More Projects</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+<section id="contact" class="contact-section" data-aos="zoom-in">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="tel" id="mobile" placeholder="Mobile" required>
+        <textarea id="message" placeholder="Message" required></textarea>
+        <button type="button" onclick="sendEmail()">Submit</button>
+    </form>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 Tech Miss3 | All Rights Reserved
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+       function scrollToContact() {
+    document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+}
+
+
+        function sendEmail() {
+            emailjs.send("service_your_service_id", "template_your_template_id", {
+                from_name: document.getElementById("name").value,
+                from_email: document.getElementById("email").value,
+                mobile: document.getElementById("mobile").value,
+                message: document.getElementById("message").value,
+            }, "your_user_id")
+            .then(function(response) {
+                alert("Message sent successfully!");
+                document.getElementById("contact-form").reset();
+            }, function(error) {
+                alert("Failed to send message. Please try again.");
+            });
+        }
+
+        // Highlight buttons on hover
+        const buttons = document.querySelectorAll('.custom-btn-black');
+        buttons.forEach(button => {
+            button.addEventListener('mouseover', function() {
+                this.style.transform = 'scale(1.1)';
+            });
+            button.addEventListener('mouseout', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>

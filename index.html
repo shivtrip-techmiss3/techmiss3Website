@@ -8,46 +8,84 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        /* Technologies Grid - 4 per row */
+        .technology-section .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            justify-items: center;
+        }
+        .technology-section .tech-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+        }
+        .technology-section .tech-card i {
+            font-size: 2rem;
+            color: orange;
+            margin-bottom: 10px;
+        }
 
-  </head>
+        /* Social icons colors */
+        .top-bar a.facebook { color: #3b5998; }
+        .top-bar a.instagram { color: #C13584; }
+        .top-bar a.whatsapp { color: #25D366; }
+
+        /* Special style for X (Twitter) */
+        .top-bar a.twitter i {
+            color: #000000;              /* official X black */
+            background-color: #ffffff;   /* white circle */
+            border-radius: 50%;
+            padding: 4px;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
 <body>
     <!-- Top Bar -->
-<div class="top-bar bg-dark text-white py-1 px-3 d-flex justify-content-between align-items-center">
-  <div>
-    <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
-    <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
-    <a href="#" class="text-white me-2"><i class="fab fa-linkedin-in"></i></a>
-    <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
-  </div>
-  <div>
-    <a href="tel:+911234567890" class="text-white"><i class="fas fa-phone"></i> +91 12345 67890</a>
-  </div>
-</div>
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
-  <div class="container">
-    <a class="navbar-brand" href="#home"><img src="img/logo.png" alt="Tech Miss3" height="50"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
-        <li class="nav-item"><a class="nav-link" href="#careers">Careers</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
+    <div class="top-bar bg-dark text-white py-1 px-3 d-flex justify-content-between align-items-center">
+        <div>
+            <a href="https://www.facebook.com/profile.php?id=61580662049886" class="facebook me-2" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/techmiss3" class="instagram me-2" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/techmiss3" class="twitter me-2" target="_blank"><i class="fab fa-x"></i></a>
+            <a href="whatsapp://send?phone=919380729681" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div>
+            <a href="tel:+919380729681" class="text-white me-2"><i class="fas fa-phone"></i> +91 9380729681</a>
+        </div>
     </div>
-  </div>
-</nav>
 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#home"><img src="img/logo.png" alt="Tech Miss3" height="50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#careers">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
     <section id="home" class="hero-section">
         <div class="slideshow-container" onmouseover="pauseSlides()" onmouseout="resumeSlides()">
             <div class="slide">
-                <img src="img\hero1.jpg" alt="Hero 1" class="hero-img" loading="lazy">
+                <img src="img/hero1.jpg" alt="Hero 1" class="hero-img" loading="lazy">
                 <div class="slide-text">
                     <h1>Tech Miss3</h1>
                     <p>Where digital innovation meets your business goals</p>
@@ -56,7 +94,7 @@
                 </div>
             </div>
             <div class="slide">
-                <img src="img\hero2.jpg" alt="Hero 2" class="hero-img" loading="lazy">
+                <img src="img/hero2.jpg" alt="Hero 2" class="hero-img" loading="lazy">
                 <div class="slide-text">
                     <h1>Innovative Solutions</h1>
                 </div>
@@ -68,6 +106,7 @@
         </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="about-section" data-aos="fade-up">
         <div class="about-container">
             <div class="about-text">
@@ -78,139 +117,102 @@
                 <p class="highlight">With innovation at our core, we ensure that every solution we deliver is tailored to your business needs — practical, impactful, and built to last.</p>
             </div>
             <div class="about-image">
-                <img src="img\aboutus.jpg" alt="About Us">
+                <img src="img/aboutus.jpg" alt="About Us">
             </div>
         </div>
     </section>
 
+    <!-- Services Section -->
     <section id="services" class="services-section" data-aos="fade-up">
         <h2>Our Services</h2>
         <div class="services-grid">
-            <div class="service-card" data-aos="zoom-in">
+            <a href="ai-based-business-solutions.html" class="service-card" data-aos="zoom-in">
+                <i class="fas fa-brain"></i>
+                <h3>AI Based Business Solutions</h3>
+                <p>Advanced AI-driven solutions to optimize and automate your business processes.</p>
+            </a>
+            <a href="website-development.html" class="service-card" data-aos="zoom-in" data-aos-delay="100">
                 <i class="fas fa-laptop-code"></i>
-                <h3>Website Development</h3>
+                <h3>Web Based Business Solutions</h3>
                 <p>Modern and responsive websites tailored for your business needs.</p>
-            </div>
-            <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+            </a>
+            <a href="mobile-app-development.html" class="service-card" data-aos="zoom-in" data-aos-delay="200">
                 <i class="fas fa-mobile-alt"></i>
-                <h3>Mobile App Development</h3>
+                <h3>Mobile App Based Business Solutions</h3>
                 <p>Custom mobile applications for Android and iOS platforms.</p>
-            </div>
-            <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
-                <i class="fas fa-cogs"></i>
-                <h3>Software Solutions</h3>
-                <p>Comprehensive digital solutions to streamline your business.</p>
-            </div>
+            </a>
         </div>
     </section>
 
+    <!-- Technologies Section -->
     <section id="technology" class="technology-section" data-aos="fade-up">
         <h2>Our Technologies</h2>
         <div class="tech-grid">
-            <div class="tech-card" data-aos="zoom-in" data-aos-delay="600">
-                <i class="fas fa-brain"></i>
-                <p>AI</p>
-            </div>
-            <div class="tech-card" data-aos="zoom-in">
-                <i class="fab fa-node-js"></i>
-                <p>Node.js</p>
-            </div>
-            <div class="tech-card" data-aos="zoom-in" data-aos-delay="50">
-                <i class="fab fa-react"></i>
-                <p>React</p>
-            </div>
-            <!-- <div class="tech-card" data-aos="zoom-in" data-aos-delay="100">
-                <i class="fab fa-react"></i>
-                <p>React Native</p>
-            </div> -->
-            <div class="tech-card" data-aos="zoom-in" data-aos-delay="150">
-                <i class="fas fa-dove"></i> <!-- Placeholder for Flutter -->
-                <p>Flutter</p>
-            </div>
-            <div class="tech-card" data-aos="zoom-in" data-aos-delay="200">
-                <i class="fab fa-java"></i>
-                <p>Java</p>
-            </div>
-            <div class="tech-card" data-aos="zoom-in" data-aos-delay="250">
-                <i class="fab fa-android"></i>
-                <p>Android</p>
-            </div>
-            <div class="tech-card" data-aos="zoom-in" data-aos-delay="300">
-                <i class="fas fa-code"></i> 
-                <p>Kotlin</p>
-            </div>
-            <div class="tech-card" data-aos="zoom-in" data-aos-delay="350">
-                <i class="fab fa-google-play"></i>
-                <p>Google Play Launch</p>
-            </div>
-            <div class="tech-card" data-aos="zoom-in" data-aos-delay="400">
-                <i class="fab fa-app-store"></i>
-                <p>App Store Launch</p>
-            </div>
-            <div class="tech-card" data-aos="zoom-in" data-aos-delay="450">
-                <i class="fas fa-server"></i> <!-- Placeholder for Deployment -->
-                <p>Deployment Tech</p>
-            </div>
-            <div class="tech-card" data-aos="zoom-in" data-aos-delay="500">
-                <i class="fab fa-jenkins"></i>
-                <p>Jenkins</p>
-            </div>
-            <div class="tech-card" data-aos="zoom-in" data-aos-delay="550">
-                <i class="fab fa-git-alt"></i>
-                <p>Git</p>
-            </div>
-            
+            <div class="tech-card" data-aos="zoom-in"><i class="fas fa-brain"></i><p>AI</p></div>
+            <div class="tech-card" data-aos="zoom-in"><i class="fab fa-node-js"></i><p>Node.js</p></div>
+            <div class="tech-card" data-aos="zoom-in"><i class="fab fa-react"></i><p>React</p></div>
+            <div class="tech-card" data-aos="zoom-in"><i class="fas fa-dove"></i><p>Flutter</p></div>
+            <div class="tech-card" data-aos="zoom-in"><i class="fab fa-java"></i><p>Java</p></div>
+            <div class="tech-card" data-aos="zoom-in"><i class="fab fa-android"></i><p>Android</p></div>
+            <div class="tech-card" data-aos="zoom-in"><i class="fas fa-code"></i><p>Kotlin</p></div>
+            <div class="tech-card" data-aos="zoom-in"><i class="fab fa-google-play"></i><p>Google Play Launch</p></div>
+            <div class="tech-card" data-aos="zoom-in"><i class="fab fa-app-store"></i><p>App Store Launch</p></div>
+            <div class="tech-card" data-aos="zoom-in"><i class="fas fa-server"></i><p>Deployment Tech</p></div>
+            <div class="tech-card" data-aos="zoom-in"><i class="fab fa-jenkins"></i><p>Jenkins</p></div>
+            <div class="tech-card" data-aos="zoom-in"><i class="fab fa-git-alt"></i><p>Git</p></div>
         </div>
     </section>
 
+    <!-- Products Section -->
     <section id="products" class="products-section" data-aos="fade-up">
         <h2>Our Products</h2>
         <div class="product-carousel">
-            <div class="product-item"><img src="img\product2.jpg" alt="Product 1"></div>
-            <div class="product-item"><img src="img\caochingaap.jpg" alt="Product 2"></div>
-            <div class="product-item"><img src="img\robotAi.jpg" alt="Product 3"></div>
-            <div class="product-item"><img src="img\influenceraap.jpg" alt="Product 4"></div>
-            <div class="product-item"><img src="img\product3.jpg" alt="Product 5"></div>
-            <div class="product-item"><img src="img\product1.jpg" alt="Product 6"></div>
-            <!-- Add more if needed -->
+            <div class="product-item"><img src="img/product2.jpg" alt="Product 1"></div>
+            <div class="product-item"><img src="img/caochingaap.jpg" alt="Product 2"></div>
+            <div class="product-item"><img src="img/robotAi.jpg" alt="Product 3"></div>
+            <div class="product-item"><img src="img/influenceraap.jpg" alt="Product 4"></div>
+            <div class="product-item"><img src="img/product3.jpg" alt="Product 5"></div>
+            <div class="product-item"><img src="img/product1.jpg" alt="Product 6"></div>
         </div>
     </section>
 
+    <!-- Careers Section -->
     <section id="careers" class="careers-section" data-aos="fade-up">
-    <h2>Careers at Tech Miss3</h2>
-    <div class="careers-container">
-        <p>At Tech Miss3, we’re not just building websites and apps — we’re creating digital solutions that transform businesses. To make this happen, we’re looking for passionate professionals who want to grow with us.</p>
-        <h4>Current Openings</h4>
-        <div class="job-listing" data-aos="zoom-in">
-            <h6>Graphic Designer (UI/UX – Apps & Websites)</h6>
-            <ul>
-                <li>Strong experience in graphic design, UI/UX, and modern web/app layouts</li>
-                <li>Ability to design clean, user-friendly, and visually appealing interfaces</li>
-                <li>Proficiency in tools like Figma, Adobe XD, Photoshop, Illustrator</li>
-                <li>Understanding of responsive design and user journeys</li>
-                <li>Creative thinker with attention to detail</li>
+        <h2>Careers at Tech Miss3</h2>
+        <div class="careers-container">
+            <p>At Tech Miss3, we’re not just building websites and apps — we’re creating digital solutions that transform businesses. To make this happen, we’re looking for passionate professionals who want to grow with us.</p>
+            <h4>Current Openings</h4>
+            <div class="job-listing" data-aos="zoom-in">
+                <h6>Graphic Designer (UI/UX – Apps & Websites)</h6>
+                <ul>
+                    <li>Strong experience in graphic design, UI/UX, and modern web/app layouts</li>
+                    <li>Ability to design clean, user-friendly, and visually appealing interfaces</li>
+                    <li>Proficiency in tools like Figma, Adobe XD, Photoshop, Illustrator</li>
+                    <li>Understanding of responsive design and user journeys</li>
+                    <li>Creative thinker with attention to detail</li>
+                </ul>
+            </div>
+            <div class="job-listing" data-aos="zoom-in" data-aos-delay="100">
+                <h6>Quality Analyst (QA – 5+ Years Experience)</h6>
+                <ul>
+                    <li>Minimum 5 years of professional QA/testing experience</li>
+                    <li>Strong skills in manual & automation testing for web and mobile apps</li>
+                    <li>Familiarity with test planning, bug tracking, and reporting tools</li>
+                    <li>Ability to work closely with developers to ensure bug-free, high-quality delivery</li>
+                    <li>Knowledge of SDLC/STLC and Agile methodologies preferred</li>
+                </ul>
+            </div>
+            <h3>Why Work With Us?</h3>
+            <ul class="why-us">
+                <li>Be part of a growing IT solutions company that values innovation & creativity</li>
+                <li>Work on exciting projects for small and medium businesses across industries</li>
+                <li>A culture that encourages ideas, ownership, and growth</li>
             </ul>
+            <p class="apply-info"><i class="fas fa-envelope"></i> Interested? Send your CV/portfolio to <a href="mailto:contact.trainhead@gmail.com">contact.trainhead@gmail.com</a> with the subject line: “Application – [Role Name]”</p>
         </div>
-        <div class="job-listing" data-aos="zoom-in" data-aos-delay="100">
-            <h6>Quality Analyst (QA – 5+ Years Experience)</h6>
-            <ul>
-                <li>Minimum 5 years of professional QA/testing experience</li>
-                <li>Strong skills in manual & automation testing for web and mobile apps</li>
-                <li>Familiarity with test planning, bug tracking, and reporting tools</li>
-                <li>Ability to work closely with developers to ensure bug-free, high-quality delivery</li>
-                <li>Knowledge of SDLC/STLC and Agile methodologies preferred</li>
-            </ul>
-        </div>
-        <h3>Why Work With Us?</h3>
-        <ul class="why-us">
-            <li>Be part of a growing IT solutions company that values innovation & creativity</li>
-            <li>Work on exciting projects for small and medium businesses across industries</li>
-            <li>A culture that encourages ideas, ownership, and growth</li>
-        </ul>
-        <p class="apply-info"><i class="fas fa-envelope"></i> Interested? Send your CV/portfolio to <a href="mailto:contact.trainhead@gmail.com">contact.trainhead@gmail.com</a> with the subject line: “Application – [Role Name]”</p>
-    </div>
-</section>
+    </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="contact-section" data-aos="zoom-in">
         <h2>Contact Us</h2>
         <form id="contact-form">
@@ -230,7 +232,35 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+
+        // Add simple zoom effect for service cards
+        const serviceCards = document.querySelectorAll('.service-card');
+        serviceCards.forEach(card => {
+            card.addEventListener('mouseover', function() {
+                this.style.transform = 'scale(1.1)';
+                this.style.transition = 'transform 0.3s ease';
+            });
+            card.addEventListener('mouseout', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+
+        function sendEmail() {
+            emailjs.send("service_your_service_id", "template_your_template_id", {
+                from_name: document.getElementById("name").value,
+                from_email: document.getElementById("email").value,
+                mobile: document.getElementById("mobile").value,
+                message: document.getElementById("message").value,
+            }, "your_user_id")
+            .then(function(response) {
+                alert("Message sent successfully!");
+                document.getElementById("contact-form").reset();
+            }, function(error) {
+                alert("Failed to send message. Please try again.");
+            });
+        }
     </script>
     <script src="script.js"></script>
 </body>
 </html>
+```

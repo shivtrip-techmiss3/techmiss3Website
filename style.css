@@ -1,3 +1,4 @@
+
 :root {
     --saffron: #ff9933;
     --white: #ffffff;
@@ -185,7 +186,46 @@ nav a {
     margin: auto;
 }
 
-.service-card, .tech-card {
+.service-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    text-decoration: none; /* Remove link underline */
+    color: #333; /* Black text for all content */
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card i {
+    font-size: 3em;
+    color: var(--saffron); /* Saffron icon */
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    color: #333; /* Black title */
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1em;
+    color: #333; /* Black description */
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.tech-card {
     background: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
@@ -193,11 +233,11 @@ nav a {
     transition: transform 0.3s;
 }
 
-.service-card:hover, .tech-card:hover {
+.tech-card:hover {
     transform: scale(1.05);
 }
 
-.service-card i, .tech-card i {
+.tech-card i {
     font-size: 3em;
     color: var(--saffron);
     margin-bottom: 10px;
