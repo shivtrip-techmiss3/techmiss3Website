@@ -1,0 +1,112 @@
+:root {
+    --saffron: #ff9933;
+    --white: #ffffff;
+    --green: #138808;
+    --primary-font: 'Arial', sans-serif;
+}
+
+body {
+    font-family: var(--primary-font);
+    background: var(--white);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h2, h3, h4 {
+    color: var(--saffron) !important; /* All subheadings orange */
+}
+
+.btn, .custom-btn-black, .btn-primary {
+    background-color: var(--green) !important; /* All buttons green */
+    color: var(--white) !important;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover, .custom-btn-black:hover, .btn-primary:hover {
+    background-color: #0f5a05 !important; /* Slightly darker green on hover */
+}
+
+.idea-card i {
+    color: var(--saffron) !important; /* Icons orange */
+    font-size: 3.2em; /* slightly bigger icons */
+}
+
+.service-detail-section, .featured-solution-section, .ai-ideas-section {
+    padding: 50px 20px;
+}
+
+.service-detail-section img, .featured-solution-section img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.ai-ideas-section .idea-card {
+    padding: 20px;
+    text-align: center;
+}
+
+.ai-ideas-section .idea-card h4 {
+    margin-top: 10px;
+}
+
+/* --- Contact Us Form --- */
+.contact-section {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: var(--saffron);
+    margin-bottom: 20px;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.contact-section button {
+    background-color: var(--green) !important;
+    color: var(--white) !important;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contact-section button:hover {
+    background-color: #0f5a05 !important;
+}
+/* Social icons colors */
+.top-bar a.facebook { color: #3b5998; }   /* Facebook Blue */
+.top-bar a.instagram { color: #C13584; }  /* Instagram Pink */
+.top-bar a.whatsapp { color: #25D366; }   /* WhatsApp Green */
+
+/* Special style for X (Twitter) */
+.top-bar a.twitter i {
+    color: #000000;              /* official X black */
+    background-color: #ffffff;   /* white circle */
+    border-radius: 50%;
+    padding: 4px;
+    font-size: 0.85rem;
+}
+
+/* Remove underline/underscore from social icons */
+.top-bar a {
+    text-decoration: none;
+}
+
+.top-bar a::after {
+    content: none;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tech Miss3 offers Mobile App Based Business Solutions to enhance user engagement and optimize business processes with custom mobile applications.">
+    <title>Mobile App Based Business Solutions - Tech Miss3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="service-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Top Bar -->
+<div class="top-bar bg-dark text-white py-1 px-3 d-flex justify-content-between align-items-center">
+    <div>
+        <a href="https://www.facebook.com/profile.php?id=61580662049886" class="facebook me-2" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/techmiss3" class="instagram me-2" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/techmiss3" class="twitter me-2" target="_blank">
+            <i class="fab fa-x"></i>
+        </a>
+        <a href="whatsapp://send?phone=919380729681" class="whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+    <div>
+        <a href="tel:+919380729681" class="text-white me-2">
+            <i class="fas fa-phone"></i> +91 9380729681
+        </a>
+    </div>
+</div>
+
+
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Tech Miss3" height="50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#careers">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile App Based Business Solutions Section -->
+    <section id="mobile-app-solutions" class="service-detail-section py-5" data-aos="fade-up">
+        <div class="container">
+            <h1 class="text-center mb-4 display-3 text-black fw-bold animate__animated animate__slideInDown" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Mobile App Based Business Solutions</h1>
+            <div class="row align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
+                    <img src="img/2209.i201.039.F.m004.c9.mobile app development isometric.jpg" alt="Mobile App Development Isometric" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <h3 class="fw-bold sub-heading-orange">Engage Users with Custom Mobile Apps</h3>
+                    <p>Our Mobile App Based Business Solutions create tailor-made applications for Android and iOS, designed to enhance user engagement, streamline processes, and support your business growth in a digital-first world.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check icon-orange"></i> Native and cross-platform app development</li>
+                        <li class="mb-2"><i class="fas fa-check icon-orange"></i> Intuitive user-friendly interfaces</li>
+                        <li class="mb-2"><i class="fas fa-check icon-orange"></i> Integration with APIs and third-party services</li>
+                        <li class="mb-2"><i class="fas fa-check icon-orange"></i> App store optimization and launch support</li>
+                    </ul>
+                    <button class="btn btn-green mt-3" onclick="scrollToContact()">Request a Consultation</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Showcase -->
+    <section class="additional-showcase mt-5 py-5" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center mb-4 sub-heading-orange">Explore Our Mobile Expertise</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
+                    <img src="img/representation-user-experience-interface-design.jpg" alt="User Experience Design" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <p>Discover our portfolio of innovative mobile apps, crafted to deliver exceptional user experiences and robust functionality for businesses across industries.</p>
+                    <button class="btn btn-green mt-3" onclick="scrollToContact()">View More Projects</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+<section id="contact" class="contact-section" data-aos="zoom-in">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="tel" id="mobile" placeholder="Mobile" required>
+        <textarea id="message" placeholder="Message" required></textarea>
+        <button type="button" onclick="sendEmail()">Submit</button>
+    </form>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        © 2025 Tech Miss3 | All Rights Reserved
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+       function scrollToContact() {
+    document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+}
+
+
+        function sendEmail() {
+            emailjs.send("service_your_service_id", "template_your_template_id", {
+                from_name: document.getElementById("name").value,
+                from_email: document.getElementById("email").value,
+                mobile: document.getElementById("mobile").value,
+                message: document.getElementById("message").value,
+            }, "your_user_id")
+            .then(function(response) {
+                alert("Message sent successfully!");
+                document.getElementById("contact-form").reset();
+            }, function(error) {
+                alert("Failed to send message. Please try again.");
+            });
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
