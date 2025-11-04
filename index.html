@@ -6,6 +6,7 @@
     <title>Tech Miss3</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -37,14 +38,13 @@
         .top-bar a.instagram { color: #C13584; }
         .top-bar a.whatsapp { color: #25D366; }
 
-        /* Special style for X (Twitter) */
-        .top-bar a.twitter i {
-            color: #000000;              /* official X black */
-            background-color: #ffffff;   /* white circle */
-            border-radius: 50%;
-            padding: 4px;
-            font-size: 0.85rem;
-        }
+        /* Twitter (classic blue bird icon) */
+.top-bar a.twitter i {
+  color: #1DA1F2; /* Official Twitter blue */
+  background: none;
+  font-size: 1rem;
+}
+
     </style>
 </head>
 <body>
@@ -53,7 +53,10 @@
         <div>
             <a href="https://www.facebook.com/profile.php?id=61580662049886" class="facebook me-2" target="_blank"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/techmiss3" class="instagram me-2" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com/techmiss3" class="twitter me-2" target="_blank"><i class="fab fa-x"></i></a>
+            <a href="https://twitter.com/techmiss3" class="twitter me-2" target="_blank">
+  <i class="fab fa-twitter"></i>
+</a>
+
             <a href="whatsapp://send?phone=919380729681" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
         </div>
         <div>
@@ -74,7 +77,8 @@
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#careers">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -176,41 +180,7 @@
         </div>
     </section>
 
-    <!-- Careers Section -->
-    <section id="careers" class="careers-section" data-aos="fade-up">
-        <h2>Careers at Tech Miss3</h2>
-        <div class="careers-container">
-            <p>At Tech Miss3, we’re not just building websites and apps — we’re creating digital solutions that transform businesses. To make this happen, we’re looking for passionate professionals who want to grow with us.</p>
-            <h4>Current Openings</h4>
-            <div class="job-listing" data-aos="zoom-in">
-                <h6>Graphic Designer (UI/UX – Apps & Websites)</h6>
-                <ul>
-                    <li>Strong experience in graphic design, UI/UX, and modern web/app layouts</li>
-                    <li>Ability to design clean, user-friendly, and visually appealing interfaces</li>
-                    <li>Proficiency in tools like Figma, Adobe XD, Photoshop, Illustrator</li>
-                    <li>Understanding of responsive design and user journeys</li>
-                    <li>Creative thinker with attention to detail</li>
-                </ul>
-            </div>
-            <div class="job-listing" data-aos="zoom-in" data-aos-delay="100">
-                <h6>Quality Analyst (QA – 5+ Years Experience)</h6>
-                <ul>
-                    <li>Minimum 5 years of professional QA/testing experience</li>
-                    <li>Strong skills in manual & automation testing for web and mobile apps</li>
-                    <li>Familiarity with test planning, bug tracking, and reporting tools</li>
-                    <li>Ability to work closely with developers to ensure bug-free, high-quality delivery</li>
-                    <li>Knowledge of SDLC/STLC and Agile methodologies preferred</li>
-                </ul>
-            </div>
-            <h3>Why Work With Us?</h3>
-            <ul class="why-us">
-                <li>Be part of a growing IT solutions company that values innovation & creativity</li>
-                <li>Work on exciting projects for small and medium businesses across industries</li>
-                <li>A culture that encourages ideas, ownership, and growth</li>
-            </ul>
-            <p class="apply-info"><i class="fas fa-envelope"></i> Interested? Send your CV/portfolio to <a href="mailto:contact.trainhead@gmail.com">contact.trainhead@gmail.com</a> with the subject line: “Application – [Role Name]”</p>
-        </div>
-    </section>
+    
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section" data-aos="zoom-in">
@@ -224,9 +194,7 @@
         </form>
     </section>
 
-    <footer>
-        © 2025 Tech Miss3 | All Rights Reserved
-    </footer>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -261,6 +229,20 @@
         }
     </script>
     <script src="script.js"></script>
+
+
+    <script>
+  // load footer.html (works when served via Live Server or a real server)
+  fetch('footer.html')
+    .then(r => {
+      if (!r.ok) throw new Error('footer fetch failed: ' + r.status);
+      return r.text();
+    })
+    .then(html => document.body.insertAdjacentHTML('beforeend', html))
+    .catch(err => console.warn(err));
+</script>
+
+
 </body>
+
 </html>
-```

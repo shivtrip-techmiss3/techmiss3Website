@@ -24,8 +24,9 @@
             <i class="fab fa-instagram"></i>
         </a>
         <a href="https://twitter.com/techmiss3" class="twitter me-2" target="_blank">
-            <i class="fab fa-x"></i>
-        </a>
+  <i class="fab fa-twitter"></i>
+</a>
+
         <a href="whatsapp://send?phone=919380729681" class="whatsapp" target="_blank">
             <i class="fab fa-whatsapp"></i>
         </a>
@@ -53,7 +54,8 @@
                     <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#products">Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#careers">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+
                     <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
                 </ul>
             </div>
@@ -163,10 +165,7 @@
     </form>
 </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        © 2025 Tech Miss3 | All Rights Reserved
-    </footer>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -203,5 +202,22 @@
             btn.addEventListener('click', scrollToContact);
         });
     </script>
+
+
+<script>
+  // load footer.html (works when served via Live Server or a real server)
+  fetch('footer.html')
+    .then(r => {
+      if (!r.ok) throw new Error('footer fetch failed: ' + r.status);
+      return r.text();
+    })
+    .then(html => document.body.insertAdjacentHTML('beforeend', html))
+    .catch(err => console.warn(err));
+</script>
+
+
+
 </body>
+
+
 </html>

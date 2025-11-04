@@ -93,14 +93,11 @@ h2, h3, h4 {
 .top-bar a.instagram { color: #C13584; }  /* Instagram Pink */
 .top-bar a.whatsapp { color: #25D366; }   /* WhatsApp Green */
 
-/* Special style for X (Twitter) */
-.top-bar a.twitter i {
-    color: #000000;              /* official X black */
-    background-color: #ffffff;   /* white circle */
-    border-radius: 50%;
-    padding: 4px;
-    font-size: 0.85rem;
+/* Real Twitter Blue color */
+.top-bar a.twitter {
+    color: #1DA1F2;  /* Official Twitter Blue */
 }
+
 
 /* Remove underline/underscore from social icons */
 .top-bar a {
