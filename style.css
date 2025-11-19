@@ -458,3 +458,131 @@ footer {
   transform: scale(1.2);
 }
 
+
+
+
+/* ===============================
+   MOBILE ONLY FIXES
+   =============================== */
+@media (max-width: 768px) {
+
+    /* --- HERO SECTION FIX (text too large) --- */
+    .slide-text h1 {
+        font-size: 1.6em;
+    }
+    .slide-text p {
+        font-size: 0.9em;
+    }
+    .slideshow-container {
+        height: 300px;
+    }
+    .hero-img {
+        height: 300px;
+    }
+
+    /* --- TECHNOLOGY SECTION FIX (4 per row → 2 per row) --- */
+    .technology-section .tech-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px;
+    }
+    .technology-section .tech-card {
+        padding: 15px;
+    }
+
+    /* --- PRODUCTS SECTION FIX (too small on mobile) --- */
+    .product-carousel {
+        gap: 14px;
+    }
+    .product-item {
+        flex: 0 0 calc(50% - 14px) !important;  /* 2 per row */
+    }
+    .product-item img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    /* --- ABOUT SECTION FIX --- */
+    .about-container {
+        flex-direction: column !important;
+        text-align: center;
+    }
+    .about-text {
+        padding: 10px;
+    }
+
+    /* --- FOOTER FIX (bring items vertically) --- */
+    .footer .footer-content {
+        flex-direction: column !important;
+        text-align: left;
+        gap: 20px;
+    }
+
+    .footer-col {
+        width: 100%;
+    }
+
+    .social-icons {
+        text-align: left;
+    }
+
+    /* --- NAVBAR FIX (space issue) --- */
+    .navbar-brand img {
+        height: 40px;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 0;
+        font-size: 16px;
+    }
+}
+
+
+
+/* Center quick-links & legal-links ONLY on mobile */
+@media (max-width: 768px) {
+
+    .footer-links ul,
+    .legal-links {
+        text-align: center;
+    }
+
+    .footer-links ul li,
+    .legal-links li {
+        margin: 6px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+      background: linear-gradient(90deg, #ff9933 0%, #f7f7f7 50%, #138808 100%) !important;
+    }
+}
+
+/* =============================
+   FOOTER MOBILE FIX
+   ============================= */
+@media (max-width: 768px) {
+
+    /* Center the headings */
+    .footer h5 {
+        text-align: center !important;
+        width: 100%;
+    }
+
+    /* Put links in 2 columns (2x2 / 3x3 depending on items) */
+    .footer-links ul,
+    .legal-links {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 8px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer-links ul li,
+    .legal-links li {
+        margin: 4px 0;
+        text-align: center;
+    }
+
+}
