@@ -32,7 +32,7 @@ function resumeSlides() {
     timer = setTimeout(() => { showSlides(slideIndex += 1); }, 5000);
 }
 
-// EmailJS setup
+
 emailjs.init("DoUP9lSL9aiQN2bKR");
 
 // UNIVERSAL EMAIL FUNCTION
