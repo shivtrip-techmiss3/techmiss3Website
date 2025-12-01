@@ -33,7 +33,7 @@ function resumeSlides() {
 }
 
 // EmailJS setup - Replace with your own EmailJS details
-emailjs.init("ps8MLonoRH5kjqz7S");
+emailjs.init("DoUP9lSL9aiQN2bKR");
 
 function sendEmail() {
     const name = document.getElementById('name').value;
