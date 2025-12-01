@@ -21,26 +21,26 @@
 
 
     <!-- Open Graph / Facebook / WhatsApp -->
-<meta property="og:title" content="Tech Miss3 - AI, Websites & Mobile App Solutions">
-<meta property="og:description" content="We build custom AI, website, and mobile app solutions for your business growth.">
-<meta property="og:image" content="https://techmiss3.com/img/logo.png">
+<meta property="og:title" content="Tech Miss3 - AI · Web · Mobile Solutions">
+<meta property="og:description" content="AI solutions, websites & mobile apps for modern businesses. Trusted IT partner for smart digital growth.">
+<meta property="og:image" content="https://techmiss3.com/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:url" content="https://techmiss3.com">
 <meta property="og:type" content="website">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Tech Miss3 - AI, Websites & Mobile App Solutions">
-<meta name="twitter:description" content="We build custom AI, website, and mobile app solutions for your business growth.">
-<meta name="twitter:image" content="https://techmiss3.com/img/logo.png">
+<meta name="twitter:title" content="Tech Miss3 - AI · Web · Mobile Solutions">
+<meta name="twitter:description" content="AI solutions, websites & mobile apps for modern businesses. Trusted IT partner for smart digital growth.">
+<meta name="twitter:image" content="https://techmiss3.com/img/og-image.png">
+
 
 <!-- Open Graph Preview Image -->
 <meta property="og:image" content="https://techmiss3.com/img/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://techmiss3.com/img/og-image.png">
 
 
 
@@ -285,8 +285,13 @@
     <section id="products" class="products-section" data-aos="fade-up">
         <h2>Our Products</h2>
         <div class="product-carousel">
-            <div class="product-item"><img src="img/product2.jpg" alt="Product 1"></div>
-            <div class="product-item"><img src="img/caochingaap.jpg" alt="Product 2"></div>
+           
+             <!-- ⭐ NEW: PointScheduler Image (clickable with badge + hover) -->
+    <a class="product-item clickable-product" href="pointscheduler.html">
+        <span class="badge-new">NEW ♦</span>
+        <img src="img/ps-logo.png" alt="PointScheduler App">
+    </a>
+             <div class="product-item"><img src="img/product2.jpg" alt="Product 1"></div>
             <div class="product-item"><img src="img/robotAi.jpg" alt="Product 3"></div>
             <div class="product-item"><img src="img/influenceraap.jpg" alt="Product 4"></div>
             <div class="product-item"><img src="img/product3.jpg" alt="Product 5"></div>
@@ -310,7 +315,8 @@
 
     
 
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
@@ -327,20 +333,7 @@
             });
         });
 
-        function sendEmail() {
-            emailjs.send("service_your_service_id", "template_your_template_id", {
-                from_name: document.getElementById("name").value,
-                from_email: document.getElementById("email").value,
-                mobile: document.getElementById("mobile").value,
-                message: document.getElementById("message").value,
-            }, "your_user_id")
-            .then(function(response) {
-                alert("Message sent successfully!");
-                document.getElementById("contact-form").reset();
-            }, function(error) {
-                alert("Failed to send message. Please try again.");
-            });
-        }
+       
     </script>
     <script src="script.js"></script>
 
@@ -359,14 +352,20 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
-document.querySelectorAll('.navbar-nav .nav-link').forEach(item => {
+document.querySelectorAll('.navbar-nav a').forEach(item => {
     item.addEventListener('click', () => {
+
+        // If it's a dropdown toggle → do NOT close
+        if (item.classList.contains('dropdown-toggle')) return;
+
         const navbar = document.getElementById('navbarNav');
         const bsCollapse = bootstrap.Collapse.getInstance(navbar);
+
         if (bsCollapse) bsCollapse.hide();
     });
 });
 </script>
+
 
 
 

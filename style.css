@@ -586,3 +586,37 @@ footer {
     }
 
 }
+
+
+
+
+/* --- Product Badge --- */
+.badge-new {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: #ff6600;
+    color: white;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 5;
+}
+
+/* Wrap clickable product inside relative block */
+.clickable-product {
+    position: relative;
+    display: inline-block;
+}
+
+/* --- Hover effect ONLY for clickable products --- */
+.clickable-product img {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.clickable-product:hover img {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.25);
+}
+

@@ -180,7 +180,7 @@
         <input type="tel" id="demo_phone" placeholder="Phone Number" required>
         <textarea id="demo_message" placeholder="Your Message" required></textarea>
 
-        <button type="submit" class="demo-submit">Submit</button>
+        <button type="button" class="demo-submit" onclick="sendEmail('demoForm')">Submit</button>
       </form>
 
       <div class="playstore-area">
@@ -192,6 +192,14 @@
 
     </div>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+emailjs.init("DoUP9lSL9aiQN2bKR");
+</script>
+
+<script src="script.js"></script>
+
 
   <!-- FOOTER (load same footer as index) -->
   <script>
@@ -221,31 +229,7 @@
     });
   </script>
 
-  <!-- EmailJS (replace with your keys) -->
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-<script>
-emailjs.init("ps8MLonoRH5kjqz7S"); 
-
-document.getElementById("demoForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    emailjs.send("service_h6u79mw", "template_1d0u42b", {
-        name: document.getElementById("demo_name").value,
-        email: document.getElementById("demo_email").value,
-        mobile: document.getElementById("demo_phone").value,
-        message: document.getElementById("demo_message").value
-    })
-    .then(function() {
-        alert("Your demo request was sent successfully!");
-        document.getElementById("demoForm").reset();
-        closeDemoForm();
-    })
-    .catch(function() {
-        alert("Failed to send request. Please try again.");
-    });
-});
-</script>
+  
 
 
 
