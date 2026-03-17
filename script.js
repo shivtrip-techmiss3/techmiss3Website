@@ -50,6 +50,11 @@ function sendEmail(formId = "contact-form") {
         form.querySelector("#demo_name")?.value ||
         "Not Provided",
 
+    clinic:
+        form.querySelector("#demo_clinic")?.value ||
+        "Not Provided",
+    
+
     email:
         form.querySelector("#email")?.value ||
         form.querySelector("#userEmail")?.value ||

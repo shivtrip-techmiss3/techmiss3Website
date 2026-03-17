@@ -194,3 +194,103 @@ body { position:relative; }
     width: 30px;
     height: 30px;
 }
+
+
+
+/* Floating Demo Button */
+.floating-demo-btn {
+  position: fixed;
+  top: 90px;              /* just below navbar */
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(45deg, #ff7a00, #2e7d32);
+  color: #fff;
+  border: none;
+  padding: 14px 26px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  z-index: 9999;
+  transition: all 0.3s ease;
+}
+
+.floating-demo-btn:hover {
+  transform: translateX(-50%) scale(1.05);
+}
+
+
+@media (max-width:768px) {
+  .floating-demo-btn {
+    top: 80px;
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+}
+
+.ps-feature-img {
+  width: 100%;
+  max-width: 280px;   /* controlled but not tiny */
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+}
+
+.ps-feature-img:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+.ps-feature-img {
+  background: #fff;
+  padding: 8px;
+}
+
+.ps-feature-img-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.ps-feature-title {
+  color: #ff7a00;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.ps-feature-section .row {
+  align-items: center;
+}
+.ps-feature-section .row {
+  margin-bottom: 100px;   /* more breathing space */
+}
+
+.ps-feature-section {
+  margin-bottom: 60px;
+}
+
+.ps-feature-text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.ps-feature-img-admin {
+  width: 100%;
+  max-width: 500px;   /* bigger for readability */
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+  background: #fff;
+  padding: 10px;
+}
+
+.ps-playstore-img {
+  max-width: 320px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.ps-playstore-box {
+  display: flex;
+  justify-content: center;
+}
