@@ -3,205 +3,372 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tech Miss3 offers AI Based Business Solutions to optimize and automate your business processes with cutting-edge AI technologies.">
     <title>AI Based Business Solutions - Tech Miss3</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="service-style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <meta name="description" content="Tech Miss3 builds AI automation, chatbots, and predictive analytics that cut repetitive work and surface better decisions for growing businesses.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Tech Miss3">
+    <link rel="canonical" href="https://techmiss3.com/ai-based-business-solutions.html">
+    <meta name="theme-color" content="#ea580c">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Tech Miss3">
+    <meta property="og:title" content="AI Based Business Solutions - Tech Miss3">
+    <meta property="og:description" content="Tech Miss3 builds AI automation, chatbots, and predictive analytics that cut repetitive work and surface better decisions for growing businesses.">
+    <meta property="og:url" content="https://techmiss3.com/ai-based-business-solutions.html">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward,call,chat,check_circle,close,mail,menu,android,api,autorenew,dashboard,description,edit_note,forum,language,phone_iphone,query_stats,reviews,search,security,shopping_cart,smart_toy,smartphone,storefront,support_agent,update,widgets&display=block" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+    tailwind.config = { darkMode: "class", theme: { extend: {
+      colors: { primary: "#ea580c", "primary-hover": "#c2410c", "primary-light": "#ffedd5", "on-primary": "#ffffff", "bg-canvas": "#fafafa", "surface-white": "#ffffff", "surface-orange-soft": "#fff7ed", "on-surface": "#18181b", "on-surface-variant": "#52525b", "text-muted": "#71717a" },
+      borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", "2xl": "1rem", "3xl": "1.5rem", full: "9999px" },
+      spacing: { gutter: "1.5rem" },
+      fontFamily: { sans: ["Inter", "sans-serif"] }
+    } } };
+    </script>
+    <style>
+      body{margin:0;overscroll-behavior:none;}
+      .material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 500,'GRAD' 0,'opsz' 24;vertical-align:middle;}
+      html{scroll-behavior:smooth;}
+      .section-pad{padding-top:6rem;padding-bottom:6rem;}
+      @media (max-width:768px){.section-pad{padding-top:4rem;padding-bottom:4rem;}}
+      ::-webkit-scrollbar{width:8px;}
+      ::-webkit-scrollbar-thumb{background:#fdba74;border-radius:9999px;}
+      .tm-card{transition:transform .35s cubic-bezier(0.25,1,0.5,1),box-shadow .35s cubic-bezier(0.25,1,0.5,1);backface-visibility:hidden;}
+      .tm-card:hover{will-change:transform;}
+      .tm-card:hover{transform:translateY(-6px) scale(1.015);box-shadow:0 20px 40px -12px rgba(0,0,0,0.16);}
+      .tm-btn{transition:transform .25s cubic-bezier(0.34,1.56,0.64,1),box-shadow .25s ease-out,filter .25s ease-out;}
+      .tm-btn:hover{will-change:transform;}
+      .tm-btn:hover{transform:translateY(-2px) scale(1.035);filter:brightness(1.04);}
+      .tm-btn:active{transform:translateY(0) scale(0.98);}
+      /* Scroll reveal declared last so its transition wins over hover shorthands during entrance */
+      .reveal{opacity:0;transform:perspective(1000px) rotateX(10deg) translate3d(0,35px,0) scale(0.93);transition:opacity .6s cubic-bezier(0.34,1.56,0.64,1),transform .6s cubic-bezier(0.34,1.56,0.64,1);transition-delay:var(--reveal-delay,0ms);will-change:opacity,transform;transform-style:preserve-3d;}
+      .reveal.is-visible{opacity:1;transform:perspective(1000px) rotateX(0deg) translate3d(0,0,0) scale(1);}
+      @media (prefers-reduced-motion:reduce){.reveal,.tm-card,.tm-btn{transition:none!important;}.reveal{opacity:1;transform:none;}}
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "AI Based Business Solutions",
+        "provider": { "@type": "Organization", "name": "Tech Miss3", "url": "https://techmiss3.com/" },
+        "areaServed": "IN",
+        "description": "Tech Miss3 builds AI automation, chatbots, and predictive analytics that cut repetitive work and surface better decisions for growing businesses.",
+        "url": "https://techmiss3.com/ai-based-business-solutions.html"
+    }
+    </script>
+<noscript><style>.reveal{opacity:1!important;transform:none!important;}</style></noscript>
 </head>
-<body>
+<body class="bg-bg-canvas text-on-surface font-sans antialiased overflow-x-hidden">
+<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:top-2 focus:left-2">Skip to main content</a>
 
-    <!-- Top Bar -->
-<div class="top-bar bg-dark text-white py-1 px-3 d-flex justify-content-between align-items-center">
-    <div>
-        <a href="https://www.facebook.com/profile.php?id=61580662049886" class="facebook me-2" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://www.instagram.com/techmiss3" class="instagram me-2" target="_blank">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://twitter.com/techmiss3" class="twitter me-2" target="_blank">
-            <i class="fab fa-x"></i>
-        </a>
-        <a href="whatsapp://send?phone=919380729681" class="whatsapp" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-        </a>
+<!-- HEADER -->
+<header class="fixed top-0 w-full z-50 shadow-[0_1px_8px_rgba(0,0,0,0.05)]">
+  <div class="h-20 bg-surface-white/95 backdrop-blur-xl border-b border-gray-100">
+    <div class="h-full max-w-[1180px] mx-auto px-gutter flex items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3 shrink-0">
+        <img src="img/logo.png" alt="Tech Miss3 logo" class="h-9 w-auto rounded-lg object-contain shadow-sm shadow-orange-500/20">
+        <span class="text-lg font-extrabold tracking-tight text-on-surface">Tech Miss3</span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-1">
+        <a href="index.html#home" class="text-sm font-semibold text-on-surface-variant hover:text-primary rounded-full px-4 py-2 transition-colors">Home</a>
+        <a href="index.html#about" class="text-sm font-semibold text-on-surface-variant hover:text-primary rounded-full px-4 py-2 transition-colors">About</a>
+        <a href="index.html#services" class="text-sm font-bold text-primary bg-surface-orange-soft rounded-full px-4 py-2 transition-colors">Services</a>
+        <a href="index.html#products" class="text-sm font-semibold text-on-surface-variant hover:text-primary rounded-full px-4 py-2 transition-colors">Products</a>
+        <a href="index.html#faq" class="text-sm font-semibold text-on-surface-variant hover:text-primary rounded-full px-4 py-2 transition-colors">FAQ</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="#contact" class="hidden sm:inline-flex tm-btn items-center justify-center text-sm font-bold bg-primary text-on-primary px-5 py-2.5 rounded-full shadow-[0_4px_16px_rgba(234,88,12,0.28)] hover:bg-primary-hover transition-all">Book a Consultation</a>
+        <button id="mobile-menu-btn" type="button" aria-label="Toggle menu" aria-expanded="false" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-full border border-gray-200 text-on-surface">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
     </div>
-    <div>
-        <a href="tel:+919380729681" class="text-white me-2">
-            <i class="fas fa-phone"></i> +91 9380729681
-        </a>
+    <div id="mobile-menu" class="hidden lg:hidden bg-surface-white border-b border-gray-100 px-gutter py-4 space-y-1">
+      <a href="index.html#home" class="block text-sm font-semibold text-on-surface px-3 py-2 rounded-lg hover:bg-surface-orange-soft">Home</a>
+      <a href="index.html#about" class="block text-sm font-semibold text-on-surface px-3 py-2 rounded-lg hover:bg-surface-orange-soft">About</a>
+      <a href="index.html#services" class="block text-sm font-semibold text-on-surface px-3 py-2 rounded-lg hover:bg-surface-orange-soft">Services</a>
+      <a href="index.html#products" class="block text-sm font-semibold text-on-surface px-3 py-2 rounded-lg hover:bg-surface-orange-soft">Products</a>
+      <a href="index.html#faq" class="block text-sm font-semibold text-on-surface px-3 py-2 rounded-lg hover:bg-surface-orange-soft">FAQ</a>
+      <a href="#contact" class="block text-center mt-2 text-sm font-bold bg-primary text-on-primary px-5 py-2.5 rounded-full">Book a Consultation</a>
     </div>
-</div>
+  </div>
+</header>
 
+<main id="main-content" class="pt-20">
 
-
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Tech Miss3" height="50"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#products">Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#careers">Careers</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- AI Based Business Solutions Section -->
-    <section id="ai-based-business-solutions" class="service-detail-section py-5" data-aos="fade-up">
-        <div class="container">
-            <h1 class="text-center mb-4 display-3 fw-bold sub-heading">AI Based Business Solutions</h1>
-            <div class="row align-items-center">
-                <div class="col-md-6" data-aos="fade-right">
-                    <img src="img/770.jpg" alt="AI Robot in Business Meeting" class="img-fluid rounded">
-                </div>
-                <div class="col-md-6" data-aos="fade-left">
-                    <h3 class="fw-bold sub-heading">Transform Your Business with AI</h3>
-                    <p>At Tech Miss3, our AI Based Business Solutions harness the latest AI advancements to optimize and automate your processes. From predictive analytics to intelligent automation, we empower your business with tools that enhance decision-making and drive growth in a competitive digital landscape.</p>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fas fa-check sub-icon"></i> Custom AI model development tailored to your industry</li>
-                        <li class="mb-2"><i class="fas fa-check sub-icon"></i> Advanced machine learning for real-time data insights</li>
-                        <li class="mb-2"><i class="fas fa-check sub-icon"></i> Automation of repetitive tasks with AI workflows</li>
-                        <li class="mb-2"><i class="fas fa-check sub-icon"></i> Seamless AI integration with legacy and cloud systems</li>
-                    </ul>
-                    <button class="btn green-btn" onclick="scrollToContact()">Request a Consultation</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Solution Section -->
-    <section id="featured-solution" class="featured-solution-section py-5" data-aos="fade-up">
-        <div class="container">
-            <h2 class="text-center mb-4 fw-bold sub-heading">Featured AI Solution</h2>
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <img src="img/laptop-data-center-facility-with-artificial-intelligence-simulation.jpg" alt="Featured AI Solution" class="img-fluid rounded">
-                </div>
-                <div class="col-md-6">
-                    <h3 class="fw-bold sub-heading">Innovate with Our Latest Offering</h3>
-                    <p>Explore our cutting-edge AI solution designed to meet your unique business needs. This featured service showcases our commitment to delivering innovative technology tailored for growth.</p>
-                    <button class="btn green-btn" onclick="scrollToContact()">Learn More</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- AI Business Ideas and Tools Section -->
-    <section id="ai-business-ideas" class="ai-ideas-section py-5 bg-light" data-aos="fade-up">
-        <div class="container">
-            <h2 class="text-center mb-4 fw-bold sub-heading">Innovative Business Ideas and AI Tools</h2>
-            <div class="row">
-                <div class="col-md-4" data-aos="zoom-in">
-                    <div class="idea-card p-4">
-                        <i class="fas fa-chart-line sub-icon mb-3"></i>
-                        <h4>Predictive Analytics for Sales</h4>
-                        <p>Use tools like TensorFlow or PyTorch for sales forecasting, optimizing inventory, and personalizing offers, potentially increasing revenue with real-time insights.</p>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="idea-card p-4">
-                        <i class="fas fa-robot sub-icon mb-3"></i>
-                        <h4>AI-Powered Chatbots</h4>
-                        <p>Deploy chatbots with OpenAI’s GPT or Google’s Gemini for 24/7 support, cutting costs and improving customer satisfaction with natural language processing.</p>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="idea-card p-4">
-                        <i class="fas fa-cogs sub-icon mb-3"></i>
-                        <h4>Process Automation with RPA</h4>
-                        <p>Integrate UiPath with AI to automate HR, finance, and supply chain tasks, saving operational hours with robotic process automation.</p>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="idea-card p-4">
-                        <i class="fas fa-brain sub-icon mb-3"></i>
-                        <h4>Sentiment Analysis for Marketing</h4>
-                        <p>Leverage IBM Watson or Hugging Face’s models to analyze social media sentiment, refining campaigns to boost engagement with AI-driven insights.</p>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="idea-card p-4">
-                        <i class="fas fa-shield-alt sub-icon mb-3"></i>
-                        <h4>AI Fraud Detection</h4>
-                        <p>Use anomaly detection with DeepMind’s algorithms to secure transactions, reducing fraud losses and enhancing customer trust.</p>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="500">
-                    <div class="idea-card p-4">
-                        <i class="fas fa-users-cog sub-icon mb-3"></i>
-                        <h4>Personalized HR with AI</h4>
-                        <p>Adopt LinkedIn’s AI Talent Hub or custom models to predict employee performance and streamline recruitment, improving retention.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Us Section -->
-<section id="contact" class="contact-section" data-aos="zoom-in">
-    <h2>Contact Us</h2>
-    <form id="contact-form">
-        <input type="text" id="name" placeholder="Name" required>
-        <input type="email" id="email" placeholder="Email" required>
-        <input type="tel" id="mobile" placeholder="Mobile" required>
-        <textarea id="message" placeholder="Message" required></textarea>
-        <button type="button" onclick="sendEmail()">Submit</button>
-    </form>
+<!-- HERO -->
+<section class="w-full bg-gradient-to-b from-surface-orange-soft/60 via-bg-canvas to-surface-white section-pad">
+  <div class="max-w-[1180px] mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+    <div class="space-y-6 reveal">
+      <p class="text-xs font-extrabold text-primary uppercase tracking-wider">AI Based Business Solutions</p>
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-[1.1] tracking-tight text-on-surface">AI that removes the busywork from your business.</h1>
+      <p class="text-lg text-on-surface-variant leading-relaxed">We build AI into the parts of your business that take the most time: repetitive admin, the same customer questions over and over, and decisions you are currently making on gut feel.</p>
+      <ul class="space-y-3 pt-1">
+        <li class="flex items-start gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[20px] shrink-0">check_circle</span><span>Custom AI models trained on your own data and industry</span></li>
+        <li class="flex items-start gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[20px] shrink-0">check_circle</span><span>Machine learning for real-time reporting and insights</span></li>
+        <li class="flex items-start gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[20px] shrink-0">check_circle</span><span>Automation of repetitive, rules-based tasks</span></li>
+        <li class="flex items-start gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[20px] shrink-0">check_circle</span><span>Integration with the systems and tools you already run</span></li>
+      </ul>
+      <div class="flex flex-wrap items-center gap-4 pt-2">
+        <a href="#contact" class="tm-btn inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-primary text-on-primary text-sm font-bold shadow-lg shadow-orange-500/25 hover:bg-primary-hover transition-all">
+          Request a Consultation
+          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+        </a>
+        <a href="index.html#services" class="tm-btn inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-surface-white text-on-surface text-sm font-bold border border-gray-200 shadow-sm hover:border-primary hover:text-primary transition-all">
+          All Services
+        </a>
+      </div>
+    </div>
+    <div class="reveal">
+      <img src="img/ai-hero.jpg" alt="AI assistant supporting a business team" class="w-full h-auto rounded-3xl shadow-xl border border-gray-100" loading="lazy">
+    </div>
+  </div>
 </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        © 2025 Tech Miss3 | All Rights Reserved
-    </footer>
+<!-- WHAT WE BUILD -->
+<section class="w-full bg-surface-white section-pad">
+  <div class="max-w-[1180px] mx-auto px-gutter space-y-12">
+    <div class="max-w-2xl mx-auto text-center space-y-3">
+      <p class="text-xs font-extrabold text-primary uppercase tracking-wider">What We Build</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-on-surface">Where AI actually pays off</h2>
+      <p class="text-lg text-on-surface-variant">We scope each build around a specific problem, not a general promise of innovation.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-bg-canvas border border-gray-100 rounded-3xl p-8 shadow-sm space-y-3 reveal tm-card">
+        <div class="w-12 h-12 rounded-2xl bg-primary text-white flex items-center justify-center shadow-md"><span class="material-symbols-outlined text-[24px]">query_stats</span></div>
+        <h3 class="text-lg font-bold text-on-surface">Forecasting &amp; Analytics</h3>
+        <p class="text-sm text-on-surface-variant leading-relaxed">Forecast demand, spot trends early, and plan stock or staffing from your own historical data instead of guesswork.</p>
+      </div>
+      <div class="bg-bg-canvas border border-gray-100 rounded-3xl p-8 shadow-sm space-y-3 reveal tm-card">
+        <div class="w-12 h-12 rounded-2xl bg-primary text-white flex items-center justify-center shadow-md"><span class="material-symbols-outlined text-[24px]">forum</span></div>
+        <h3 class="text-lg font-bold text-on-surface">Chatbots &amp; Assistants</h3>
+        <p class="text-sm text-on-surface-variant leading-relaxed">Handle repetitive first-line questions around the clock, and pass the complex ones to your team with full context.</p>
+      </div>
+      <div class="bg-bg-canvas border border-gray-100 rounded-3xl p-8 shadow-sm space-y-3 reveal tm-card">
+        <div class="w-12 h-12 rounded-2xl bg-primary text-white flex items-center justify-center shadow-md"><span class="material-symbols-outlined text-[24px]">autorenew</span></div>
+        <h3 class="text-lg font-bold text-on-surface">Workflow Automation</h3>
+        <p class="text-sm text-on-surface-variant leading-relaxed">Automate rules-based steps across admin, finance, and back-office work so your team stops re-keying the same data.</p>
+      </div>
+      <div class="bg-bg-canvas border border-gray-100 rounded-3xl p-8 shadow-sm space-y-3 reveal tm-card">
+        <div class="w-12 h-12 rounded-2xl bg-primary text-white flex items-center justify-center shadow-md"><span class="material-symbols-outlined text-[24px]">reviews</span></div>
+        <h3 class="text-lg font-bold text-on-surface">Feedback Analysis</h3>
+        <p class="text-sm text-on-surface-variant leading-relaxed">Read reviews, tickets, and survey responses at scale to see what customers actually complain about and ask for.</p>
+      </div>
+      <div class="bg-bg-canvas border border-gray-100 rounded-3xl p-8 shadow-sm space-y-3 reveal tm-card">
+        <div class="w-12 h-12 rounded-2xl bg-primary text-white flex items-center justify-center shadow-md"><span class="material-symbols-outlined text-[24px]">security</span></div>
+        <h3 class="text-lg font-bold text-on-surface">Anomaly Detection</h3>
+        <p class="text-sm text-on-surface-variant leading-relaxed">Flag unusual transactions, logins, or usage patterns early so problems surface before they turn into losses.</p>
+      </div>
+      <div class="bg-bg-canvas border border-gray-100 rounded-3xl p-8 shadow-sm space-y-3 reveal tm-card">
+        <div class="w-12 h-12 rounded-2xl bg-primary text-white flex items-center justify-center shadow-md"><span class="material-symbols-outlined text-[24px]">description</span></div>
+        <h3 class="text-lg font-bold text-on-surface">Document Processing</h3>
+        <p class="text-sm text-on-surface-variant leading-relaxed">Pull structured data out of invoices, forms, and PDFs automatically instead of typing it in by hand.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
+<!-- HOW IT WORKS -->
+<section class="w-full bg-bg-canvas section-pad">
+  <div class="max-w-[1180px] mx-auto px-gutter space-y-12">
+    <div class="max-w-2xl mx-auto text-center space-y-3">
+      <p class="text-xs font-extrabold text-primary uppercase tracking-wider">How We Work</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-on-surface">Clear scope and pricing before any work starts.</h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white border border-gray-100 rounded-2xl p-6 space-y-2 shadow-sm reveal tm-card">
+        <div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold">1</div>
+        <h3 class="font-bold text-on-surface">Discovery call</h3>
+        <p class="text-sm text-on-surface-variant">We learn your business and pin down the specific problem worth automating.</p>
+      </div>
+      <div class="bg-white border border-gray-100 rounded-2xl p-6 space-y-2 shadow-sm reveal tm-card">
+        <div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold">2</div>
+        <h3 class="font-bold text-on-surface">Scope &amp; quote</h3>
+        <p class="text-sm text-on-surface-variant">You get the full scope, timeline, and price in writing before we begin.</p>
+      </div>
+      <div class="bg-white border border-gray-100 rounded-2xl p-6 space-y-2 shadow-sm reveal tm-card">
+        <div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold">3</div>
+        <h3 class="font-bold text-on-surface">Build &amp; review</h3>
+        <p class="text-sm text-on-surface-variant">We build in stages with regular check-ins, so you see progress and can steer it.</p>
+      </div>
+      <div class="bg-white border border-gray-100 rounded-2xl p-6 space-y-2 shadow-sm reveal tm-card">
+        <div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold">4</div>
+        <h3 class="font-bold text-on-surface">Launch &amp; support</h3>
+        <p class="text-sm text-on-surface-variant">We deploy, monitor, and stay on for updates and support.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-        // Scroll to contact section
-        function scrollToContact() {
-            const contactSection = document.getElementById("contact");
-            if(contactSection){
-                contactSection.scrollIntoView({ behavior: "smooth" });
-            }
-        }
+<!-- OTHER SERVICES -->
+<section class="w-full bg-surface-white section-pad">
+  <div class="max-w-[1180px] mx-auto px-gutter space-y-10">
+    <div class="max-w-2xl mx-auto text-center space-y-3">
+      <p class="text-xs font-extrabold text-primary uppercase tracking-wider">Also From Tech Miss3</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-on-surface">Explore our other services</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <a href="website-development.html" class="group bg-bg-canvas border border-gray-100 rounded-3xl p-8 shadow-sm space-y-3 reveal tm-card flex flex-col justify-between">
+        <div class="space-y-3">
+          <div class="w-12 h-12 rounded-2xl bg-primary text-white flex items-center justify-center shadow-md"><span class="material-symbols-outlined text-[24px]">language</span></div>
+          <h3 class="text-lg font-bold text-on-surface">Website Development</h3>
+          <p class="text-sm text-on-surface-variant leading-relaxed">Responsive, SEO-friendly websites and web apps built around how your business actually works.</p>
+        </div>
+        <span class="inline-flex items-center gap-1.5 text-primary font-bold text-sm pt-4 group-hover:gap-2.5 transition-all">Learn more <span class="material-symbols-outlined text-[16px]">arrow_forward</span></span>
+      </a>
+      <a href="mobile-app-development.html" class="group bg-bg-canvas border border-gray-100 rounded-3xl p-8 shadow-sm space-y-3 reveal tm-card flex flex-col justify-between">
+        <div class="space-y-3">
+          <div class="w-12 h-12 rounded-2xl bg-primary text-white flex items-center justify-center shadow-md"><span class="material-symbols-outlined text-[24px]">smartphone</span></div>
+          <h3 class="text-lg font-bold text-on-surface">Mobile App Development</h3>
+          <p class="text-sm text-on-surface-variant leading-relaxed">Native and cross-platform apps for Android and iOS, with full launch support.</p>
+        </div>
+        <span class="inline-flex items-center gap-1.5 text-primary font-bold text-sm pt-4 group-hover:gap-2.5 transition-all">Learn more <span class="material-symbols-outlined text-[16px]">arrow_forward</span></span>
+      </a>
+    </div>
+  </div>
+</section>
 
-        // Email sending
-        emailjs.init("YOUR_EMAILJS_USER_ID");
-        function sendEmail() {
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const mobile = document.getElementById('mobile').value;
-            const message = document.getElementById('message').value;
+<!-- CONTACT -->
+<section class="w-full bg-bg-canvas section-pad" id="contact">
+  <div class="max-w-[1180px] mx-auto px-gutter">
+    <div class="bg-white border border-gray-100 rounded-3xl p-8 lg:p-14 shadow-lg reveal">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div class="space-y-5">
+          <p class="text-xs font-extrabold text-primary uppercase tracking-wider">Get In Touch</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-on-surface leading-tight">Tell us what you need built.</h2>
+          <p class="text-lg text-on-surface-variant">Share a few details about your project and we&rsquo;ll get back to you with a free, no-obligation quote. We typically respond within one business day.</p>
+          <div class="space-y-2 text-sm text-on-surface-variant pt-2">
+            <p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">call</span><a href="tel:+919380729681" class="hover:text-primary">+91 9380729681</a></p>
+            <p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">mail</span><a href="mailto:contact.trainhead@gmail.com" class="hover:text-primary">contact.trainhead@gmail.com</a></p>
+            <p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">chat</span><a href="whatsapp://send?phone=919380729681" class="hover:text-primary">Chat on WhatsApp</a></p>
+          </div>
+        </div>
+        <form id="contact-form" class="space-y-3">
+          <div>
+            <label for="name" class="block text-xs font-bold text-on-surface-variant uppercase mb-1">Name</label>
+            <input class="w-full h-11 px-4 rounded-xl bg-bg-canvas border border-gray-200 text-on-surface text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" placeholder="Your full name" id="name" type="text" required>
+          </div>
+          <div>
+            <label for="email" class="block text-xs font-bold text-on-surface-variant uppercase mb-1">Email</label>
+            <input class="w-full h-11 px-4 rounded-xl bg-bg-canvas border border-gray-200 text-on-surface text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" placeholder="you@yourbusiness.com" id="email" type="email" required>
+          </div>
+          <div>
+            <label for="mobile" class="block text-xs font-bold text-on-surface-variant uppercase mb-1">Mobile</label>
+            <input class="w-full h-11 px-4 rounded-xl bg-bg-canvas border border-gray-200 text-on-surface text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" placeholder="+91 00000 00000" id="mobile" type="tel" required>
+          </div>
+          <div>
+            <label for="message" class="block text-xs font-bold text-on-surface-variant uppercase mb-1">Tell us about your project</label>
+            <textarea class="w-full px-4 py-3 rounded-xl bg-bg-canvas border border-gray-200 text-on-surface text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" rows="3" placeholder="What are you trying to build?" id="message" required></textarea>
+          </div>
+          <button class="tm-btn w-full py-3 rounded-full bg-primary text-on-primary text-sm font-bold shadow-lg shadow-orange-500/25 hover:bg-primary-hover transition-all" type="button" onclick="sendEmail()">Send Enquiry</button>
+          <p class="text-[11px] text-text-muted text-center">We respect your privacy. Your details are only used to respond to your enquiry.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
-            emailjs.send("service_h6u79mw", "template_1d0u42b", {
-                name, email, mobile, message
-            }).then(res => {
-                alert("Email sent successfully!");
-            }).catch(err => {
-                alert("Failed to send email.");
-            });
-        }
+</main>
 
-        // Make all buttons scroll to contact
-        document.querySelectorAll('.green-btn').forEach(btn => {
-            btn.addEventListener('click', scrollToContact);
-        });
-    </script>
+<!-- FOOTER -->
+<footer class="w-full bg-zinc-900 text-zinc-300 section-pad border-t border-zinc-800">
+  <div class="max-w-[1180px] mx-auto px-gutter">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+      <div class="space-y-3">
+        <div class="flex items-center gap-2">
+          <img src="img/logo.png" alt="Tech Miss3 logo" class="h-8 w-auto rounded-md object-contain">
+          <span class="text-lg font-bold text-white">Tech Miss3</span>
+        </div>
+        <p class="text-sm text-zinc-400 leading-relaxed">An Udyam-registered IT partner building AI automation, websites, and mobile apps for growing businesses.</p>
+      </div>
+      <div class="space-y-3">
+        <h2 class="text-white font-semibold text-base">Quick Links</h2>
+        <ul class="text-sm text-zinc-400 space-y-2">
+          <li><a href="index.html#about" class="hover:text-primary transition-colors">About</a></li>
+          <li><a href="index.html#services" class="hover:text-primary transition-colors">Services</a></li>
+          <li><a href="index.html#products" class="hover:text-primary transition-colors">Products</a></li>
+          <li><a href="index.html#faq" class="hover:text-primary transition-colors">FAQ</a></li>
+          <li><a href="index.html#careers" class="hover:text-primary transition-colors">Careers</a></li>
+        </ul>
+      </div>
+      <div class="space-y-3">
+        <h2 class="text-white font-semibold text-base">Services</h2>
+        <ul class="text-sm text-zinc-400 space-y-2">
+          <li><a href="ai-based-business-solutions.html" class="hover:text-primary transition-colors">AI Business Solutions</a></li>
+          <li><a href="website-development.html" class="hover:text-primary transition-colors">Website Development</a></li>
+          <li><a href="mobile-app-development.html" class="hover:text-primary transition-colors">Mobile App Development</a></li>
+          <li><a href="pointscheduler.html" class="hover:text-primary transition-colors">PointScheduler</a></li>
+        </ul>
+      </div>
+      <div class="space-y-3">
+        <h2 class="text-white font-semibold text-base">Contact</h2>
+        <ul class="text-sm text-zinc-400 space-y-2">
+          <li><a href="tel:+919380729681" class="hover:text-primary transition-colors">+91 9380729681</a></li>
+          <li><a href="mailto:contact.trainhead@gmail.com" class="hover:text-primary transition-colors">contact.trainhead@gmail.com</a></li>
+          <li><a href="#contact" class="hover:text-primary transition-colors">Contact form</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-zinc-500">
+      <p>&copy; 2025 Tech Miss3 | All Rights Reserved</p>
+      <span>Udyam-Registered MSME</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    if (!btn || !menu) return;
+    btn.addEventListener('click', function () {
+      const isOpen = !menu.classList.contains('hidden');
+      menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isOpen));
+    });
+    menu.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () { menu.classList.add('hidden'); });
+    });
+  })();
+
+  // Scroll reveal with per-group cascade stagger
+  (function () {
+    const items = document.querySelectorAll('.reveal');
+    if (!items.length) return;
+    if (!('IntersectionObserver' in window)) {
+      items.forEach(function (el) { el.classList.add('is-visible'); });
+      return;
+    }
+    const groupIndex = new Map();
+    items.forEach(function (el) {
+      const parent = el.parentElement;
+      const i = groupIndex.get(parent) || 0;
+      if (!el.style.getPropertyValue('--reveal-delay')) {
+        el.style.setProperty('--reveal-delay', (Math.min(i, 6) * 75) + 'ms');
+      }
+      groupIndex.set(parent, i + 1);
+    });
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        el.classList.add('is-visible');
+        observer.unobserve(el);
+        const delay = parseFloat(el.style.getPropertyValue('--reveal-delay')) || 0;
+        window.setTimeout(function () {
+          el.classList.remove('reveal', 'is-visible');
+          el.style.removeProperty('--reveal-delay');
+          el.style.willChange = 'auto';
+        }, 650 + delay);
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    items.forEach(function (el) { observer.observe(el); });
+  })();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
