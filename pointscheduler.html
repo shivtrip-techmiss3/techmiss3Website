@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>(function(){var d=false;try{var t=localStorage.getItem('tm-theme');d=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;}catch(e){try{d=window.matchMedia('(prefers-color-scheme: dark)').matches;}catch(_){}}if(d)document.documentElement.classList.add('dark');})();</script>
 <title>PointScheduler | Therapy Centre Management Software by Tech Miss3</title>
 <meta name="description" content="PointScheduler is Tech Miss3's therapy centre management software for scheduling, patient records, therapist rosters, session notes, and billing.">
 <meta name="robots" content="index, follow">
@@ -18,9 +19,9 @@
 <link href="https://fonts.googleapis.com" rel="preconnect">
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back,arrow_forward,badge,calendar_month,calendar_today,cancel,check_circle,close,credit_card,devices,diversity_1,done_all,edit_note,event,event_available,expand_more,lock,medical_services,menu,refresh,smart_toy,tune,verified&display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back,arrow_forward,badge,calendar_month,calendar_today,cancel,check_circle,close,credit_card,dark_mode,devices,diversity_1,done_all,edit_note,event,event_available,expand_more,light_mode,lock,medical_services,menu,refresh,smart_toy,tune,verified&display=block" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#0f8b6d", "primary-hover": "#0a6a54", "primary-light": "#eef9f5", "primary-focus": "#e5f7f1", "on-primary": "#ffffff", "brand-deep": "#0a6a54", "bg-canvas": "#f7fbfa", "surface-white": "#ffffff", "surface-orange-soft": "#eef9f5", "surface-orange-subtle": "#e5f7f1", "border-subtle": "#cbe9df", "border-light": "#f3f4f6", "on-surface": "#16352e", "on-surface-variant": "#3e4944", "text-muted": "#60766f", "surface-dark": "#102a25", "surface-card": "#ffffff", "orange": { "50": "#f7fbfa", "100": "#e5f7f1", "200": "#cbe9df", "300": "#9fd6c2", "400": "#4fb897", "500": "#0f8b6d", "600": "#0a6a54", "700": "#0a6a54", "800": "#074f3f", "900": "#052e26" } }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px" }, "spacing": { "space-3xl": "4.5rem", "gutter-mobile": "0.75rem", "space-md": "1rem", "space-xs": "0.5rem", "space-2xs": "0.25rem", "margin": "1.5rem", "gutter": "1.5rem", "space-2xl": "3rem", "space-sm": "0.75rem", "space-lg": "1.5rem", "space-xl": "2rem", "margin-mobile": "1rem" }, "fontFamily": { "headline-lg": ["Inter"], "display-hero": ["Inter"], "body-default": ["Inter"], "body-lead": ["Inter"], "headline-sm": ["Inter"], "label-eyebrow": ["Inter"], "label-btn": ["Inter"], "display-hero-mobile": ["Inter"], "calendar-cell": ["Inter"], "headline-xl": ["Inter"], "headline-md": ["Inter"], "body-sm": ["Inter"], "headline-xl-mobile": ["Inter"], "micro-slot": ["Inter"] }, "fontSize": { "headline-lg": ["28px", { "lineHeight": "1.25", "letterSpacing": "-0.02em", "fontWeight": "600" }], "display-hero": ["60px", { "lineHeight": "1.08", "letterSpacing": "-0.035em", "fontWeight": "700" }], "body-default": ["16px", { "lineHeight": "1.55", "letterSpacing": "0em", "fontWeight": "400" }], "body-lead": ["19px", { "lineHeight": "1.6", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-eyebrow": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.08em", "fontWeight": "800" }], "label-btn": ["15px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }], "display-hero-mobile": ["38px", { "lineHeight": "1.12", "letterSpacing": "-0.025em", "fontWeight": "700" }], "calendar-cell": ["11px", { "lineHeight": "1.2", "letterSpacing": "0em", "fontWeight": "600" }], "headline-xl": ["40px", { "lineHeight": "1.15", "letterSpacing": "-0.03em", "fontWeight": "700" }], "headline-md": ["22px", { "lineHeight": "1.3", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["14px", { "lineHeight": "1.5", "letterSpacing": "0.005em", "fontWeight": "400" }], "headline-xl-mobile": ["30px", { "lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "700" }], "micro-slot": ["10px", { "lineHeight": "1.1", "letterSpacing": "0.01em", "fontWeight": "700" }] } } } };</script>
+<script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#0f8b6d", "primary-hover": "#0a6a54", "primary-light": "#eef9f5", "primary-focus": "#e5f7f1", "on-primary": "#ffffff", "brand-deep": "#0a6a54", "bg-canvas": "rgb(var(--ps-bg-canvas) / <alpha-value>)", "surface-white": "rgb(var(--ps-surface-white) / <alpha-value>)", "surface-orange-soft": "rgb(var(--ps-surface-orange-soft) / <alpha-value>)", "surface-orange-subtle": "rgb(var(--ps-surface-orange-subtle) / <alpha-value>)", "border-subtle": "rgb(var(--ps-border-subtle) / <alpha-value>)", "border-light": "#f3f4f6", "on-surface": "rgb(var(--ps-on-surface) / <alpha-value>)", "on-surface-variant": "rgb(var(--ps-on-surface-variant) / <alpha-value>)", "text-muted": "rgb(var(--ps-text-muted) / <alpha-value>)", "surface-dark": "#102a25", "surface-card": "#ffffff", "orange": { "50": "rgb(var(--ps-o50) / <alpha-value>)", "100": "rgb(var(--ps-o100) / <alpha-value>)", "200": "rgb(var(--ps-o200) / <alpha-value>)", "300": "#9fd6c2", "400": "#4fb897", "500": "#0f8b6d", "600": "#0a6a54", "700": "#0a6a54", "800": "#074f3f", "900": "#052e26" } }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px" }, "spacing": { "space-3xl": "4.5rem", "gutter-mobile": "0.75rem", "space-md": "1rem", "space-xs": "0.5rem", "space-2xs": "0.25rem", "margin": "1.5rem", "gutter": "1.5rem", "space-2xl": "3rem", "space-sm": "0.75rem", "space-lg": "1.5rem", "space-xl": "2rem", "margin-mobile": "1rem" }, "fontFamily": { "headline-lg": ["Inter"], "display-hero": ["Inter"], "body-default": ["Inter"], "body-lead": ["Inter"], "headline-sm": ["Inter"], "label-eyebrow": ["Inter"], "label-btn": ["Inter"], "display-hero-mobile": ["Inter"], "calendar-cell": ["Inter"], "headline-xl": ["Inter"], "headline-md": ["Inter"], "body-sm": ["Inter"], "headline-xl-mobile": ["Inter"], "micro-slot": ["Inter"] }, "fontSize": { "headline-lg": ["28px", { "lineHeight": "1.25", "letterSpacing": "-0.02em", "fontWeight": "600" }], "display-hero": ["60px", { "lineHeight": "1.08", "letterSpacing": "-0.035em", "fontWeight": "700" }], "body-default": ["16px", { "lineHeight": "1.55", "letterSpacing": "0em", "fontWeight": "400" }], "body-lead": ["19px", { "lineHeight": "1.6", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-eyebrow": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.08em", "fontWeight": "800" }], "label-btn": ["15px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }], "display-hero-mobile": ["38px", { "lineHeight": "1.12", "letterSpacing": "-0.025em", "fontWeight": "700" }], "calendar-cell": ["11px", { "lineHeight": "1.2", "letterSpacing": "0em", "fontWeight": "600" }], "headline-xl": ["40px", { "lineHeight": "1.15", "letterSpacing": "-0.03em", "fontWeight": "700" }], "headline-md": ["22px", { "lineHeight": "1.3", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["14px", { "lineHeight": "1.5", "letterSpacing": "0.005em", "fontWeight": "400" }], "headline-xl-mobile": ["30px", { "lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "700" }], "micro-slot": ["10px", { "lineHeight": "1.1", "letterSpacing": "0.01em", "fontWeight": "700" }] } } } };</script>
 <style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}html{scroll-behavior:smooth;}
 .tm-card{transition:transform .35s cubic-bezier(0.25,1,0.5,1),box-shadow .35s cubic-bezier(0.25,1,0.5,1);backface-visibility:hidden;}
       .tm-card:hover{will-change:transform;}
@@ -48,6 +49,56 @@ details[open] .faq-icon{transform:rotate(180deg);}
 @media (prefers-reduced-motion:reduce){.reveal,.tm-card,.tm-btn,.faq-answer,.faq-icon,.lightbox-backdrop,.lightbox-backdrop img{transition:none!important;}.reveal{opacity:1;transform:none;}}
 </style>
 <noscript><style>.reveal{opacity:1!important;transform:none!important;}</style></noscript>
+<style id="theme-css">
+:root{--ps-bg-canvas:247 251 250;--ps-surface-white:255 255 255;--ps-surface-orange-soft:238 249 245;--ps-surface-orange-subtle:229 247 241;--ps-border-subtle:203 233 223;--ps-on-surface:22 53 46;--ps-on-surface-variant:62 73 68;--ps-text-muted:96 118 111;--ps-o50:247 251 250;--ps-o100:229 247 241;--ps-o200:203 233 223}
+html.dark{--ps-bg-canvas:9 16 14;--ps-surface-white:26 42 37;--ps-surface-orange-soft:19 38 32;--ps-surface-orange-subtle:23 46 39;--ps-border-subtle:36 64 55;--ps-on-surface:230 242 238;--ps-on-surface-variant:170 188 181;--ps-text-muted:160 180 172;--ps-o50:13 22 20;--ps-o100:22 48 40;--ps-o200:38 74 62}
+
+html{color-scheme:light}
+html.dark{color-scheme:dark}
+.theme-icon-to-light{display:none}
+html.dark .theme-icon-to-dark{display:none}
+html.dark .theme-icon-to-light{display:inline-block}
+html.dark .bg-white{background-color:rgb(var(--ps-surface-white))}
+html.dark .bg-zinc-50\/90{background-color:rgb(24 36 32 / .9)}
+html.dark .bg-zinc-100{background-color:#1d2b27}
+html.dark .bg-red-100{background-color:rgb(239 68 68 / .16)}
+html.dark .bg-emerald-300\/40{background-color:rgb(16 185 129 / .12)}
+html.dark .bg-amber-300\/50{background-color:rgb(245 158 11 / .10)}
+html.dark .border-gray-100{border-color:#1f2d29}
+html.dark .border-gray-200{border-color:#2c3d38}
+html.dark .border-gray-200\/70{border-color:rgb(44 61 56 / .7)}
+html.dark .border-gray-200\/80{border-color:rgb(44 61 56 / .8)}
+html.dark .border-red-100{border-color:rgb(239 68 68 / .28)}
+html.dark .border-emerald-100\/90{border-color:rgb(52 211 153 / .18)}
+html.dark .border-emerald-200\/80{border-color:rgb(52 211 153 / .28)}
+html.dark .border-emerald-950\/60{border-color:rgb(52 211 153 / .15)}
+html.dark .text-primary{color:#34d399}
+html.dark .hover\:text-primary:hover{color:#6ee7b7}
+html.dark .text-emerald-600{color:#34d399}
+html.dark .text-amber-700{color:#fbbf24}
+html.dark .text-zinc-700{color:#c3d1cb}
+html.dark .text-zinc-900{color:rgb(var(--ps-on-surface))}
+html.dark .text-red-500{color:#f87171}
+html.dark .text-red-600{color:#f87171}
+html.dark .from-emerald-50{--tw-gradient-from:#0e211b var(--tw-gradient-from-position)}
+html.dark .to-amber-50{--tw-gradient-to:#231b0b var(--tw-gradient-to-position)}
+html.dark .via-white{--tw-gradient-stops:var(--tw-gradient-from),rgb(var(--ps-surface-white)) var(--tw-gradient-via-position),var(--tw-gradient-to)}
+html.dark .to-white{--tw-gradient-to:rgb(var(--ps-surface-white)) var(--tw-gradient-to-position)}
+html.dark .from-zinc-50{--tw-gradient-from:#16221f var(--tw-gradient-from-position)}
+html.dark .rounded-2xl.bg-zinc-900{background-color:#334340}
+html.dark .h-full.bg-zinc-800{background-color:#9fb3ab}
+html.dark footer.bg-zinc-900{background-color:#050907}
+html.dark footer .border-zinc-800,html.dark footer.border-zinc-800{border-color:#15201d}
+html.dark .text-zinc-500{color:#9aaca5}
+html.dark section.bg-surface-white{background-color:#111b18}
+html.dark section.via-white{--tw-gradient-stops:var(--tw-gradient-from),#111b18 var(--tw-gradient-via-position),var(--tw-gradient-to)}
+html.dark .rounded-3xl.bg-bg-canvas,html.dark .rounded-2xl.bg-bg-canvas{background-color:rgb(var(--ps-surface-white))}
+html.dark .bg-surface-orange-soft\/50{background-color:#1b2f29}
+html.dark div.from-emerald-50{--tw-gradient-from:#1c3129 var(--tw-gradient-from-position)}
+html.dark div.from-zinc-50{--tw-gradient-from:#1f2c28 var(--tw-gradient-from-position)}
+html.dark div.bg-white :is(.bg-white,.bg-surface-white),html.dark div.bg-surface-white :is(.bg-white,.bg-surface-white),html.dark :is(div,section).bg-gradient-to-br :is(.bg-white,.bg-surface-white){background-color:#2a403a}
+html.dark .rounded-\[40px\].bg-zinc-800{background-color:#2f3a37}
+</style>
 </head>
 <body class="bg-bg-canvas font-body-default text-body-default text-on-surface overflow-x-hidden">
 <header class="fixed top-0 w-full z-50 shadow-[0_1px_8px_rgba(0,0,0,0.05)]">
@@ -55,7 +106,7 @@ details[open] .faq-icon{transform:rotate(180deg);}
 <div class="h-full max-w-[1180px] mx-auto px-gutter flex items-center justify-between gap-space-md">
 <a href="#" class="flex items-center gap-space-sm">
 <div class="w-9 h-9 rounded-lg overflow-hidden shadow-sm shadow-emerald-900/20"><img src="img/point_logo.jpg" alt="PointScheduler logo" class="w-full h-full object-cover"></div>
-<span class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">PointScheduler</span>
+<span class="text-lg sm:text-headline-md text-on-surface font-bold tracking-tight">PointScheduler</span>
 </a>
 <nav class="hidden xl:flex items-center gap-space-md">
 <a class="text-on-surface-variant font-label-btn text-label-btn hover:text-primary transition-colors" href="#healthtech-pillar">Platform</a>
@@ -65,10 +116,11 @@ details[open] .faq-icon{transform:rotate(180deg);}
 <a class="text-on-surface-variant font-label-btn text-label-btn hover:text-primary transition-colors" href="#clinical-faq">FAQ</a>
 </nav>
 <div class="flex items-center gap-space-sm">
+<button type="button" id="theme-toggle" class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-200 text-on-surface hover:text-primary transition-colors shrink-0" aria-label="Switch to dark mode" aria-pressed="false"><span class="material-symbols-outlined text-[20px] theme-icon-to-dark" aria-hidden="true">dark_mode</span><span class="material-symbols-outlined text-[20px] theme-icon-to-light" aria-hidden="true">light_mode</span></button>
 <a href="index.html" class="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold text-on-surface-variant hover:text-primary border border-border-subtle rounded-full px-3 py-1.5 transition-colors">
 <span class="material-symbols-outlined text-[16px]">arrow_back</span> Tech Miss3
 </a>
-<a class="inline-flex items-center justify-center font-label-btn text-label-btn bg-gradient-to-r from-primary to-amber-500 text-on-primary px-space-lg py-space-xs rounded-full shadow-[0_8px_20px_rgba(15,139,109,0.24)] hover:bg-primary-hover transition-all tm-btn" href="#demo-booking">Book a Live Demo</a>
+<a class="hidden sm:inline-flex items-center justify-center font-label-btn text-label-btn bg-gradient-to-r from-primary to-amber-500 text-on-primary px-space-lg py-space-xs rounded-full shadow-[0_8px_20px_rgba(15,139,109,0.24)] hover:bg-primary-hover transition-all tm-btn" href="#demo-booking">Book a Live Demo</a>
 <button id="mobile-menu-btn" type="button" aria-label="Toggle menu" aria-expanded="false" class="xl:hidden w-10 h-10 flex items-center justify-center rounded-full border border-gray-200 text-on-surface shrink-0">
 <span class="material-symbols-outlined">menu</span>
 </button>
@@ -81,6 +133,7 @@ details[open] .faq-icon{transform:rotate(180deg);}
 <a href="#features" class="block text-sm font-semibold text-on-surface px-3 py-2 rounded-lg hover:bg-surface-orange-soft">Features</a>
 <a href="#clinical-faq" class="block text-sm font-semibold text-on-surface px-3 py-2 rounded-lg hover:bg-surface-orange-soft">FAQ</a>
 <a href="index.html" class="block text-sm font-semibold text-on-surface px-3 py-2 rounded-lg hover:bg-surface-orange-soft">&larr; Back to Tech Miss3</a>
+<a href="#demo-booking" class="block text-center mt-2 text-sm font-bold bg-gradient-to-r from-primary to-amber-500 text-on-primary px-5 py-2.5 rounded-full">Book a Live Demo</a>
 </div>
 </div>
 </header>
@@ -245,10 +298,10 @@ details[open] .faq-icon{transform:rotate(180deg);}
 <p class="font-body-default text-body-default text-on-surface-variant max-w-2xl leading-relaxed">Coordinate intricate multi-specialty care pathways involving paediatric occupational therapists, speech pathologists, clinical psychologists, and educational specialists with unified guardian communication.</p>
 <div class="flex flex-wrap gap-space-xs pt-space-xs"><span class="px-3 py-1 rounded-full bg-surface-white border border-orange-100 text-body-sm font-medium text-on-surface-variant">Multi-therapist sync</span><span class="px-3 py-1 rounded-full bg-surface-white border border-orange-100 text-body-sm font-medium text-on-surface-variant">Guardian portal updates</span><span class="px-3 py-1 rounded-full bg-surface-white border border-orange-100 text-body-sm font-medium text-on-surface-variant">Milestone roadmaps</span></div>
 </div>
-<div class="bg-white border border-gray-100 hover:border-orange-200 p-space-xl rounded-3xl shadow-sm hover:shadow-md space-y-space-xs group flex flex-col justify-between reveal tm-card"><div class="w-12 h-12 rounded-2xl bg-surface-orange-soft text-primary flex items-center justify-center font-bold text-2xl group-hover:scale-105 transition-transform">&#129513;</div><div class="space-y-space-xs"><h3 class="font-headline-md text-headline-md text-on-surface">Autism &amp; ABA Practices</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Manage multi-hour daily therapy blocks, discrete trial training records, and BCBA supervision oversight.</p></div></div>
-<div class="bg-white border border-gray-100 hover:border-orange-200 p-space-xl rounded-3xl shadow-sm hover:shadow-md space-y-space-xs group flex flex-col justify-between reveal tm-card"><div class="w-12 h-12 rounded-2xl bg-surface-orange-soft text-primary flex items-center justify-center font-bold text-2xl group-hover:scale-105 transition-transform">&#128483;&#65039;</div><div class="space-y-space-xs"><h3 class="font-headline-md text-headline-md text-on-surface">Speech-Language Pathology</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Organize articulation sessions, recurrent sound-room assignments, and interactive home-practice notes.</p></div></div>
-<div class="bg-white border border-gray-100 hover:border-orange-200 p-space-xl rounded-3xl shadow-sm hover:shadow-md space-y-space-xs group flex flex-col justify-between reveal tm-card"><div class="w-12 h-12 rounded-2xl bg-surface-orange-soft text-primary flex items-center justify-center font-bold text-2xl group-hover:scale-105 transition-transform">&#128400;&#65039;</div><div class="space-y-space-xs"><h3 class="font-headline-md text-headline-md text-on-surface">Occupational Therapy Centres</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Reserve sensory gyms, track motor progress, and coordinate shared clinical apparatus without clashes.</p></div></div>
-<div class="lg:col-span-2 bg-gradient-to-br from-zinc-50 to-white border border-gray-200/80 p-space-xl rounded-3xl shadow-sm hover:shadow-md flex flex-col justify-between space-y-space-sm group reveal tm-card"><div class="flex items-center justify-between"><div class="w-12 h-12 rounded-2xl bg-surface-orange-soft text-primary flex items-center justify-center font-bold text-2xl group-hover:scale-105 transition-transform">&#127939;</div><span class="px-3 py-1 rounded-full bg-zinc-100 text-zinc-700 font-calendar-cell font-bold text-calendar-cell uppercase tracking-wider">Physical &amp; Neuro Care</span></div><div><h3 class="font-headline-md text-headline-md text-on-surface">Paediatric, Adult Physio &amp; Rehab Facilities</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mt-space-2xs">Unified operations for high-cadence rehabilitation practices offering bundled care packages combining neuro, physical, and speech rehabilitation across multiple clinical bays.</p></div></div>
+<div class="bg-white border border-gray-100 hover:border-orange-200 p-space-xl rounded-3xl shadow-sm hover:shadow-md space-y-space-xs group flex flex-col reveal tm-card"><div class="w-12 h-12 rounded-2xl bg-surface-orange-soft text-primary flex items-center justify-center font-bold text-2xl group-hover:scale-105 transition-transform">&#129513;</div><div class="space-y-space-xs"><h3 class="font-headline-md text-headline-md text-on-surface">Autism &amp; ABA Practices</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Manage multi-hour daily therapy blocks, discrete trial training records, and BCBA supervision oversight.</p></div></div>
+<div class="bg-white border border-gray-100 hover:border-orange-200 p-space-xl rounded-3xl shadow-sm hover:shadow-md space-y-space-xs group flex flex-col reveal tm-card"><div class="w-12 h-12 rounded-2xl bg-surface-orange-soft text-primary flex items-center justify-center font-bold text-2xl group-hover:scale-105 transition-transform">&#128483;&#65039;</div><div class="space-y-space-xs"><h3 class="font-headline-md text-headline-md text-on-surface">Speech-Language Pathology</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Organize articulation sessions, recurrent sound-room assignments, and interactive home-practice notes.</p></div></div>
+<div class="bg-white border border-gray-100 hover:border-orange-200 p-space-xl rounded-3xl shadow-sm hover:shadow-md space-y-space-xs group flex flex-col reveal tm-card"><div class="w-12 h-12 rounded-2xl bg-surface-orange-soft text-primary flex items-center justify-center font-bold text-2xl group-hover:scale-105 transition-transform">&#128400;&#65039;</div><div class="space-y-space-xs"><h3 class="font-headline-md text-headline-md text-on-surface">Occupational Therapy Centres</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Reserve sensory gyms, track motor progress, and coordinate shared clinical apparatus without clashes.</p></div></div>
+<div class="lg:col-span-2 bg-gradient-to-br from-zinc-50 to-white border border-gray-200/80 p-space-xl rounded-3xl shadow-sm hover:shadow-md flex flex-col space-y-space-sm group reveal tm-card"><div class="flex items-center justify-between"><div class="w-12 h-12 rounded-2xl bg-surface-orange-soft text-primary flex items-center justify-center font-bold text-2xl group-hover:scale-105 transition-transform">&#127939;</div><span class="px-3 py-1 rounded-full bg-zinc-100 text-zinc-700 font-calendar-cell font-bold text-calendar-cell uppercase tracking-wider">Physical &amp; Neuro Care</span></div><div><h3 class="font-headline-md text-headline-md text-on-surface">Paediatric, Adult Physio &amp; Rehab Facilities</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mt-space-2xs">Unified operations for high-cadence rehabilitation practices offering bundled care packages combining neuro, physical, and speech rehabilitation across multiple clinical bays.</p></div></div>
 </div>
 </div>
 </section>
@@ -300,10 +353,10 @@ details[open] .faq-icon{transform:rotate(180deg);}
 <div class="space-y-space-xs"><h3 class="font-headline-md text-headline-md text-on-surface font-bold">Smart Appointment &amp; Room Orchestration</h3><p class="font-body-lead text-body-lead text-on-surface-variant max-w-xl leading-relaxed">Consolidate multi-practitioner schedules, equipment buffer times, specialized room assignments, and recurring patient sessions with zero double-booking.</p></div>
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-xs"><div class="p-space-xs rounded-xl bg-white border border-orange-100 shadow-sm"><span class="block font-bold text-primary text-sm">Instant Conflict Checks</span><span class="font-micro-slot text-text-muted">Room &amp; equipment bounds</span></div><div class="p-space-xs rounded-xl bg-white border border-orange-100 shadow-sm"><span class="block font-bold text-primary text-sm">Multi-week Recurring</span><span class="font-micro-slot text-text-muted">Automated slot holds</span></div><div class="p-space-xs rounded-xl bg-white border border-orange-100 shadow-sm"><span class="block font-bold text-primary text-sm">Buffer Allocations</span><span class="font-micro-slot text-text-muted">Between back-to-back care</span></div></div>
 </div>
-<div class="bg-bg-canvas border border-gray-100 hover:border-orange-200 rounded-3xl p-space-xl shadow-sm hover:shadow-md space-y-space-sm group flex flex-col justify-between reveal tm-card"><div class="w-12 h-12 rounded-2xl bg-amber-500 text-on-primary flex items-center justify-center shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-[24px]">badge</span></div><div class="space-y-space-xs"><h3 class="font-headline-md text-headline-md text-on-surface">Therapist Management</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Organize clinician caseload quotas, leave rotations, room preferences, and multi-location practice assignments.</p></div></div>
-<div class="bg-bg-canvas border border-gray-100 hover:border-orange-200 rounded-3xl p-space-xl shadow-sm hover:shadow-md space-y-space-sm group flex flex-col justify-between reveal tm-card"><div class="w-12 h-12 rounded-2xl bg-orange-600 text-on-primary flex items-center justify-center shadow-md shadow-orange-600/20 group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-[24px]">diversity_1</span></div><div class="space-y-space-xs"><h3 class="font-headline-md text-headline-md text-on-surface">Patient &amp; Family Records</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Safeguard diagnostic intake forms, clinical milestones, emergency contacts, and historic records in a secure repository.</p></div></div>
-<div class="bg-bg-canvas border border-gray-100 hover:border-orange-200 rounded-3xl p-space-xl shadow-sm hover:shadow-md space-y-space-sm group flex flex-col justify-between reveal tm-card"><div class="w-12 h-12 rounded-2xl bg-zinc-900 text-on-primary flex items-center justify-center shadow-md group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-[24px]">edit_note</span></div><div class="space-y-space-xs"><h3 class="font-headline-md text-headline-md text-on-surface">Sessions &amp; Assessments</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Streamline post-session documentation with rapid clinical templates, attendance timestamps, and family milestone summaries.</p></div></div>
-<div class="bg-bg-canvas border border-gray-100 hover:border-orange-200 rounded-3xl p-space-xl shadow-sm hover:shadow-md space-y-space-sm group flex flex-col justify-between reveal tm-card"><div class="w-12 h-12 rounded-2xl bg-primary text-on-primary flex items-center justify-center shadow-md shadow-emerald-900/20 group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-[24px]">credit_card</span></div><div class="space-y-space-xs"><h3 class="font-headline-md text-headline-md text-on-surface">Packages &amp; Automated Billing</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Manage prepaid session blocks, automatically adjust bundle credits upon checkout, and issue electronic statements.</p></div></div>
+<div class="bg-bg-canvas border border-gray-100 hover:border-orange-200 rounded-3xl p-space-xl shadow-sm hover:shadow-md space-y-space-sm group flex flex-col reveal tm-card"><div class="w-12 h-12 rounded-2xl bg-amber-500 text-on-primary flex items-center justify-center shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-[24px]">badge</span></div><div class="space-y-space-xs"><h3 class="font-headline-md text-headline-md text-on-surface">Therapist Management</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Organize clinician caseload quotas, leave rotations, room preferences, and multi-location practice assignments.</p></div></div>
+<div class="bg-bg-canvas border border-gray-100 hover:border-orange-200 rounded-3xl p-space-xl shadow-sm hover:shadow-md space-y-space-sm group flex flex-col reveal tm-card"><div class="w-12 h-12 rounded-2xl bg-orange-600 text-on-primary flex items-center justify-center shadow-md shadow-orange-600/20 group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-[24px]">diversity_1</span></div><div class="space-y-space-xs"><h3 class="font-headline-md text-headline-md text-on-surface">Patient &amp; Family Records</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Safeguard diagnostic intake forms, clinical milestones, emergency contacts, and historic records in a secure repository.</p></div></div>
+<div class="bg-bg-canvas border border-gray-100 hover:border-orange-200 rounded-3xl p-space-xl shadow-sm hover:shadow-md space-y-space-sm group flex flex-col reveal tm-card"><div class="w-12 h-12 rounded-2xl bg-zinc-900 text-on-primary flex items-center justify-center shadow-md group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-[24px]">edit_note</span></div><div class="space-y-space-xs"><h3 class="font-headline-md text-headline-md text-on-surface">Sessions &amp; Assessments</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Streamline post-session documentation with rapid clinical templates, attendance timestamps, and family milestone summaries.</p></div></div>
+<div class="bg-bg-canvas border border-gray-100 hover:border-orange-200 rounded-3xl p-space-xl shadow-sm hover:shadow-md space-y-space-sm group flex flex-col reveal tm-card"><div class="w-12 h-12 rounded-2xl bg-primary text-on-primary flex items-center justify-center shadow-md shadow-emerald-900/20 group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-[24px]">credit_card</span></div><div class="space-y-space-xs"><h3 class="font-headline-md text-headline-md text-on-surface">Packages &amp; Automated Billing</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Manage prepaid session blocks, automatically adjust bundle credits upon checkout, and issue electronic statements.</p></div></div>
 </div>
 </div>
 </section>
@@ -352,17 +405,17 @@ details[open] .faq-icon{transform:rotate(180deg);}
 </div>
 <h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface leading-tight">Book a PointScheduler demo without waiting for a callback.</h2>
 <p class="font-body-lead text-body-lead text-on-surface-variant">
-              Select your preferred consultation time and share a few clinic details. A Tech Miss3 healthcare specialist will confirm your slot within one business day.
+              Pick a free 30-minute slot on our live calendar. Your booking is confirmed straight away and a calendar invite is sent to your email.
             </p>
 <div class="p-space-md rounded-2xl bg-surface-white border border-orange-100 shadow-sm space-y-space-xs">
 <span class="font-label-btn text-label-btn text-primary flex items-center gap-space-2xs"><span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>Streamlined 3-Step Flow:</span>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Select appointment slot &rarr; Share your clinic details &rarr; Get a confirmed consultation link by email.</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Open the live calendar &rarr; Pick a free 30-minute slot &rarr; Get an instant confirmation and calendar invite.</p>
 </div>
 </div>
 <div class="lg:col-span-6">
 <div class="bg-surface-white rounded-3xl p-space-xl shadow-xl border border-orange-100 space-y-space-md">
 <div class="flex items-center justify-between pb-space-xs border-b border-gray-100">
-<div><h3 class="font-headline-md text-headline-md text-on-surface font-bold">Clinical Specialist Schedule</h3><p class="font-body-sm text-body-sm text-text-muted">Choose a 30-minute slot</p></div>
+<div><h3 class="font-headline-md text-headline-md text-on-surface font-bold">Book a Demo</h3><p class="font-body-sm text-body-sm text-text-muted">Free live walkthrough of PointScheduler</p></div>
 <div class="w-10 h-10 rounded-full bg-surface-orange-soft border border-orange-200 flex items-center justify-center text-primary"><span class="material-symbols-outlined">event</span></div>
 </div>
 <div>
@@ -384,14 +437,6 @@ details[open] .faq-icon{transform:rotate(180deg);}
     View Available Demo Slots
   </a>
 </div>
-<div class="space-y-space-xs pt-space-xs">
-<input type="hidden" id="demo-slot" value="">
-<div><label class="block font-calendar-cell text-calendar-cell font-bold text-on-surface-variant uppercase mb-1">Your Name</label><input class="w-full h-11 px-space-sm rounded-xl bg-bg-canvas border border-gray-200 text-on-surface font-body-sm text-body-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary shadow-inner" id="demo-name" placeholder="Your full name" type="text" required></div>
-<div><label class="block font-calendar-cell text-calendar-cell font-bold text-on-surface-variant uppercase mb-1">Work Email</label><input class="w-full h-11 px-space-sm rounded-xl bg-bg-canvas border border-gray-200 text-on-surface font-body-sm text-body-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary shadow-inner" id="demo-email" placeholder="director@yourclinic.com" type="email" required></div>
-<div><label class="block font-calendar-cell text-calendar-cell font-bold text-on-surface-variant uppercase mb-1">Clinic / Practice Name</label><input class="w-full h-11 px-space-sm rounded-xl bg-bg-canvas border border-gray-200 text-on-surface font-body-sm text-body-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary shadow-inner" id="demo-clinic" placeholder="e.g. Apex Therapy &amp; Rehabilitation" type="text" required></div>
-</div>
-<button class="w-full py-space-sm rounded-full bg-gradient-to-r from-primary to-amber-500 text-on-primary font-label-btn text-label-btn shadow-lg shadow-emerald-900/25 hover:bg-primary-hover transition-all tm-btn" id="confirm-booking-btn" type="button" onclick="sendDemoRequest()">Confirm Live Demo Booking</button>
-<div class="hidden p-space-xs rounded-xl bg-orange-100 text-primary font-medium text-center font-body-sm text-body-sm border border-orange-200" id="booking-confirmation">Request received! We&rsquo;ll confirm your slot by email within one business day.</div>
 <p class="font-micro-slot text-micro-slot text-text-muted text-center">A Tech Miss3 product. Built and supported by the same team behind techmiss3.com.</p>
 </div>
 </div>
@@ -403,50 +448,7 @@ details[open] .faq-icon{transform:rotate(180deg);}
   <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close preview"><span class="material-symbols-outlined">close</span></button>
   <img src="" alt="" id="lightbox-image">
 </div>
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script>
-    emailjs.init("ps8MLonoRH5kjqz7S");
-
-    const slotButtons = document.querySelectorAll('#time-slot-grid .slot-btn');
-    const slotField = document.getElementById('demo-slot');
-    slotButtons.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        slotButtons.forEach(function (b) {
-          b.className = 'slot-btn p-space-sm rounded-xl bg-bg-canvas text-on-surface font-label-btn text-label-btn border border-gray-200 hover:border-primary hover:text-primary text-center transition-all';
-        });
-        btn.className = 'slot-btn p-space-sm rounded-xl bg-primary text-on-primary font-label-btn text-label-btn shadow-md shadow-emerald-900/30 text-center transition-all border border-primary';
-        if (slotField) slotField.value = btn.dataset.slot || '';
-      });
-    });
-
-    function sendDemoRequest() {
-      const name = document.getElementById('demo-name').value;
-      const email = document.getElementById('demo-email').value;
-      const clinic = document.getElementById('demo-clinic').value;
-      const slot = (document.getElementById('demo-slot').value) || 'No preference given';
-      if (!name || !email || !clinic) {
-        alert('Please fill in your name, work email, and clinic name.');
-        return;
-      }
-      const btn = document.getElementById('confirm-booking-btn');
-      const notice = document.getElementById('booking-confirmation');
-      btn.disabled = true;
-      btn.textContent = 'Sending...';
-      emailjs.send("service_h6u79mw", "template_1d0u42b", {
-        name: name,
-        email: email,
-        mobile: 'Not provided',
-        message: 'PointScheduler demo request. Clinic/Practice: ' + clinic + '. Preferred slot: ' + slot + '.'
-      }).then(function () {
-        notice.classList.remove('hidden');
-        btn.textContent = 'Demo Requested!';
-      }, function () {
-        btn.disabled = false;
-        btn.textContent = 'Confirm Live Demo Booking';
-        alert('Something went wrong sending your request. Please try again or email contact.trainhead@gmail.com directly.');
-      });
-    }
-
     (function () {
       const menuBtn = document.getElementById('mobile-menu-btn');
       const menu = document.getElementById('mobile-menu');
@@ -585,5 +587,58 @@ details[open] .faq-icon{transform:rotate(180deg);}
 </div>
 </div>
 </footer>
+<script>
+  // Light/dark theme toggle. Preference is shared across all pages via localStorage.
+  (function () {
+    var root = document.documentElement;
+    var btn = document.getElementById('theme-toggle');
+    var meta = document.querySelector('meta[name="theme-color"]');
+    var lightMeta = meta ? meta.getAttribute('content') : null;
+    function stored() { try { return localStorage.getItem('tm-theme'); } catch (e) { return null; } }
+    function sync() {
+      var dark = root.classList.contains('dark');
+      if (btn) {
+        btn.setAttribute('aria-pressed', String(dark));
+        btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+      }
+      if (meta && lightMeta) meta.setAttribute('content', dark ? '#09100e' : lightMeta);
+    }
+    // The latest requested theme lives here, not in the DOM: during a view transition the DOM
+    // update is deferred, so reading classList on a fast second click would see stale state.
+    var wantDark = root.classList.contains('dark');
+    var transitioning = false;
+    function run() { root.classList.toggle('dark', wantDark); sync(); }
+    function apply(dark, persist) {
+      wantDark = dark;
+      if (persist) { try { localStorage.setItem('tm-theme', dark ? 'dark' : 'light'); } catch (e) {} }
+      if (transitioning) { run(); return; }                 // never stack transitions; land the latest choice now
+      if (root.classList.contains('dark') === dark) { sync(); return; }
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!document.startViewTransition || reduce || document.hidden) { run(); return; }
+      transitioning = true;
+      var t = document.startViewTransition(run);
+      var settle = function () { transitioning = false; run(); };
+      t.finished.then(settle, settle);
+      if (t.ready) t.ready.catch(function () {});           // a skipped transition must not surface as an error
+    }
+    sync();
+    if (btn) btn.addEventListener('click', function () { apply(!wantDark, true); });
+    if (window.matchMedia) {
+      var mq = window.matchMedia('(prefers-color-scheme: dark)');
+      var onSystem = function (e) { if (!stored()) apply(e.matches, false); };
+      if (mq.addEventListener) mq.addEventListener('change', onSystem);
+      else if (mq.addListener) mq.addListener(onSystem);
+    }
+    window.addEventListener('storage', function (e) {
+      if (e.key === 'tm-theme' && e.newValue) apply(e.newValue === 'dark', false);
+    });
+    // Pages restored from the back/forward cache keep their old class; re-sync with storage.
+    window.addEventListener('pageshow', function (e) {
+      if (!e.persisted) return;
+      var t = stored();
+      if (t) apply(t === 'dark', false);
+    });
+  })();
+</script>
 </body>
 </html>
