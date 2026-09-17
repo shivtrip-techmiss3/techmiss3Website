@@ -17,7 +17,7 @@ AI/ML, Node.js, React, Flutter, Java, Android, Kotlin, Jenkins, Git, cloud deplo
 
 ## Company facts
 - Udyam-registered MSME (India)
-- Free initial consultation, bookable through the contact form on the homepage
+- Free initial consultation, bookable directly through the website
 - Careers page: https://techmiss3.com/careers.html
 
 ## Contact
