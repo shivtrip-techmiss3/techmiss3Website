@@ -1,14 +1,18 @@
-// EmailJS — sends enquiries from the contact form on index.html and the service pages.
-(function () {
-    if (typeof emailjs === 'undefined') return;
-    emailjs.init("ps8MLonoRH5kjqz7S");
-})();
-
+// Contact form -> EmailJS. Used by index.html and the three service pages.
+var TM_PUBLIC_KEY = "DoUP9lSL9aiQN2bKR";
 var TM_SERVICE_ID = "service_h6u79mw";
 var TM_TEMPLATE_ID = "template_1d0u42b";
-var tmSending = false;
+var TM_INBOX = "contact.trainhead@gmail.com";
+var TM_COOLDOWN_MS = 30000;
 
-function tmGetStatusEl(form) {
+var tmSending = false;
+var tmLastSentAt = 0;
+
+(function () {
+    if (typeof emailjs !== 'undefined') emailjs.init(TM_PUBLIC_KEY);
+})();
+
+function tmStatus(form, message, ok) {
     var el = document.getElementById('form-status');
     if (!el && form) {
         el = document.createElement('p');
@@ -18,14 +22,24 @@ function tmGetStatusEl(form) {
         el.className = 'text-sm font-semibold text-center pt-1';
         form.appendChild(el);
     }
-    return el;
+    if (!el) return;
+    el.textContent = message || '';
+    el.style.color = ok ? '#16a34a' : '#dc2626';
 }
 
-function tmSetStatus(form, message, ok) {
-    var el = tmGetStatusEl(form);
-    if (!el) { if (message) window.alert(message); return; }
-    el.textContent = message || '';
-    el.style.color = ok ? '#15803d' : '#b91c1c';
+// Rate limits (429), provider outages (5xx) and dropped connections are worth one more try.
+// Configuration errors (400/404) are not: retrying would fail the same way.
+function tmIsRetryable(err) {
+    var s = err && typeof err.status === 'number' ? err.status : 0;
+    return s === 0 || s === 429 || s >= 500;
+}
+
+function tmSendWithRetry(params) {
+    return emailjs.send(TM_SERVICE_ID, TM_TEMPLATE_ID, params).catch(function (err) {
+        if (!tmIsRetryable(err)) throw err;
+        return new Promise(function (resolve) { setTimeout(resolve, 1500 + Math.random() * 1500); })
+            .then(function () { return emailjs.send(TM_SERVICE_ID, TM_TEMPLATE_ID, params); });
+    });
 }
 
 function sendEmail() {
@@ -44,45 +58,50 @@ function sendEmail() {
     var message = messageEl.value.trim();
 
     // The submit button is type="button", so browser validation never runs. Validate here.
-    var problem = null;
-    var focusEl = null;
+    var problem = null, focusEl = null;
     if (!name) { problem = 'Please enter your name.'; focusEl = nameEl; }
-    else if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { problem = 'Please enter a valid email address.'; focusEl = emailEl; }
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { problem = 'Please enter a valid email address.'; focusEl = emailEl; }
     else if (mobile.replace(/[^0-9]/g, '').length < 7) { problem = 'Please enter a valid mobile number.'; focusEl = mobileEl; }
     else if (!message) { problem = 'Please tell us a little about your project.'; focusEl = messageEl; }
-
     if (problem) {
-        tmSetStatus(form, problem, false);
+        tmStatus(form, problem, false);
         if (focusEl) focusEl.focus();
         return;
     }
 
-    var slotField = document.getElementById('preferred-slot');
-    var slot = (slotField && slotField.value) ? slotField.value : 'No preference given';
+    if (Date.now() - tmLastSentAt < TM_COOLDOWN_MS) {
+        tmStatus(form, 'Your enquiry was just sent. Please wait a moment before sending another.', true);
+        return;
+    }
+
+    // Ad blockers and flaky networks can stop the EmailJS library from loading at all.
+    if (typeof emailjs === 'undefined') {
+        tmStatus(form, 'Our form could not load. Please email us at ' + TM_INBOX + ' instead.', false);
+        return;
+    }
 
     var btn = document.getElementById('confirm-booking-btn') ||
               (form && form.querySelector('button[onclick*="sendEmail"]'));
-    var originalLabel = btn ? btn.textContent : '';
+    var label = btn ? btn.textContent : '';
 
     tmSending = true;
     if (btn) { btn.disabled = true; btn.textContent = 'Sending...'; }
-    tmSetStatus(form, 'Sending your enquiry...', true);
+    tmStatus(form, 'Sending your enquiry...', true);
 
-    emailjs.send(TM_SERVICE_ID, TM_TEMPLATE_ID, {
+    tmSendWithRetry({
         name: name,
         email: email,
         mobile: mobile,
         message: message,
-        preferred_slot: slot
+        reply_to: email       // replies from the inbox go straight to the customer; also the EmailJS auto-reply address
+    }).then(function () {
+        tmLastSentAt = Date.now();
+        if (form) form.reset();
+        tmStatus(form, 'Thanks! Your enquiry has been sent. We usually reply within one business day.', true);
+    }, function () {
+        tmStatus(form, 'Sorry, that did not send. Please try again, or email ' + TM_INBOX + ' directly.', false);
     }).then(function () {
         tmSending = false;
-        if (btn) { btn.disabled = false; btn.textContent = originalLabel; }
-        if (form) form.reset();
-        if (slotField) slotField.value = '';
-        tmSetStatus(form, 'Thanks! Your enquiry has been sent. We usually reply within one business day.', true);
-    }, function () {
-        tmSending = false;
-        if (btn) { btn.disabled = false; btn.textContent = originalLabel; }
-        tmSetStatus(form, 'Sorry, that did not send. Please try again, or email contact.trainhead@gmail.com directly.', false);
+        if (btn) { btn.disabled = false; btn.textContent = label; }
     });
 }
