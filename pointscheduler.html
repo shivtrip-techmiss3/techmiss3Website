@@ -1,326 +1,644 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>PointScheduler – Tech Miss3</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>(function(){var d=false;try{var t=localStorage.getItem('tm-theme');d=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;}catch(e){try{d=window.matchMedia('(prefers-color-scheme: dark)').matches;}catch(_){}}if(d)document.documentElement.classList.add('dark');})();</script>
+<title>PointScheduler | Therapy Centre Management Software by Tech Miss3</title>
+<meta name="description" content="PointScheduler is Tech Miss3's therapy centre management software for scheduling, patient records, therapist rosters, session notes, and billing.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Tech Miss3">
+<link rel="canonical" href="https://techmiss3.com/pointscheduler.html">
+<meta name="theme-color" content="#0f8b6d">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PointScheduler by Tech Miss3">
+<meta property="og:title" content="PointScheduler | Therapy Centre Management Software">
+<meta property="og:description" content="Scheduling, patient records, therapist rosters, session notes, and billing for therapy centres, built by Tech Miss3.">
+<meta property="og:url" content="https://techmiss3.com/pointscheduler.html">
+<link rel="icon" type="image/jpeg" href="img/point_logo.jpg">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back,arrow_forward,badge,calendar_month,calendar_today,cancel,check_circle,close,credit_card,dark_mode,devices,diversity_1,done_all,edit_note,event,event_available,expand_more,light_mode,lock,medical_services,menu,refresh,smart_toy,tune,verified&display=block" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#0f8b6d", "primary-hover": "#0a6a54", "primary-light": "#eef9f5", "primary-focus": "#e5f7f1", "on-primary": "#ffffff", "brand-deep": "#0a6a54", "bg-canvas": "rgb(var(--ps-bg-canvas) / <alpha-value>)", "surface-white": "rgb(var(--ps-surface-white) / <alpha-value>)", "surface-orange-soft": "rgb(var(--ps-surface-orange-soft) / <alpha-value>)", "surface-orange-subtle": "rgb(var(--ps-surface-orange-subtle) / <alpha-value>)", "border-subtle": "rgb(var(--ps-border-subtle) / <alpha-value>)", "border-light": "#f3f4f6", "on-surface": "rgb(var(--ps-on-surface) / <alpha-value>)", "on-surface-variant": "rgb(var(--ps-on-surface-variant) / <alpha-value>)", "text-muted": "rgb(var(--ps-text-muted) / <alpha-value>)", "surface-dark": "#102a25", "surface-card": "#ffffff", "orange": { "50": "rgb(var(--ps-o50) / <alpha-value>)", "100": "rgb(var(--ps-o100) / <alpha-value>)", "200": "rgb(var(--ps-o200) / <alpha-value>)", "300": "#9fd6c2", "400": "#4fb897", "500": "#0f8b6d", "600": "#0a6a54", "700": "#0a6a54", "800": "#074f3f", "900": "#052e26" } }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px" }, "spacing": { "space-3xl": "4.5rem", "gutter-mobile": "0.75rem", "space-md": "1rem", "space-xs": "0.5rem", "space-2xs": "0.25rem", "margin": "1.5rem", "gutter": "1.5rem", "space-2xl": "3rem", "space-sm": "0.75rem", "space-lg": "1.5rem", "space-xl": "2rem", "margin-mobile": "1rem" }, "fontFamily": { "headline-lg": ["Inter"], "display-hero": ["Inter"], "body-default": ["Inter"], "body-lead": ["Inter"], "headline-sm": ["Inter"], "label-eyebrow": ["Inter"], "label-btn": ["Inter"], "display-hero-mobile": ["Inter"], "calendar-cell": ["Inter"], "headline-xl": ["Inter"], "headline-md": ["Inter"], "body-sm": ["Inter"], "headline-xl-mobile": ["Inter"], "micro-slot": ["Inter"] }, "fontSize": { "headline-lg": ["28px", { "lineHeight": "1.25", "letterSpacing": "-0.02em", "fontWeight": "600" }], "display-hero": ["60px", { "lineHeight": "1.08", "letterSpacing": "-0.035em", "fontWeight": "700" }], "body-default": ["16px", { "lineHeight": "1.55", "letterSpacing": "0em", "fontWeight": "400" }], "body-lead": ["19px", { "lineHeight": "1.6", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-eyebrow": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.08em", "fontWeight": "800" }], "label-btn": ["15px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }], "display-hero-mobile": ["38px", { "lineHeight": "1.12", "letterSpacing": "-0.025em", "fontWeight": "700" }], "calendar-cell": ["11px", { "lineHeight": "1.2", "letterSpacing": "0em", "fontWeight": "600" }], "headline-xl": ["40px", { "lineHeight": "1.15", "letterSpacing": "-0.03em", "fontWeight": "700" }], "headline-md": ["22px", { "lineHeight": "1.3", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["14px", { "lineHeight": "1.5", "letterSpacing": "0.005em", "fontWeight": "400" }], "headline-xl-mobile": ["30px", { "lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "700" }], "micro-slot": ["10px", { "lineHeight": "1.1", "letterSpacing": "0.01em", "fontWeight": "700" }] } } } };</script>
+<style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}html{scroll-behavior:smooth;}
+.tm-card{transition:transform .35s cubic-bezier(0.25,1,0.5,1),box-shadow .35s cubic-bezier(0.25,1,0.5,1);backface-visibility:hidden;}
+      .tm-card:hover{will-change:transform;}
+.tm-card:hover{transform:translateY(-6px) scale(1.015);box-shadow:0 20px 40px -12px rgba(15,139,109,0.18);}
+.tm-btn{transition:transform .25s cubic-bezier(0.34,1.56,0.64,1),box-shadow .25s ease-out,filter .25s ease-out;}
+      .tm-btn:hover{will-change:transform;}
+.tm-btn:hover{transform:translateY(-2px) scale(1.035);filter:brightness(1.04);}
+.tm-btn:active{transform:translateY(0) scale(0.98);}
+details .faq-answer{display:grid!important;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .35s cubic-bezier(0.25,1,0.5,1),opacity .3s ease-out;}
+.faq-answer > div{overflow:hidden;}
+details[open] .faq-answer{grid-template-rows:1fr;opacity:1;}
+.faq-icon{transition:transform .35s cubic-bezier(0.25,1,0.5,1);}
+details[open] .faq-icon{transform:rotate(180deg);}
+/* Scroll reveal declared after hover rules so its transition wins during entrance */
+.reveal{opacity:0;transform:perspective(1000px) rotateX(10deg) translate3d(0,35px,0) scale(0.93);transition:opacity .6s cubic-bezier(0.34,1.56,0.64,1),transform .6s cubic-bezier(0.34,1.56,0.64,1);transition-delay:var(--reveal-delay,0ms);will-change:opacity,transform;transform-style:preserve-3d;}
+.reveal.is-visible{opacity:1;transform:perspective(1000px) rotateX(0deg) translate3d(0,0,0) scale(1);}
+.tilt{transform:perspective(1200px);transform-style:preserve-3d;}
+.lightbox-trigger{cursor:zoom-in;}
+.lightbox-backdrop{position:fixed;inset:0;background:rgba(10,20,17,0.72);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);opacity:0;pointer-events:none;transition:opacity .3s ease-out;z-index:300;display:flex;align-items:center;justify-content:center;padding:2rem;}
+.lightbox-backdrop.is-open{opacity:1;pointer-events:auto;}
+.lightbox-backdrop img{transform:scale(0.9);transition:transform .35s cubic-bezier(0.34,1.56,0.64,1);max-width:min(92vw,480px);max-height:88vh;border-radius:1rem;box-shadow:0 30px 60px rgba(0,0,0,0.4);}
+.lightbox-backdrop.is-open img{transform:scale(1);}
+.lightbox-close{position:absolute;top:1.5rem;right:1.5rem;width:2.5rem;height:2.5rem;border-radius:9999px;background:rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;color:#fff;transition:background .2s;}
+.lightbox-close:hover{background:rgba(255,255,255,0.3);}
+@media (prefers-reduced-motion:reduce){.reveal,.tm-card,.tm-btn,.faq-answer,.faq-icon,.lightbox-backdrop,.lightbox-backdrop img{transition:none!important;}.reveal{opacity:1;transform:none;}}
+</style>
+<noscript><style>.reveal{opacity:1!important;transform:none!important;}</style></noscript>
+<style id="theme-css">
+:root{--ps-bg-canvas:247 251 250;--ps-surface-white:255 255 255;--ps-surface-orange-soft:238 249 245;--ps-surface-orange-subtle:229 247 241;--ps-border-subtle:203 233 223;--ps-on-surface:22 53 46;--ps-on-surface-variant:62 73 68;--ps-text-muted:96 118 111;--ps-o50:247 251 250;--ps-o100:229 247 241;--ps-o200:203 233 223}
+html.dark{--ps-bg-canvas:9 16 14;--ps-surface-white:26 42 37;--ps-surface-orange-soft:19 38 32;--ps-surface-orange-subtle:23 46 39;--ps-border-subtle:36 64 55;--ps-on-surface:230 242 238;--ps-on-surface-variant:170 188 181;--ps-text-muted:160 180 172;--ps-o50:13 22 20;--ps-o100:22 48 40;--ps-o200:38 74 62}
 
-
-  <!-- Core site styles -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Page styles -->
-  <link rel="stylesheet" href="pointscheduler.css">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-<link rel="shortcut icon" href="img/favicon.ico">
-
-
-  <!-- Font Awesome (social icons) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-
-
-
-  <!-- Bootstrap & AOS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+html{color-scheme:light}
+html.dark{color-scheme:dark}
+.theme-icon-to-light{display:none}
+html.dark .theme-icon-to-dark{display:none}
+html.dark .theme-icon-to-light{display:inline-block}
+html.dark .bg-white{background-color:rgb(var(--ps-surface-white))}
+html.dark .bg-zinc-50\/90{background-color:rgb(24 36 32 / .9)}
+html.dark .bg-zinc-100{background-color:#1d2b27}
+html.dark .bg-red-100{background-color:rgb(239 68 68 / .16)}
+html.dark .bg-emerald-300\/40{background-color:rgb(16 185 129 / .12)}
+html.dark .bg-amber-300\/50{background-color:rgb(245 158 11 / .10)}
+html.dark .border-gray-100{border-color:#1f2d29}
+html.dark .border-gray-200{border-color:#2c3d38}
+html.dark .border-gray-200\/70{border-color:rgb(44 61 56 / .7)}
+html.dark .border-gray-200\/80{border-color:rgb(44 61 56 / .8)}
+html.dark .border-red-100{border-color:rgb(239 68 68 / .28)}
+html.dark .border-emerald-100\/90{border-color:rgb(52 211 153 / .18)}
+html.dark .border-emerald-200\/80{border-color:rgb(52 211 153 / .28)}
+html.dark .border-emerald-950\/60{border-color:rgb(52 211 153 / .15)}
+html.dark .text-primary{color:#34d399}
+html.dark .hover\:text-primary:hover{color:#6ee7b7}
+html.dark .text-emerald-600{color:#34d399}
+html.dark .text-amber-700{color:#fbbf24}
+html.dark .text-zinc-700{color:#c3d1cb}
+html.dark .text-zinc-900{color:rgb(var(--ps-on-surface))}
+html.dark .text-red-500{color:#f87171}
+html.dark .text-red-600{color:#f87171}
+html.dark .from-emerald-50{--tw-gradient-from:#0e211b var(--tw-gradient-from-position)}
+html.dark .to-amber-50{--tw-gradient-to:#231b0b var(--tw-gradient-to-position)}
+html.dark .via-white{--tw-gradient-stops:var(--tw-gradient-from),rgb(var(--ps-surface-white)) var(--tw-gradient-via-position),var(--tw-gradient-to)}
+html.dark .to-white{--tw-gradient-to:rgb(var(--ps-surface-white)) var(--tw-gradient-to-position)}
+html.dark .from-zinc-50{--tw-gradient-from:#16221f var(--tw-gradient-from-position)}
+html.dark .rounded-2xl.bg-zinc-900{background-color:#334340}
+html.dark .h-full.bg-zinc-800{background-color:#9fb3ab}
+html.dark footer.bg-zinc-900{background-color:#050907}
+html.dark footer .border-zinc-800,html.dark footer.border-zinc-800{border-color:#15201d}
+html.dark .text-zinc-500{color:#9aaca5}
+html.dark section.bg-surface-white{background-color:#111b18}
+html.dark section.via-white{--tw-gradient-stops:var(--tw-gradient-from),#111b18 var(--tw-gradient-via-position),var(--tw-gradient-to)}
+html.dark .rounded-3xl.bg-bg-canvas,html.dark .rounded-2xl.bg-bg-canvas{background-color:rgb(var(--ps-surface-white))}
+html.dark .bg-surface-orange-soft\/50{background-color:#1b2f29}
+html.dark div.from-emerald-50{--tw-gradient-from:#1c3129 var(--tw-gradient-from-position)}
+html.dark div.from-zinc-50{--tw-gradient-from:#1f2c28 var(--tw-gradient-from-position)}
+html.dark div.bg-white :is(.bg-white,.bg-surface-white),html.dark div.bg-surface-white :is(.bg-white,.bg-surface-white),html.dark :is(div,section).bg-gradient-to-br :is(.bg-white,.bg-surface-white){background-color:#2a403a}
+html.dark .rounded-\[40px\].bg-zinc-800{background-color:#2f3a37}
+</style>
 </head>
-<body>
-
-  <!-- TOP BAR -->
-  <div class="top-bar bg-dark text-white py-1 px-3 d-flex justify-content-between align-items-center">
-    <div>
-      <a href="https://www.facebook.com/profile.php?id=61580662049886" class="facebook me-3" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://www.instagram.com/techmiss3" class="instagram me-3" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://twitter.com/techmiss3" class="twitter me-3" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https://wa.me/919380729681" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
-    </div>
-    <div>
-      <a href="tel:+919380729681" class="text-white"><i class="fas fa-phone"></i> +91 9380729681</a>
-    </div>
-  </div>
-
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Tech Miss3" height="50"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown">
-              Products
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="pointscheduler.html">PointScheduler</a></li>
-              <li><a class="dropdown-item" href="irongate.html">IronGate Security (Upcoming)</a></li>
-        <!-- Add more products here in the future -->
-            </ul>
-          </li>
-
-          <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Fixed portrait images (Option A: fixed, stick to sides) -->
-  <img src="img/portrait-left.png" alt="portrait left" class="portrait portrait-left" />
-  <img src="img/portrait-right.png" alt="portrait right" class="portrait portrait-right" />
-
-  <!-- HERO (logo + title) -->
-  <section class="ps-hero">
-    <div class="container text-center">
-      <div class="ps-hero-inner d-flex align-items-center justify-content-center">
-        <img src="img/ps-logo.png" alt="PointScheduler logo" class="ps-logo" />
-        <div>
-          <h1 data-aos="fade-up" class="ps-title">PointScheduler</h1>
-          <p data-aos="fade-up" data-aos-delay="80" class="ps-sub">Manage Therapists, Sessions & Patients Effortlessly</p>
-          <p class="ps-sub-muted">Focus more on care — let PointScheduler handle the management.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- DESCRIPTION -->
-  <section class="container my-5" data-aos="fade-up">
-    <p class="text-center mx-auto" style="max-width:900px;">
-      PointScheduler is a complete management system created for therapy centers, therapists, and patients.
-      Designed especially for Autism-focused centers but suitable for physiotherapy, speech therapy, OT,
-      mental health clinics, rehabilitation centers, and more.
-    </p>
-  </section>
-
-  <!-- FEATURE BANNER IMAGE -->
-<section class="ps-feature-banner text-center" data-aos="zoom-in">
-  <img src="img/ps-feature-banner.png" alt="PointScheduler Overview" class="ps-feature-banner-img">
+<body class="bg-bg-canvas font-body-default text-body-default text-on-surface overflow-x-hidden">
+<header class="fixed top-0 w-full z-50 shadow-[0_1px_8px_rgba(0,0,0,0.05)]">
+<div class="h-20 bg-surface-white/95 backdrop-blur-xl border-b border-gray-100">
+<div class="h-full max-w-[1180px] mx-auto px-gutter flex items-center justify-between gap-space-md">
+<a href="#" class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg overflow-hidden shadow-sm shadow-emerald-900/20"><img src="img/point_logo.jpg" alt="PointScheduler logo" class="w-full h-full object-cover"></div>
+<span class="text-lg sm:text-headline-md text-on-surface font-bold tracking-tight">PointScheduler</span>
+</a>
+<nav class="hidden xl:flex items-center gap-space-md">
+<a class="text-on-surface-variant font-label-btn text-label-btn hover:text-primary transition-colors" href="#healthtech-pillar">Platform</a>
+<a class="text-on-surface-variant font-label-btn text-label-btn hover:text-primary transition-colors" href="#pointscheduler-deepdive">Overview</a>
+<a class="text-on-surface-variant font-label-btn text-label-btn hover:text-primary transition-colors" href="#target-clinics">Who It&rsquo;s For</a>
+<a class="text-on-surface-variant font-label-btn text-label-btn hover:text-primary transition-colors" href="#features">Features</a>
+<a class="text-on-surface-variant font-label-btn text-label-btn hover:text-primary transition-colors" href="#clinical-faq">FAQ</a>
+</nav>
+<div class="flex items-center gap-space-sm">
+<button type="button" id="theme-toggle" class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-200 text-on-surface hover:text-primary transition-colors shrink-0" aria-label="Switch to dark mode" aria-pressed="false"><span class="material-symbols-outlined text-[20px] theme-icon-to-dark" aria-hidden="true">dark_mode</span><span class="material-symbols-outlined text-[20px] theme-icon-to-light" aria-hidden="true">light_mode</span></button>
+<a href="index.html" class="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold text-on-surface-variant hover:text-primary border border-border-subtle rounded-full px-3 py-1.5 transition-colors">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span> Tech Miss3
+</a>
+<a class="hidden sm:inline-flex items-center justify-center font-label-btn text-label-btn bg-gradient-to-r from-primary to-amber-500 text-on-primary px-space-lg py-space-xs rounded-full shadow-[0_8px_20px_rgba(15,139,109,0.24)] hover:bg-primary-hover transition-all tm-btn" href="#demo-booking">Book a Live Demo</a>
+<button id="mobile-menu-btn" type="button" aria-label="Toggle menu" aria-expanded="false" class="xl:hidden w-10 h-10 flex items-center justify-center rounded-full border border-gray-200 text-on-surface shrink-0">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden xl:hidden bg-surface-white border-b border-gray-100 px-gutter py-4 space-y-1">
+<a href="#healthtech-pillar" class="block text-sm font-semibold text-on-surface px-3 py-2 rounded-lg hover:bg-surface-orange-soft">Platform</a>
+<a href="#pointscheduler-deepdive" class="block text-sm font-semibold text-on-surface px-3 py-2 rounded-lg hover:bg-surface-orange-soft">Overview</a>
+<a href="#target-clinics" class="block text-sm font-semibold text-on-surface px-3 py-2 rounded-lg hover:bg-surface-orange-soft">Who It&rsquo;s For</a>
+<a href="#features" class="block text-sm font-semibold text-on-surface px-3 py-2 rounded-lg hover:bg-surface-orange-soft">Features</a>
+<a href="#clinical-faq" class="block text-sm font-semibold text-on-surface px-3 py-2 rounded-lg hover:bg-surface-orange-soft">FAQ</a>
+<a href="index.html" class="block text-sm font-semibold text-on-surface px-3 py-2 rounded-lg hover:bg-surface-orange-soft">&larr; Back to Tech Miss3</a>
+<a href="#demo-booking" class="block text-center mt-2 text-sm font-bold bg-gradient-to-r from-primary to-amber-500 text-on-primary px-5 py-2.5 rounded-full">Book a Live Demo</a>
+</div>
+</div>
+</header>
+<main class="w-full pt-20 bg-bg-canvas pt-24">
+<div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-gradient-to-br from-emerald-50 via-white to-amber-50 py-space-3xl pt-24">
+<div class="absolute top-12 left-10 w-96 h-96 rounded-full bg-emerald-300/40 blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-20 right-10 w-96 h-96 rounded-full bg-amber-300/50 blur-3xl pointer-events-none -z-10"></div>
+<div class="max-w-[1180px] mx-auto px-gutter grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+<div class="lg:col-span-6 space-y-space-md">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-space-2xs rounded-full bg-orange-100 border border-orange-200">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-eyebrow text-label-eyebrow text-primary tracking-wider uppercase">A Tech Miss3 Product</span>
+</div>
+<h1 class="font-display-hero text-headline-xl-mobile md:text-display-hero text-on-surface leading-tight tracking-tight">
+          Building <span class="bg-gradient-to-r from-primary to-amber-500 bg-clip-text text-transparent">HealthTech</span> and intelligent software that solves real problems.
+        </h1>
+<p class="font-body-lead text-body-lead text-on-surface-variant leading-relaxed">
+          PointScheduler is Tech Miss3&rsquo;s healthcare platform, built for therapy centres. It helps you orchestrate patients, therapists, recurring appointments, attendance, clinical documentation, packages, billing, and everyday operations in one unified workspace.
+        </p>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<a class="inline-flex items-center gap-space-xs px-space-xl py-space-sm rounded-full bg-gradient-to-r from-primary to-amber-500 text-on-primary font-label-btn text-label-btn shadow-lg shadow-emerald-900/25 hover:bg-primary-hover transition-all transform hover:-translate-y-0.5 tm-btn" href="#pointscheduler-deepdive">
+<span>Explore PointScheduler</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-full bg-surface-white text-on-surface font-label-btn text-label-btn border border-gray-200 shadow-sm hover:border-primary hover:text-primary transition-all" href="#demo-booking">
+<span class="material-symbols-outlined text-primary text-[20px]">calendar_today</span>
+<span>Book a Product Demo</span>
+</a>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs pt-space-md text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-primary text-[18px]">verified</span><span>HealthTech Dedicated</span></div>
+<div class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-primary text-[18px]">verified</span><span>Real Clinical Flows</span></div>
+<div class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-primary text-[18px]">verified</span><span>Web + Mobile Suite</span></div>
+<div class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-primary text-[18px]">verified</span><span>Built by Tech Miss3</span></div>
+</div>
+</div>
+<div class="lg:col-span-6 relative">
+<div class="flex items-center justify-between gap-space-sm mb-space-xs relative z-10">
+<div class="inline-flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-surface-white/95 backdrop-blur-md border border-emerald-200/80 shadow-md shadow-emerald-900/10">
+<div class="relative w-8 h-8 rounded-full overflow-hidden ring-2 ring-white shadow-sm shrink-0"><img src="img/point_logo.jpg" alt="PointScheduler logo" class="w-full h-full object-cover"></div>
+<div class="flex flex-col"><span class="font-headline-sm text-[13px] font-bold text-on-surface leading-tight">PointScheduler</span></div>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-white/90 backdrop-blur-sm border border-gray-200/80 text-[11px] font-medium text-on-surface-variant shadow-sm"><span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span><span class="tracking-tight font-semibold text-emerald-600">Live Clinical Workspace</span></div>
+</div>
+<div class="absolute -inset-4 bg-gradient-to-tr from-emerald-300/25 via-amber-200/20 to-primary/15 blur-2xl rounded-3xl -z-10 pointer-events-none transform -rotate-1"></div>
+<div id="admin-tilt" class="tilt relative rounded-2xl bg-white shadow-2xl border border-emerald-100/90 overflow-hidden ring-1 ring-black/5" style="box-shadow: rgba(15, 139, 109, 0.18) 0px 24px 60px -15px, rgba(0, 0, 0, 0.08) 0px 10px 30px -10px, rgba(15, 139, 109, 0.08) 0px 0px 0px 1px;">
+<div class="bg-zinc-50/90 backdrop-blur-md px-4 py-2.5 border-b border-gray-200/70 flex items-center justify-between gap-3">
+<div class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-red-400/80 inline-block"></span><span class="w-2.5 h-2.5 rounded-full bg-amber-400/80 inline-block"></span><span class="w-2.5 h-2.5 rounded-full bg-emerald-400/80 inline-block"></span></div>
+<div class="flex-1 max-w-[260px] mx-auto"><div class="flex items-center justify-center gap-1.5 px-3 py-1 rounded-md bg-white border border-gray-200/80 text-[11px] font-medium text-zinc-500 shadow-sm"><span class="material-symbols-outlined text-[13px] text-emerald-600">lock</span><span class="truncate tracking-tight">app.pointscheduler.com/admin</span></div></div>
+<div class="flex items-center gap-1.5 text-zinc-400"><span class="material-symbols-outlined text-[15px]">refresh</span><span class="material-symbols-outlined text-[15px]">tune</span></div>
+</div>
+<div class="bg-white max-h-[420px] overflow-hidden">
+<img src="img/Admin_orginal.jpeg" alt="PointScheduler admin dashboard showing appointments" class="w-full h-auto object-cover object-top lightbox-trigger" loading="lazy" data-full="img/Admin_orginal.jpeg">
+</div>
+</div>
+</div>
+</div>
 </section>
-
-
-  <!-- FEATURES -->
-  <section class="container my-5">
-    <h2 class="text-center mb-4" data-aos="fade-up">Key Features</h2>
-
-    <div class="row g-4">
-      <div class="col-md-6 col-lg-3" data-aos="zoom-in">
-        <div class="ps-feature-box">
-          <h3>Center Management</h3>
-          <p>Manage centers, admins, rooms, slots & therapy types.</p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
-        <div class="ps-feature-box">
-          <h3>Therapist Management</h3>
-          <p>Add therapists, availability, assignments & attendance.</p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
-        <div class="ps-feature-box">
-          <h3>Patient & Autism Care</h3>
-          <p>Track ABA goals, progress, reports & parent feedback.</p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
-        <div class="ps-feature-box">
-          <h3>Smart Scheduling</h3>
-          <p>Auto-slot system with drag & drop calendar.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- APP PREVIEW -->
-  <section class="container my-5">
-    <h2 class="text-center mb-4" data-aos="fade-up">App Preview</h2>
-
-    <div class="row justify-content-center ps-preview g-3">
-      <div class="col-6 col-sm-4 col-md-3 text-center" data-aos="zoom-in"><img src="img/preview1.png" alt="preview 1"></div>
-      <div class="col-6 col-sm-4 col-md-3 text-center" data-aos="zoom-in" data-aos-delay="80"><img src="img/preview2.png" alt="preview 2"></div>
-      <div class="col-6 col-sm-4 col-md-3 text-center" data-aos="zoom-in" data-aos-delay="160"><img src="img/preview3.png" alt="preview 3"></div>
-      <div class="col-6 col-sm-4 col-md-3 text-center d-none d-md-block" data-aos="zoom-in" data-aos-delay="240"><img src="img/preview4.png" alt="preview 4"></div>
-    </div>
-
-
-    <section class="container my-5 ps-feature-section">
-
-  <h2 class="text-center mb-5">Advanced Features</h2>
-
-  <!-- Feature 1 -->
-  <div class="row align-items-center mb-5">
-   <div class="col-md-6 text-center">
-      <img src="img/feature1.png" class="ps-feature-img">
-    </div>
-    <div class="col-md-6">
-      <h3 class="ps-feature-title">Smart Recurring Scheduling</h3>
-      <p class="ps-feature-text">
-        Automatically schedule recurring therapy sessions with flexible options like weekly repeats,
-        custom days, and end conditions. Reduce manual work and improve planning efficiency.
-      </p>
-    </div>
-  </div>
-
-  <!-- Feature 2 -->
-  <div class="row align-items-center mb-5">
-    
-    <div class="col-md-6 text-center">
-      <img src="img/feature2.png" class="ps-feature-img">
-    </div>
-    <div class="col-md-6">
-      <h3 class="ps-feature-title">Session Tracking & Status</h3>
-      <p class="ps-feature-text">
-        Monitor daily sessions with real-time status updates such as completed, open, or pending.
-        Stay organized with a clear timeline view.
-      </p>
-    </div>
-  </div>
-
-  <!-- Feature 3 -->
-  <div class="row align-items-center mb-5">
-    <div class="col-md-6 text-center">
-      <img src="img/feature3.png" class="ps-feature-img">
-    </div>
-    <div class="col-md-6">
-      <h3 class="ps-feature-title">Wallet & Payment Management</h3>
-      <p class="ps-feature-text">
-        Manage patient payments with an integrated wallet system. Track balances,
-        top-ups, and transaction history easily.
-      </p>
-    </div>
-  </div>
-
-  <!-- Feature 4 -->
-  <div class="row align-items-center mb-5">
-    <div class="col-md-6 text-center">
-      <img src="img/feature4.png" class="ps-feature-img-admin">
-    </div>
-    <div class="col-md-6">
-      <h3 class="ps-feature-title">Powerful Admin Dashboard</h3>
-      <p class="ps-feature-text">
-        Manage centers, therapists, admins, and patients from one place with a structured admin panel.
-      </p>
-    </div>
-  </div>
-
+<!-- HEALTHTECH PILLARS & SERVICES -->
+<section class="w-full bg-surface-white py-space-3xl" id="healthtech-pillar">
+<div class="max-w-[1180px] mx-auto px-gutter space-y-space-2xl">
+<div class="max-w-3xl mx-auto text-center space-y-space-xs">
+<div class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-full bg-surface-orange-soft border border-orange-200">
+<span class="font-label-eyebrow text-label-eyebrow text-primary uppercase">HealthTech from Tech Miss3</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">Specialized healthcare technology, built from real clinical empathy.</h2>
+<p class="font-body-lead text-body-lead text-on-surface-variant">We bridge clinical therapy workflows with modern cloud architecture, empowering interdisciplinary care teams to prioritize patient recovery over administrative overhead.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<div class="bg-surface-orange-soft/50 border border-orange-100 rounded-2xl p-space-xl shadow-sm hover:shadow-md flex flex-col justify-between reveal tm-card">
+<div class="space-y-space-sm">
+<div class="w-14 h-14 rounded-2xl bg-primary text-on-primary flex items-center justify-center shadow-md shadow-emerald-900/20"><span class="material-symbols-outlined text-[28px]">medical_services</span></div>
+<h3 class="font-headline-md text-headline-md text-on-surface">HealthTech Products</h3>
+<p class="font-body-default text-body-default text-on-surface-variant">Software engineered specifically around therapy-centre workflows, multidisciplinary care teams, comprehensive patient journals, and holistic centre operations.</p>
+</div>
+<div class="pt-space-md">
+<div class="h-1 bg-orange-100 rounded-full overflow-hidden"><div class="w-4/5 h-full bg-primary rounded-full"></div></div>
+<p class="font-calendar-cell text-calendar-cell text-primary mt-space-2xs font-semibold">Specialized for Clinic Workflows</p>
+</div>
+</div>
+<div class="bg-surface-orange-soft/50 border border-orange-100 rounded-2xl p-space-xl shadow-sm hover:shadow-md flex flex-col justify-between reveal tm-card">
+<div class="space-y-space-sm">
+<div class="w-14 h-14 rounded-2xl bg-amber-500 text-on-primary flex items-center justify-center shadow-md shadow-amber-500/20"><span class="material-symbols-outlined text-[28px]">smart_toy</span></div>
+<h3 class="font-headline-md text-headline-md text-on-surface">AI Solutions &amp; Clinical Insights</h3>
+<p class="font-body-default text-body-default text-on-surface-variant">Automated appointment recurrence intelligence, attendance drop-off prediction, therapy milestone summaries, and intelligent documentation assistance.</p>
+</div>
+<div class="pt-space-md">
+<div class="h-1 bg-orange-100 rounded-full overflow-hidden"><div class="w-3/4 h-full bg-amber-500 rounded-full"></div></div>
+<p class="font-calendar-cell text-calendar-cell text-amber-700 mt-space-2xs font-semibold">Predictive Attendance Engine</p>
+</div>
+</div>
+<div class="bg-surface-orange-soft/50 border border-orange-100 rounded-2xl p-space-xl shadow-sm hover:shadow-md flex flex-col justify-between reveal tm-card">
+<div class="space-y-space-sm">
+<div class="w-14 h-14 rounded-2xl bg-zinc-900 text-on-primary flex items-center justify-center shadow-md"><span class="material-symbols-outlined text-[28px]">devices</span></div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Web &amp; Mobile Portals</h3>
+<p class="font-body-default text-body-default text-on-surface-variant">On-the-go therapist mobile schedules, an intuitive parent/patient progress portal, and a high-density administrative control panel.</p>
+</div>
+<div class="pt-space-md">
+<div class="h-1 bg-orange-100 rounded-full overflow-hidden"><div class="w-5/6 h-full bg-zinc-800 rounded-full"></div></div>
+<p class="font-calendar-cell text-calendar-cell text-zinc-700 mt-space-2xs font-semibold">Synchronized Multi-Device Suite</p>
+</div>
+</div>
+</div>
+</div>
 </section>
-
-
-
-
-<section class="ps-playstore-section text-center my-5">
-
-  <h2 class="ps-feature-title mb-3">Get PointScheduler App</h2>
-
-  <p class="ps-feature-text mb-4">
-    Download the app from Google Play and manage your therapy center anytime, anywhere.
+<!-- FLAGSHIP PRODUCT SPOTLIGHT -->
+<section class="w-full bg-bg-canvas py-space-3xl" id="pointscheduler-deepdive">
+<div class="max-w-[1180px] mx-auto px-gutter">
+<div class="bg-gradient-to-br from-[#102a25] via-[#0a1f1a] to-[#0a1f1a] rounded-3xl overflow-hidden shadow-2xl p-space-xl lg:p-space-2xl text-white border border-emerald-950/60">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+<div class="lg:col-span-7 space-y-space-md">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-space-2xs rounded-full bg-emerald-500/20 border border-emerald-500/30 backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+<span class="font-label-eyebrow text-label-eyebrow text-emerald-300 uppercase tracking-wider">Flagship HealthTech Platform</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-white leading-tight">PointScheduler: Therapy Centre Management Software</h2>
+<p class="font-body-lead text-body-lead text-zinc-300 leading-relaxed">
+              Designed explicitly to eliminate therapy scheduling bottlenecks. PointScheduler synchronizes room allocations, multidisciplinary therapy blocks, recurrent patient slots, session attendance notes, and recurring billing packages into an intuitive, zero-conflict interface.
+            </p>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-2xs bg-white/10 p-space-xs rounded-xl backdrop-blur-sm border border-white/5"><span class="material-symbols-outlined text-emerald-400 text-[18px]">check_circle</span><span class="font-body-sm text-body-sm font-semibold text-white">Smart Scheduling</span></div>
+<div class="flex items-center gap-space-2xs bg-white/10 p-space-xs rounded-xl backdrop-blur-sm border border-white/5"><span class="material-symbols-outlined text-emerald-400 text-[18px]">check_circle</span><span class="font-body-sm text-body-sm font-semibold text-white">Patient Records</span></div>
+<div class="flex items-center gap-space-2xs bg-white/10 p-space-xs rounded-xl backdrop-blur-sm border border-white/5"><span class="material-symbols-outlined text-emerald-400 text-[18px]">check_circle</span><span class="font-body-sm text-body-sm font-semibold text-white">Therapist Rosters</span></div>
+<div class="flex items-center gap-space-2xs bg-white/10 p-space-xs rounded-xl backdrop-blur-sm border border-white/5"><span class="material-symbols-outlined text-emerald-400 text-[18px]">check_circle</span><span class="font-body-sm text-body-sm font-semibold text-white">Billing &amp; Packages</span></div>
+<div class="flex items-center gap-space-2xs bg-white/10 p-space-xs rounded-xl backdrop-blur-sm border border-white/5"><span class="material-symbols-outlined text-emerald-400 text-[18px]">check_circle</span><span class="font-body-sm text-body-sm font-semibold text-white">Session Notes</span></div>
+<div class="flex items-center gap-space-2xs bg-white/10 p-space-xs rounded-xl backdrop-blur-sm border border-white/5"><span class="material-symbols-outlined text-emerald-400 text-[18px]">check_circle</span><span class="font-body-sm text-body-sm font-semibold text-white">Centre Analytics</span></div>
+</div>
+<div class="pt-space-sm">
+<a class="inline-flex items-center gap-space-xs px-space-xl py-space-sm rounded-full bg-gradient-to-r from-primary to-amber-500 text-on-primary font-label-btn text-label-btn shadow-lg shadow-emerald-900/30 hover:bg-primary-hover transition-all tm-btn" href="#demo-booking">
+<span>Book a Live Consultation</span>
+<span class="material-symbols-outlined text-[18px]">event_available</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-5 flex justify-center">
+<div class="w-full max-w-[320px] bg-zinc-800 rounded-[40px] p-3 shadow-2xl border border-zinc-700">
+<div class="relative rounded-[32px] overflow-hidden bg-white shadow-inner flex justify-center max-h-[600px]">
+<img src="img/app_orginal.jpeg" alt="PointScheduler mobile app dashboard" class="w-full h-auto object-cover object-top block lightbox-trigger" loading="lazy" data-full="img/app_orginal.jpeg">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- WHO POINTSCHEDULER IS FOR -->
+<section class="w-full bg-surface-white py-space-3xl" id="target-clinics">
+<div class="max-w-[1180px] mx-auto px-gutter space-y-space-2xl">
+<div class="max-w-2xl space-y-space-xs">
+<div class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-full bg-surface-orange-soft border border-orange-200">
+<span class="font-label-eyebrow text-label-eyebrow text-primary uppercase">Target Clinical Environments</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface">Tailored for multidisciplinary therapy practices.</h2>
+<p class="font-body-lead text-body-lead text-on-surface-variant">Built to solve the distinct logistical, clinical notes, and patient tracking nuances of developmental, therapy, and rehabilitation disciplines.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<div class="lg:col-span-2 bg-gradient-to-br from-emerald-50 via-white to-amber-50 border-2 border-orange-200/80 p-space-xl rounded-3xl shadow-md hover:shadow-lg space-y-space-sm group relative overflow-hidden reveal tm-card">
+<div class="flex items-center justify-between"><div class="w-14 h-14 rounded-2xl bg-primary text-on-primary flex items-center justify-center font-bold text-2xl shadow-md shadow-emerald-900/20 group-hover:scale-105 transition-transform">&#129490;</div><span class="px-3 py-1 rounded-full bg-orange-100 text-primary font-calendar-cell font-bold text-calendar-cell uppercase tracking-wider">High Volume Care</span></div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Child Development Centres (CDCs)</h3>
+<p class="font-body-default text-body-default text-on-surface-variant max-w-2xl leading-relaxed">Coordinate intricate multi-specialty care pathways involving paediatric occupational therapists, speech pathologists, clinical psychologists, and educational specialists with unified guardian communication.</p>
+<div class="flex flex-wrap gap-space-xs pt-space-xs"><span class="px-3 py-1 rounded-full bg-surface-white border border-orange-100 text-body-sm font-medium text-on-surface-variant">Multi-therapist sync</span><span class="px-3 py-1 rounded-full bg-surface-white border border-orange-100 text-body-sm font-medium text-on-surface-variant">Guardian portal updates</span><span class="px-3 py-1 rounded-full bg-surface-white border border-orange-100 text-body-sm font-medium text-on-surface-variant">Milestone roadmaps</span></div>
+</div>
+<div class="bg-white border border-gray-100 hover:border-orange-200 p-space-xl rounded-3xl shadow-sm hover:shadow-md space-y-space-xs group flex flex-col reveal tm-card"><div class="w-12 h-12 rounded-2xl bg-surface-orange-soft text-primary flex items-center justify-center font-bold text-2xl group-hover:scale-105 transition-transform">&#129513;</div><div class="space-y-space-xs"><h3 class="font-headline-md text-headline-md text-on-surface">Autism &amp; ABA Practices</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Manage multi-hour daily therapy blocks, discrete trial training records, and BCBA supervision oversight.</p></div></div>
+<div class="bg-white border border-gray-100 hover:border-orange-200 p-space-xl rounded-3xl shadow-sm hover:shadow-md space-y-space-xs group flex flex-col reveal tm-card"><div class="w-12 h-12 rounded-2xl bg-surface-orange-soft text-primary flex items-center justify-center font-bold text-2xl group-hover:scale-105 transition-transform">&#128483;&#65039;</div><div class="space-y-space-xs"><h3 class="font-headline-md text-headline-md text-on-surface">Speech-Language Pathology</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Organize articulation sessions, recurrent sound-room assignments, and interactive home-practice notes.</p></div></div>
+<div class="bg-white border border-gray-100 hover:border-orange-200 p-space-xl rounded-3xl shadow-sm hover:shadow-md space-y-space-xs group flex flex-col reveal tm-card"><div class="w-12 h-12 rounded-2xl bg-surface-orange-soft text-primary flex items-center justify-center font-bold text-2xl group-hover:scale-105 transition-transform">&#128400;&#65039;</div><div class="space-y-space-xs"><h3 class="font-headline-md text-headline-md text-on-surface">Occupational Therapy Centres</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Reserve sensory gyms, track motor progress, and coordinate shared clinical apparatus without clashes.</p></div></div>
+<div class="lg:col-span-2 bg-gradient-to-br from-zinc-50 to-white border border-gray-200/80 p-space-xl rounded-3xl shadow-sm hover:shadow-md flex flex-col space-y-space-sm group reveal tm-card"><div class="flex items-center justify-between"><div class="w-12 h-12 rounded-2xl bg-surface-orange-soft text-primary flex items-center justify-center font-bold text-2xl group-hover:scale-105 transition-transform">&#127939;</div><span class="px-3 py-1 rounded-full bg-zinc-100 text-zinc-700 font-calendar-cell font-bold text-calendar-cell uppercase tracking-wider">Physical &amp; Neuro Care</span></div><div><h3 class="font-headline-md text-headline-md text-on-surface">Paediatric, Adult Physio &amp; Rehab Facilities</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mt-space-2xs">Unified operations for high-cadence rehabilitation practices offering bundled care packages combining neuro, physical, and speech rehabilitation across multiple clinical bays.</p></div></div>
+</div>
+</div>
+</section>
+<!-- BEFORE VS AFTER COMPARISON -->
+<section class="w-full bg-bg-canvas py-space-3xl">
+<div class="max-w-[1180px] mx-auto px-gutter space-y-space-2xl">
+<div class="max-w-2xl mx-auto text-center space-y-space-xs">
+<div class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-full bg-surface-orange-soft border border-orange-200">
+<span class="font-label-eyebrow text-label-eyebrow text-primary uppercase">Operational Transformation</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">Daily problems PointScheduler solves.</h2>
+<p class="font-body-lead text-body-lead text-on-surface-variant">Eliminate administrative friction and empower your clinical staff to focus on patient outcomes.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-xl">
+<div class="bg-white border border-red-100 rounded-3xl p-space-xl lg:p-space-2xl shadow-sm space-y-space-md reveal tm-card">
+<div class="flex items-center gap-space-sm"><div class="w-12 h-12 rounded-2xl bg-red-100 text-red-600 flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">close</span></div><div><h3 class="font-headline-md text-headline-md text-zinc-900">Status Quo &amp; Disconnected Tools</h3><p class="font-body-sm text-body-sm text-text-muted">The reality of running therapy centres on generic calendars</p></div></div>
+<ul class="space-y-space-md font-body-default text-body-default text-on-surface-variant pt-space-xs">
+<li class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-red-500 text-[20px] shrink-0 mt-0.5">cancel</span><span><strong>Therapist availability is blind:</strong> Staff waste hours cross-referencing messy chat threads and whiteboard rosters.</span></li>
+<li class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-red-500 text-[20px] shrink-0 mt-0.5">cancel</span><span><strong>Recurring room collisions:</strong> Multi-month therapy blocks frequently collide over sensory gyms and specialized suites.</span></li>
+<li class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-red-500 text-[20px] shrink-0 mt-0.5">cancel</span><span><strong>Fragmented clinical journals:</strong> Notes get lost between emails, paper binders, and disjointed generic apps.</span></li>
+<li class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-red-500 text-[20px] shrink-0 mt-0.5">cancel</span><span><strong>Billing leakage &amp; package disputes:</strong> Missed check-in reconciliation leaves clinics with uncollected dues.</span></li>
+</ul>
+</div>
+<div class="bg-surface-orange-soft/60 border-2 border-primary/40 rounded-3xl p-space-xl lg:p-space-2xl shadow-xl shadow-emerald-900/10 space-y-space-md relative overflow-hidden reveal tm-card">
+<div class="flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-12 h-12 rounded-2xl bg-primary text-on-primary flex items-center justify-center shadow-lg shadow-emerald-900/30"><span class="material-symbols-outlined text-[24px]">done_all</span></div><div><h3 class="font-headline-md text-headline-md text-primary font-bold">With PointScheduler</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Purpose-built clinical therapy orchestration</p></div></div><span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary font-label-eyebrow text-label-eyebrow uppercase font-bold tracking-wider">100% Conflict Free</span></div>
+<ul class="space-y-space-md font-body-default text-body-default text-on-surface-variant pt-space-xs">
+<li class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">check_circle</span><span><strong>Unified real-time grid:</strong> Instant visibility across practitioners, designated therapy suites, and patient rosters.</span></li>
+<li class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">check_circle</span><span><strong>Intelligent recurring blocks:</strong> Secure 12-to-24-week therapy series with automated clash avoidance.</span></li>
+<li class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">check_circle</span><span><strong>Unified digital medical journals:</strong> Integrated clinical templates, objective therapy notes, and instant parent handoffs.</span></li>
+<li class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">check_circle</span><span><strong>Zero-touch package deduction:</strong> Completed sessions auto-reconcile against prepaid bundles in real-time.</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- CORE FEATURES DEEP DIVE -->
+<section class="w-full bg-surface-white py-space-3xl" id="features">
+<div class="max-w-[1180px] mx-auto px-gutter space-y-space-2xl">
+<div class="max-w-2xl space-y-space-xs">
+<div class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-full bg-surface-orange-soft border border-orange-200">
+<span class="font-label-eyebrow text-label-eyebrow text-primary uppercase">Core Feature Modules</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface">Explain the benefit, not only the feature name.</h2>
+<p class="font-body-lead text-body-lead text-on-surface-variant">Every capability is engineered to protect clinical focus, ensure compliance, and boost appointment adherence.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<div class="lg:col-span-2 bg-gradient-to-br from-emerald-50 via-white to-amber-50 border-2 border-orange-200/80 rounded-3xl p-space-xl shadow-md hover:shadow-lg space-y-space-md group reveal tm-card">
+<div class="flex items-center justify-between"><div class="w-14 h-14 rounded-2xl bg-primary text-on-primary flex items-center justify-center shadow-lg shadow-emerald-900/25 group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-[28px]">calendar_month</span></div><span class="px-3 py-1 rounded-full bg-primary/10 text-primary font-calendar-cell font-bold text-calendar-cell uppercase tracking-wider">Flagship Module</span></div>
+<div class="space-y-space-xs"><h3 class="font-headline-md text-headline-md text-on-surface font-bold">Smart Appointment &amp; Room Orchestration</h3><p class="font-body-lead text-body-lead text-on-surface-variant max-w-xl leading-relaxed">Consolidate multi-practitioner schedules, equipment buffer times, specialized room assignments, and recurring patient sessions with zero double-booking.</p></div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-xs"><div class="p-space-xs rounded-xl bg-white border border-orange-100 shadow-sm"><span class="block font-bold text-primary text-sm">Instant Conflict Checks</span><span class="font-micro-slot text-text-muted">Room &amp; equipment bounds</span></div><div class="p-space-xs rounded-xl bg-white border border-orange-100 shadow-sm"><span class="block font-bold text-primary text-sm">Multi-week Recurring</span><span class="font-micro-slot text-text-muted">Automated slot holds</span></div><div class="p-space-xs rounded-xl bg-white border border-orange-100 shadow-sm"><span class="block font-bold text-primary text-sm">Buffer Allocations</span><span class="font-micro-slot text-text-muted">Between back-to-back care</span></div></div>
+</div>
+<div class="bg-bg-canvas border border-gray-100 hover:border-orange-200 rounded-3xl p-space-xl shadow-sm hover:shadow-md space-y-space-sm group flex flex-col reveal tm-card"><div class="w-12 h-12 rounded-2xl bg-amber-500 text-on-primary flex items-center justify-center shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-[24px]">badge</span></div><div class="space-y-space-xs"><h3 class="font-headline-md text-headline-md text-on-surface">Therapist Management</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Organize clinician caseload quotas, leave rotations, room preferences, and multi-location practice assignments.</p></div></div>
+<div class="bg-bg-canvas border border-gray-100 hover:border-orange-200 rounded-3xl p-space-xl shadow-sm hover:shadow-md space-y-space-sm group flex flex-col reveal tm-card"><div class="w-12 h-12 rounded-2xl bg-orange-600 text-on-primary flex items-center justify-center shadow-md shadow-orange-600/20 group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-[24px]">diversity_1</span></div><div class="space-y-space-xs"><h3 class="font-headline-md text-headline-md text-on-surface">Patient &amp; Family Records</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Safeguard diagnostic intake forms, clinical milestones, emergency contacts, and historic records in a secure repository.</p></div></div>
+<div class="bg-bg-canvas border border-gray-100 hover:border-orange-200 rounded-3xl p-space-xl shadow-sm hover:shadow-md space-y-space-sm group flex flex-col reveal tm-card"><div class="w-12 h-12 rounded-2xl bg-zinc-900 text-on-primary flex items-center justify-center shadow-md group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-[24px]">edit_note</span></div><div class="space-y-space-xs"><h3 class="font-headline-md text-headline-md text-on-surface">Sessions &amp; Assessments</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Streamline post-session documentation with rapid clinical templates, attendance timestamps, and family milestone summaries.</p></div></div>
+<div class="bg-bg-canvas border border-gray-100 hover:border-orange-200 rounded-3xl p-space-xl shadow-sm hover:shadow-md space-y-space-sm group flex flex-col reveal tm-card"><div class="w-12 h-12 rounded-2xl bg-primary text-on-primary flex items-center justify-center shadow-md shadow-emerald-900/20 group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-[24px]">credit_card</span></div><div class="space-y-space-xs"><h3 class="font-headline-md text-headline-md text-on-surface">Packages &amp; Automated Billing</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Manage prepaid session blocks, automatically adjust bundle credits upon checkout, and issue electronic statements.</p></div></div>
+</div>
+</div>
+</section>
+<!-- FREQUENTLY ASKED QUESTIONS -->
+<section class="w-full bg-bg-canvas py-space-3xl" id="clinical-faq">
+<div class="max-w-[1180px] mx-auto px-gutter space-y-space-2xl">
+<div class="max-w-2xl mx-auto text-center space-y-space-xs">
+<div class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-full bg-surface-orange-soft border border-orange-200">
+<span class="font-label-eyebrow text-label-eyebrow text-primary uppercase">Clear Clinical Answers</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">Frequently Asked Questions</h2>
+<p class="font-body-lead text-body-lead text-on-surface-variant">Direct answers for healthcare directors, clinicians, and practice operations managers.</p>
+</div>
+<div class="max-w-3xl mx-auto space-y-space-sm">
+<details class="group bg-surface-white border border-gray-100 p-space-lg rounded-2xl shadow-sm cursor-pointer reveal tm-card">
+<summary class="flex items-center justify-between font-headline-sm text-headline-sm text-on-surface list-none"><span>What is PointScheduler?</span><span class="material-symbols-outlined text-primary faq-icon">expand_more</span></summary>
+<div class="faq-answer"><div><p class="mt-space-sm font-body-default text-body-default text-on-surface-variant leading-relaxed">PointScheduler is therapy centre management software created by Tech Miss3. It centralizes practitioner rosters, patient records, recurring therapy schedules, attendance check-ins, clinical notes, treatment packages, and overall clinic performance into one integrated web and mobile platform.</p></div></div>
+</details>
+<details class="group bg-surface-white border border-gray-100 p-space-lg rounded-2xl shadow-sm cursor-pointer reveal tm-card">
+<summary class="flex items-center justify-between font-headline-sm text-headline-sm text-on-surface list-none"><span>Who is PointScheduler designed for?</span><span class="material-symbols-outlined text-primary faq-icon">expand_more</span></summary>
+<div class="faq-answer"><div><p class="mt-space-sm font-body-default text-body-default text-on-surface-variant leading-relaxed">It is purposefully designed for therapy-intensive clinical environments: Child Development Centres (CDCs), Autism/ABA clinics, Speech-Language pathology practices, Occupational Therapy suites, Paediatric and Adult Physiotherapy centres, and Multi-specialty Rehabilitation facilities.</p></div></div>
+</details>
+<details class="group bg-surface-white border border-gray-100 p-space-lg rounded-2xl shadow-sm cursor-pointer reveal tm-card">
+<summary class="flex items-center justify-between font-headline-sm text-headline-sm text-on-surface list-none"><span>Can PointScheduler manage complex recurring appointments?</span><span class="material-symbols-outlined text-primary faq-icon">expand_more</span></summary>
+<div class="faq-answer"><div><p class="mt-space-sm font-body-default text-body-default text-on-surface-variant leading-relaxed">Yes. Multi-week and multi-month therapy blocks are fundamental to its architecture. The system checks therapist availability, room reservations, and equipment buffers across all target cycles, preventing double-bookings.</p></div></div>
+</details>
+<details class="group bg-surface-white border border-gray-100 p-space-lg rounded-2xl shadow-sm cursor-pointer reveal tm-card">
+<summary class="flex items-center justify-between font-headline-sm text-headline-sm text-on-surface list-none"><span>How does the live product demonstration work?</span><span class="material-symbols-outlined text-primary faq-icon">expand_more</span></summary>
+<div class="faq-answer"><div><p class="mt-space-sm font-body-default text-body-default text-on-surface-variant leading-relaxed">Select an available time slot below to lock in a dedicated walk-through. A Tech Miss3 solutions specialist will show you the exact clinical setup matching your specialty and answer your technical or migration questions.</p></div></div>
+</details>
+<details class="group bg-surface-white border border-gray-100 p-space-lg rounded-2xl shadow-sm cursor-pointer reveal tm-card">
+<summary class="flex items-center justify-between font-headline-sm text-headline-sm text-on-surface list-none"><span>Is PointScheduler part of Tech Miss3?</span><span class="material-symbols-outlined text-primary faq-icon">expand_more</span></summary>
+<div class="faq-answer"><div><p class="mt-space-sm font-body-default text-body-default text-on-surface-variant leading-relaxed">Yes. PointScheduler is built and supported by <a href="index.html" class="text-primary font-semibold hover:underline">Tech Miss3</a>, an Udyam-registered IT solutions company. You can reach the same team for support, customization, or your other AI, web, and mobile projects.</p></div></div>
+</details>
+</div>
+</div>
+</section>
+<!-- DIRECT DEMO BOOKING MODULE -->
+<section class="w-full bg-surface-white py-space-3xl" id="demo-booking">
+<div class="max-w-[1180px] mx-auto px-gutter">
+<div class="bg-gradient-to-br from-emerald-50 via-white to-amber-50 border border-orange-200/80 rounded-3xl p-space-xl lg:p-space-2xl shadow-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+<div class="lg:col-span-6 space-y-space-md">
+<div class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-full bg-white border border-orange-200">
+<span class="font-label-eyebrow text-label-eyebrow text-primary uppercase">Direct Demo Booking</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface leading-tight">Book a PointScheduler demo without waiting for a callback.</h2>
+<p class="font-body-lead text-body-lead text-on-surface-variant">
+              Pick a free 30-minute slot on our live calendar. Your booking is confirmed straight away and a calendar invite is sent to your email.
+            </p>
+<div class="p-space-md rounded-2xl bg-surface-white border border-orange-100 shadow-sm space-y-space-xs">
+<span class="font-label-btn text-label-btn text-primary flex items-center gap-space-2xs"><span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>Streamlined 3-Step Flow:</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Open the live calendar &rarr; Pick a free 30-minute slot &rarr; Get an instant confirmation and calendar invite.</p>
+</div>
+</div>
+<div class="lg:col-span-6">
+<div class="bg-surface-white rounded-3xl p-space-xl shadow-xl border border-orange-100 space-y-space-md">
+<div class="flex items-center justify-between pb-space-xs border-b border-gray-100">
+<div><h3 class="font-headline-md text-headline-md text-on-surface font-bold">Book a Demo</h3><p class="font-body-sm text-body-sm text-text-muted">Free live walkthrough of PointScheduler</p></div>
+<div class="w-10 h-10 rounded-full bg-surface-orange-soft border border-orange-200 flex items-center justify-center text-primary"><span class="material-symbols-outlined">event</span></div>
+</div>
+<div>
+  <p class="font-calendar-cell text-calendar-cell text-on-surface-variant font-bold uppercase mb-space-xs">
+    Select an Available Demo Time
   </p>
 
-  <div class="ps-playstore-box">
-    <img src="img/playstore-preview.png" class="ps-playstore-img">
-  </div>
+  <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+    View live availability and choose a convenient 30-minute PointScheduler demo slot.
+  </p>
 
-
-    <div class="text-center mt-4">
-      <a href="#" class="ps-btn ps-btn-green" onclick="openDemoForm()">Book a Demo</a>
-    </div>
-
-    <div class="text-center mt-3">
-    <a href="https://play.google.com/store/apps/details?id=com.techmiss3.pointscheduller&hl=en_IN"
-       target="_blank"
-       class="ps-play-inline">
-        <img src="img/playstore-icon.png" class="ps-play-icon" alt="">
-        Download on Play Store
-    </a>
+  <a
+    href="https://calendar.app.google/uZr1w45ioXHAYqoV6"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="w-full py-space-sm rounded-full bg-gradient-to-r from-primary to-amber-500 text-on-primary font-label-btn text-label-btn shadow-lg shadow-emerald-900/25 hover:bg-primary-hover transition-all tm-btn flex items-center justify-center gap-space-xs"
+  >
+    <span class="material-symbols-outlined text-[18px]">calendar_month</span>
+    View Available Demo Slots
+  </a>
 </div>
-
-  </section>
-
-  
-  <!-- DEMO FORM POPUP (modal) - styled like contact form (orange->green gradient) -->
-  <div id="demoModal" class="demo-modal" aria-hidden="true">
-    <div class="demo-modal-content">
-      <span class="demo-close" onclick="closeDemoForm()">&times;</span>
-
-      <h2>Book a Demo</h2>
-      <p>Enter your details and we will contact you shortly.</p>
-
-      <form id="demoForm">
-        <input type="text" id="demo_name" placeholder="Your Name" required>
-        <input type="text" id="demo_clinic" placeholder="Therapy Center / Clinic Name" required>
-        <input type="email" id="demo_email" placeholder="Email Address" required>
-        <input type="tel" id="demo_phone" placeholder="Phone Number" required>
-        <textarea id="demo_message" placeholder="Your Message" required></textarea>
-
-        <button type="button" class="demo-submit" onclick="sendEmail('demoForm')">Submit</button>
-      </form>
-
-      <div class="playstore-area">
-    <a href="https://play.google.com/store/apps/details?id=com.techmiss3.pointscheduller&hl=en_IN" target="_blank" class="ps-play-inline">
-        <img src="img/playstore-icon.png" class="ps-play-icon" alt="Play Store">
-        Download on Play Store
-    </a>
+<p class="font-micro-slot text-micro-slot text-text-muted text-center">A Tech Miss3 product. Built and supported by the same team behind techmiss3.com.</p>
 </div>
-
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="lightbox-backdrop" id="lightbox-backdrop">
+  <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close preview"><span class="material-symbols-outlined">close</span></button>
+  <img src="" alt="" id="lightbox-image">
+</div>
 <script>
-emailjs.init("DoUP9lSL9aiQN2bKR");
+    (function () {
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      if (!menuBtn || !menu) return;
+      menuBtn.addEventListener('click', function () {
+        const isOpen = !menu.classList.contains('hidden');
+        menu.classList.toggle('hidden');
+        menuBtn.setAttribute('aria-expanded', String(!isOpen));
+      });
+      menu.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', function () { menu.classList.add('hidden'); });
+      });
+    })();
+
+    // Lightweight scroll-reveal (no external library) with per-group cascade stagger
+    (function () {
+      const items = document.querySelectorAll('.reveal');
+      if (!items.length) return;
+      if (!('IntersectionObserver' in window)) {
+        items.forEach(function (el) { el.classList.add('is-visible'); });
+        return;
+      }
+      const groupIndex = new Map();
+      items.forEach(function (el) {
+        const parent = el.parentElement;
+        const i = groupIndex.get(parent) || 0;
+        if (!el.style.getPropertyValue('--reveal-delay')) {
+          el.style.setProperty('--reveal-delay', (Math.min(i, 6) * 75) + 'ms');
+        }
+        groupIndex.set(parent, i + 1);
+      });
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          const el = entry.target;
+          el.classList.add('is-visible');
+          observer.unobserve(el);
+          const delay = parseFloat(el.style.getPropertyValue('--reveal-delay')) || 0;
+          window.setTimeout(function () {
+            el.classList.remove('reveal', 'is-visible');
+            el.style.removeProperty('--reveal-delay');
+            el.style.willChange = 'auto';
+          }, 600 + delay);
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+      items.forEach(function (el) { observer.observe(el); });
+    })();
+
+    // Pointer-direction 3D tilt on the admin mockup.
+    // Pointer-capable devices only; rect is cached and writes are rAF-throttled
+    // so mousemove never triggers a layout read/write per event.
+    (function () {
+      const el = document.getElementById('admin-tilt');
+      if (!el) return;
+      if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      let rect = null, frame = null, ry = 0, rx = 0;
+      const MAX = 9; // degrees
+
+      function paint() {
+        frame = null;
+        el.style.transform = 'perspective(1200px) rotateX(' + rx + 'deg) rotateY(' + ry + 'deg) scale(1.02)';
+      }
+      el.addEventListener('pointerenter', function () {
+        rect = el.getBoundingClientRect();
+        el.style.transition = 'transform .15s ease-out';
+        el.style.willChange = 'transform';
+      });
+      el.addEventListener('pointermove', function (e) {
+        if (!rect) rect = el.getBoundingClientRect();
+        ry = ((e.clientX - rect.left) / rect.width - 0.5) * (MAX * 2);
+        rx = -((e.clientY - rect.top) / rect.height - 0.5) * (MAX * 2);
+        if (!frame) frame = requestAnimationFrame(paint);
+      });
+      el.addEventListener('pointerleave', function () {
+        if (frame) { cancelAnimationFrame(frame); frame = null; }
+        el.style.transition = 'transform .55s cubic-bezier(0.25,1,0.5,1)';
+        el.style.transform = 'perspective(1200px) rotateX(0deg) rotateY(0deg) scale(1)';
+        el.style.willChange = 'auto';
+        rect = null;
+      });
+      // cached rect goes stale when the page moves
+      window.addEventListener('scroll', function () { rect = null; }, { passive: true });
+      window.addEventListener('resize', function () { rect = null; }, { passive: true });
+    })();
+
+    // Screenshot lightbox
+    (function () {
+      const backdrop = document.getElementById('lightbox-backdrop');
+      const img = document.getElementById('lightbox-image');
+      if (!backdrop || !img) return;
+      let lastFocused = null;
+      function open(src, alt) {
+        img.src = src;
+        img.alt = alt || '';
+        lastFocused = document.activeElement;
+        backdrop.classList.add('is-open');
+      }
+      function close() {
+        backdrop.classList.remove('is-open');
+        if (lastFocused) lastFocused.focus();
+      }
+      document.querySelectorAll('.lightbox-trigger').forEach(function (el) {
+        el.addEventListener('click', function () { open(el.dataset.full || el.src, el.alt); });
+      });
+      backdrop.addEventListener('click', function (e) {
+        if (e.target === backdrop) close();
+      });
+      document.getElementById('lightbox-close').addEventListener('click', close);
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && backdrop.classList.contains('is-open')) close();
+      });
+    })();
 </script>
-
-<script src="script.js"></script>
-
-
-  <!-- FOOTER (load same footer as index) -->
-  <script>
-    fetch('footer.html')
-      .then(r => r.text())
-      .then(html => document.body.insertAdjacentHTML('beforeend', html))
-      .catch(err => console.warn('Footer load failed:', err));
-  </script>
-
-  <!-- SCRIPTS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>AOS.init();</script>
-
-  <!-- Modal behaviour -->
-  <script>
-    function openDemoForm() {
-      document.getElementById('demoModal').style.display = 'flex';
-      document.body.classList.add('no-scroll'); // prevents body scroll when modal open
-      document.getElementById("floatingDemoBtn").style.display = "none";
+</div>
+</main>
+<footer class="w-full bg-zinc-900 text-zinc-300 py-space-3xl border-t border-zinc-800">
+<div class="max-w-[1180px] mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-2xl">
+<div class="space-y-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-md overflow-hidden"><img src="img/point_logo.jpg" alt="PointScheduler logo" class="w-full h-full object-cover"></div>
+<span class="font-headline-sm text-headline-sm text-white font-bold">PointScheduler</span>
+</div>
+<p class="font-body-sm text-body-sm text-zinc-400 leading-relaxed">Therapy centre management software: scheduling, patient records, therapist rosters, session notes, and billing in one platform.</p>
+<a href="index.html" class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 hover:text-emerald-300"><span class="material-symbols-outlined text-[16px]">arrow_back</span> A Tech Miss3 product</a>
+</div>
+<div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm text-white font-semibold">PointScheduler</h4><ul class="space-y-space-2xs font-body-sm text-body-sm text-zinc-400"><li><a class="hover:text-primary transition-colors" href="#pointscheduler-deepdive">Smart Scheduling</a></li><li><a class="hover:text-primary transition-colors" href="#features">Patient Records</a></li><li><a class="hover:text-primary transition-colors" href="#features">Therapist Rosters</a></li><li><a class="hover:text-primary transition-colors" href="#features">Billing &amp; Packages</a></li></ul></div>
+<div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm text-white font-semibold">Who It&rsquo;s For</h4><ul class="space-y-space-2xs font-body-sm text-body-sm text-zinc-400"><li><a class="hover:text-primary transition-colors" href="#target-clinics">Child Development Centres</a></li><li><a class="hover:text-primary transition-colors" href="#target-clinics">Autism &amp; ABA Practices</a></li><li><a class="hover:text-primary transition-colors" href="#target-clinics">Speech-Language Pathology</a></li><li><a class="hover:text-primary transition-colors" href="#target-clinics">Physio &amp; Rehab Facilities</a></li></ul></div>
+<div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm text-white font-semibold">Tech Miss3</h4><ul class="space-y-space-2xs font-body-sm text-body-sm text-zinc-400"><li><a class="hover:text-primary transition-colors" href="index.html">Home</a></li><li><a class="hover:text-primary transition-colors" href="index.html#services">All Services</a></li><li><a class="hover:text-primary transition-colors" href="tel:+919380729681">+91 9380729681</a></li><li><a class="hover:text-primary transition-colors" href="mailto:contact.trainhead@gmail.com">contact.trainhead@gmail.com</a></li></ul></div>
+</div>
+<div class="pt-space-lg border-t border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-zinc-500">
+<p>&copy; 2025 PointScheduler by Tech Miss3. All rights reserved.</p>
+<div class="flex items-center gap-space-md"><a class="hover:text-primary transition-colors" href="index.html">Tech Miss3 Home</a></div>
+</div>
+</div>
+</footer>
+<script>
+  // Light/dark theme toggle. Preference is shared across all pages via localStorage.
+  (function () {
+    var root = document.documentElement;
+    var btn = document.getElementById('theme-toggle');
+    var meta = document.querySelector('meta[name="theme-color"]');
+    var lightMeta = meta ? meta.getAttribute('content') : null;
+    function stored() { try { return localStorage.getItem('tm-theme'); } catch (e) { return null; } }
+    function sync() {
+      var dark = root.classList.contains('dark');
+      if (btn) {
+        btn.setAttribute('aria-pressed', String(dark));
+        btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+      }
+      if (meta && lightMeta) meta.setAttribute('content', dark ? '#09100e' : lightMeta);
     }
-    function closeDemoForm() {
-      document.getElementById('demoModal').style.display = 'none';
-      document.body.classList.remove('no-scroll');
-       document.getElementById("floatingDemoBtn").style.display = "block";
+    // The latest requested theme lives here, not in the DOM: during a view transition the DOM
+    // update is deferred, so reading classList on a fast second click would see stale state.
+    var wantDark = root.classList.contains('dark');
+    var transitioning = false;
+    function run() { root.classList.toggle('dark', wantDark); sync(); }
+    function apply(dark, persist) {
+      wantDark = dark;
+      if (persist) { try { localStorage.setItem('tm-theme', dark ? 'dark' : 'light'); } catch (e) {} }
+      if (transitioning) { run(); return; }                 // never stack transitions; land the latest choice now
+      if (root.classList.contains('dark') === dark) { sync(); return; }
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!document.startViewTransition || reduce || document.hidden) { run(); return; }
+      transitioning = true;
+      var t = document.startViewTransition(run);
+      var settle = function () { transitioning = false; run(); };
+      t.finished.then(settle, settle);
+      if (t.ready) t.ready.catch(function () {});           // a skipped transition must not surface as an error
     }
-    window.addEventListener('click', function(e) {
-      if (e.target === document.getElementById('demoModal')) closeDemoForm();
+    sync();
+    if (btn) btn.addEventListener('click', function () { apply(!wantDark, true); });
+    if (window.matchMedia) {
+      var mq = window.matchMedia('(prefers-color-scheme: dark)');
+      var onSystem = function (e) { if (!stored()) apply(e.matches, false); };
+      if (mq.addEventListener) mq.addEventListener('change', onSystem);
+      else if (mq.addListener) mq.addListener(onSystem);
+    }
+    window.addEventListener('storage', function (e) {
+      if (e.key === 'tm-theme' && e.newValue) apply(e.newValue === 'dark', false);
     });
-  </script>
-  
-  <!-- Floating Book Demo Button -->
-<button id="floatingDemoBtn" class="floating-demo-btn" onclick="openDemoForm()">
-  Book a Demo
-</button>
-
-
-
-
+    // Pages restored from the back/forward cache keep their old class; re-sync with storage.
+    window.addEventListener('pageshow', function (e) {
+      if (!e.persisted) return;
+      var t = stored();
+      if (t) apply(t === 'dark', false);
+    });
+  })();
+</script>
 </body>
 </html>
