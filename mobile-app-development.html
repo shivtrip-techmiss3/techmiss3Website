@@ -3,173 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script>(function(){var d=false;try{var t=localStorage.getItem('tm-theme');d=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;}catch(e){try{d=window.matchMedia('(prefers-color-scheme: dark)').matches;}catch(_){}}if(d)document.documentElement.classList.add('dark');})();</script>
-    <title>Mobile App Development - Tech Miss3</title>
-    <meta name="description" content="Tech Miss3 builds native and cross-platform mobile apps for Android and iOS, including Play Store and App Store launch support.">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Tech Miss3">
-    <link rel="canonical" href="https://techmiss3.com/mobile-app-development.html">
-    <meta name="theme-color" content="#ea580c">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Tech Miss3">
-    <meta property="og:title" content="Mobile App Development - Tech Miss3">
-    <meta property="og:description" content="Tech Miss3 builds native and cross-platform mobile apps for Android and iOS, including Play Store and App Store launch support.">
-    <meta property="og:url" content="https://techmiss3.com/mobile-app-development.html">
-    <link rel="icon" type="image/png" href="img/logo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=android,api,arrow_forward,autorenew,call,chat,check_circle,close,dark_mode,dashboard,description,edit_note,forum,language,light_mode,mail,menu,phone_iphone,query_stats,reviews,search,security,shopping_cart,smart_toy,smartphone,storefront,support_agent,update,widgets&display=block" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script id="tailwind-config">
-    tailwind.config = { darkMode: "class", theme: { extend: {
-      colors: { primary: "#ea580c", "primary-hover": "#c2410c", "primary-light": "#ffedd5", "on-primary": "#ffffff", "bg-canvas": "rgb(var(--tm-bg-canvas) / <alpha-value>)", "surface-white": "rgb(var(--tm-surface-white) / <alpha-value>)", "surface-orange-soft": "rgb(var(--tm-surface-orange-soft) / <alpha-value>)", "on-surface": "rgb(var(--tm-on-surface) / <alpha-value>)", "on-surface-variant": "rgb(var(--tm-on-surface-variant) / <alpha-value>)", "text-muted": "rgb(var(--tm-text-muted) / <alpha-value>)" },
-      borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", "2xl": "1rem", "3xl": "1.5rem", full: "9999px" },
-      spacing: { gutter: "1.5rem" },
-      fontFamily: { sans: ["Inter", "sans-serif"] }
-    } } };
-    </script>
-    <style>
-      body{margin:0;overscroll-behavior:none;}
-      .material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 500,'GRAD' 0,'opsz' 24;vertical-align:middle;}
-      html{scroll-behavior:smooth;}
-      .section-pad{padding-top:6rem;padding-bottom:6rem;}
-      @media (max-width:768px){.section-pad{padding-top:4rem;padding-bottom:4rem;}}
-      ::-webkit-scrollbar{width:8px;}
-      ::-webkit-scrollbar-thumb{background:#fdba74;border-radius:9999px;}
-      .tm-card{transition:transform .35s cubic-bezier(0.25,1,0.5,1),box-shadow .35s cubic-bezier(0.25,1,0.5,1);backface-visibility:hidden;}
-      .tm-card:hover{will-change:transform;}
-      .tm-card:hover{transform:translateY(-6px) scale(1.015);box-shadow:0 20px 40px -12px rgba(0,0,0,0.16);}
-      .tm-btn{transition:transform .25s cubic-bezier(0.34,1.56,0.64,1),box-shadow .25s ease-out,filter .25s ease-out;}
-      .tm-btn:hover{will-change:transform;}
-      .tm-btn:hover{transform:translateY(-2px) scale(1.035);filter:brightness(1.04);}
-      .tm-btn:active{transform:translateY(0) scale(0.98);}
-      /* Scroll reveal declared last so its transition wins over hover shorthands during entrance */
-      .reveal{opacity:0;transform:perspective(1000px) rotateX(10deg) translate3d(0,35px,0) scale(0.93);transition:opacity .6s cubic-bezier(0.34,1.56,0.64,1),transform .6s cubic-bezier(0.34,1.56,0.64,1);transition-delay:var(--reveal-delay,0ms);will-change:opacity,transform;transform-style:preserve-3d;}
-      .reveal.is-visible{opacity:1;transform:perspective(1000px) rotateX(0deg) translate3d(0,0,0) scale(1);}
-      @media (prefers-reduced-motion:reduce){.reveal,.tm-card,.tm-btn{transition:none!important;}.reveal{opacity:1;transform:none;}}
-    </style>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "Mobile App Based Business Solutions",
-        "provider": { "@type": "Organization", "name": "Tech Miss3", "url": "https://techmiss3.com/" },
-        "areaServed": "IN",
-        "description": "Tech Miss3 builds native and cross-platform mobile apps for Android and iOS, including Play Store and App Store launch support.",
-        "url": "https://techmiss3.com/mobile-app-development.html"
-    }
-    </script>
-<noscript><style>.reveal{opacity:1!important;transform:none!important;}</style></noscript>
-<style id="theme-css">
-:root{--tm-bg-canvas:250 250 250;--tm-surface-white:255 255 255;--tm-surface-orange-soft:255 247 237;--tm-on-surface:24 24 27;--tm-on-surface-variant:82 82 91;--tm-text-muted:113 113 122}
-html.dark{--tm-bg-canvas:19 19 22;--tm-surface-white:38 38 45;--tm-surface-orange-soft:44 34 27;--tm-on-surface:240 240 242;--tm-on-surface-variant:184 184 192;--tm-text-muted:160 160 170}
-html{color-scheme:light}
-html.dark{color-scheme:dark}
-.theme-icon-to-light{display:none}
-html.dark .theme-icon-to-dark{display:none}
-html.dark .theme-icon-to-light{display:inline-block}
-html.dark .bg-white{background-color:rgb(var(--tm-surface-white))}
-html.dark .bg-orange-50{background-color:#2c221b}
-html.dark .bg-red-100{background-color:rgb(239 68 68 / .16)}
-html.dark .hover\:bg-gray-100:hover{background-color:#2c2c33}
-html.dark .hover\:bg-zinc-100:hover{background-color:#2c2c33}
-html.dark .bg-orange-200\/40{background-color:rgb(234 88 12 / .10)}
-html.dark .bg-amber-200\/40{background-color:rgb(245 158 11 / .08)}
-html.dark .border-gray-100{border-color:#303038}
-html.dark .border-gray-200{border-color:#3d3d46}
-html.dark .border-gray-200\/80{border-color:rgb(61 61 70 / .8)}
-html.dark .hover\:border-gray-300:hover{border-color:#52525c}
-html.dark .border-orange-100{border-color:rgb(234 88 12 / .25)}
-html.dark .border-orange-200{border-color:rgb(234 88 12 / .4)}
-html.dark .border-orange-200\/80{border-color:rgb(234 88 12 / .34)}
-html.dark .hover\:border-orange-200:hover{border-color:rgb(249 115 22 / .6)}
-html.dark .border-red-100{border-color:rgb(248 113 113 / .3)}
-html.dark .text-primary{color:#f97316}
-html.dark .hover\:text-primary:hover{color:#fdba74}
-html.dark .text-blue-900{color:#93c5fd}
-html.dark .text-zinc-900{color:rgb(var(--tm-on-surface))}
-html.dark .text-red-500{color:#fca5a5}
-html.dark .text-red-600{color:#fca5a5}
-html.dark .from-orange-50{--tw-gradient-from:#131316 var(--tw-gradient-from-position)}
-html.dark .via-white{--tw-gradient-stops:var(--tw-gradient-from),#17171b var(--tw-gradient-via-position),var(--tw-gradient-to)}
-html.dark .to-orange-50\/60{--tw-gradient-to:rgb(44 34 27 / .7) var(--tw-gradient-to-position)}
-html.dark .to-white{--tw-gradient-to:rgb(var(--tm-surface-white)) var(--tw-gradient-to-position)}
-html.dark .from-zinc-50{--tw-gradient-from:#28282f var(--tw-gradient-from-position)}
-html.dark section.bg-bg-canvas{background-color:#131316;background-image:none}
-html.dark section.bg-surface-white{background-color:#18181c;background-image:none}
-html.dark .rounded-3xl.bg-bg-canvas,html.dark .rounded-2xl.bg-bg-canvas{background-color:rgb(var(--tm-surface-white))}
-html.dark .rounded-2xl.bg-zinc-900,html.dark .rounded-2xl.bg-zinc-800{background-color:#3f3f48}
-html.dark .rounded-2xl.bg-zinc-700{background-color:#4d4d57}
-html.dark footer.bg-zinc-900{background-color:#0c0c0e;background-image:none}
-html.dark footer .border-zinc-800,html.dark footer.border-zinc-800{border-color:#26262c}
-html.dark .info-modal{background:rgba(33,33,39,.97);border:1px solid rgba(255,255,255,.08)}
-html.dark div.bg-white :is(.bg-white,.bg-surface-white),html.dark div.bg-surface-white :is(.bg-white,.bg-surface-white),html.dark div.bg-gradient-to-br :is(.bg-white,.bg-surface-white){background-color:#303038}
-html.dark span.bg-surface-orange-soft{background-color:rgb(249 115 22 / .16)}
-html.dark div.from-surface-orange-soft\/60{--tw-gradient-from:#33271f var(--tw-gradient-from-position)}
-</style>
+    <meta name="description" content="Tech Miss3 offers Mobile App Based Business Solutions to enhance user engagement and optimize business processes with custom mobile applications.">
+    <title>Mobile App Based Business Solutions - Tech Miss3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="service-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+        <!-- Favicon & App Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- Mobile / Apple icon -->
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+    <!-- Android icons -->
+    <link rel="icon" sizes="192x192" href="img/android-chrome-192.png">
+    <link rel="icon" sizes="512x512" href="img/android-chrome-512.png">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
-<body class="bg-bg-canvas text-on-surface font-sans antialiased overflow-x-hidden">
-<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:top-2 focus:left-2">Skip to main content</a>
-
-<!-- HEADER -->
-<header class="fixed top-0 w-full z-50 shadow-[0_1px_8px_rgba(0,0,0,0.05)]">
-  <div class="h-20 bg-surface-white/95 backdrop-blur-xl border-b border-gray-100">
-    <div class="h-full max-w-[1180px] mx-auto px-gutter flex items-center justify-between gap-4">
-      <a href="index.html" class="flex items-center gap-3 shrink-0">
-        <img src="img/logo.png" alt="Tech Miss3 logo" class="h-9 w-auto rounded-lg object-contain shadow-sm shadow-orange-500/20">
-        <span class="text-lg font-extrabold tracking-tight text-on-surface">Tech Miss3</span>
-      </a>
-      <nav class="hidden lg:flex items-center gap-1">
-        <a href="index.html#home" class="text-sm font-semibold text-on-surface-variant hover:text-primary rounded-full px-4 py-2 transition-colors">Home</a>
-        <a href="index.html#about" class="text-sm font-semibold text-on-surface-variant hover:text-primary rounded-full px-4 py-2 transition-colors">About</a>
-        <a href="index.html#services" class="text-sm font-bold text-primary bg-surface-orange-soft rounded-full px-4 py-2 transition-colors">Services</a>
-        <a href="index.html#products" class="text-sm font-semibold text-on-surface-variant hover:text-primary rounded-full px-4 py-2 transition-colors">Products</a>
-        <a href="careers.html" class="text-sm font-semibold text-on-surface-variant hover:text-primary rounded-full px-4 py-2 transition-colors">Careers</a>
-        <a href="index.html#faq" class="text-sm font-semibold text-on-surface-variant hover:text-primary rounded-full px-4 py-2 transition-colors">FAQ</a>
-      </nav>
-      <div class="flex items-center gap-2">
-        <button type="button" id="theme-toggle" class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-200 text-on-surface hover:text-primary transition-colors " aria-label="Switch to dark mode" aria-pressed="false"><span class="material-symbols-outlined text-[20px] theme-icon-to-dark" aria-hidden="true">dark_mode</span><span class="material-symbols-outlined text-[20px] theme-icon-to-light" aria-hidden="true">light_mode</span></button>
-        <a href="#contact" class="hidden sm:inline-flex tm-btn items-center justify-center text-sm font-bold bg-primary text-on-primary px-5 py-2.5 rounded-full shadow-[0_4px_16px_rgba(234,88,12,0.28)] hover:bg-primary-hover transition-all">Book a Consultation</a>
-        <button id="mobile-menu-btn" type="button" aria-label="Toggle menu" aria-expanded="false" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-full border border-gray-200 text-on-surface">
-          <span class="material-symbols-outlined">menu</span>
-        </button>
-      </div>
-    </div>
-    <div id="mobile-menu" class="hidden lg:hidden bg-surface-white border-b border-gray-100 px-gutter py-4 space-y-1">
-      <a href="index.html#home" class="block text-sm font-semibold text-on-surface px-3 py-2 rounded-lg hover:bg-surface-orange-soft">Home</a>
-      <a href="index.html#about" class="block text-sm font-semibold text-on-surface px-3 py-2 rounded-lg hover:bg-surface-orange-soft">About</a>
-      <a href="index.html#services" class="block text-sm font-semibold text-on-surface px-3 py-2 rounded-lg hover:bg-surface-orange-soft">Services</a>
-      <a href="index.html#products" class="block text-sm font-semibold text-on-surface px-3 py-2 rounded-lg hover:bg-surface-orange-soft">Products</a>
-      <a href="careers.html" class="block text-sm font-semibold text-on-surface px-3 py-2 rounded-lg hover:bg-surface-orange-soft">Careers</a>
-      <a href="index.html#faq" class="block text-sm font-semibold text-on-surface px-3 py-2 rounded-lg hover:bg-surface-orange-soft">FAQ</a>
-      <a href="#contact" class="block text-center mt-2 text-sm font-bold bg-primary text-on-primary px-5 py-2.5 rounded-full">Book a Consultation</a>
-    </div>
-  </div>
-</header>
-
-<main id="main-content" class="pt-20">
-
-<!-- HERO -->
-<section class="w-full bg-gradient-to-b from-surface-orange-soft/60 via-bg-canvas to-surface-white section-pad">
-  <div class="max-w-[1180px] mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
-    <div class="space-y-6 reveal">
-      <p class="text-xs font-extrabold text-primary uppercase tracking-wider">Mobile App Based Business Solutions</p>
-      <h1 class="text-4xl md:text-5xl font-extrabold leading-[1.1] tracking-tight text-on-surface">Mobile apps your customers will actually keep.</h1>
-      <p class="text-lg text-on-surface-variant leading-relaxed">We build Android and iOS applications designed around real user journeys, then handle store submission, release, and the updates that follow.</p>
-      <ul class="space-y-3 pt-1">
-        <li class="flex items-start gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[20px] shrink-0">check_circle</span><span>Native Android and iOS, or one Flutter codebase for both</span></li>
-        <li class="flex items-start gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[20px] shrink-0">check_circle</span><span>Interfaces designed for how people really use a phone</span></li>
-        <li class="flex items-start gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[20px] shrink-0">check_circle</span><span>Integration with your APIs and third-party services</span></li>
-        <li class="flex items-start gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[20px] shrink-0">check_circle</span><span>Play Store and App Store submission and launch support</span></li>
-      </ul>
-      <div class="flex flex-wrap items-center gap-4 pt-2">
-        <a href="#contact" class="tm-btn inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-primary text-on-primary text-sm font-bold shadow-lg shadow-orange-500/25 hover:bg-primary-hover transition-all">
-          Request a Consultation
-          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+<body>
+    <!-- Top Bar -->
+<div class="top-bar bg-dark text-white py-1 px-3 d-flex justify-content-between align-items-center">
+    <div>
+        <a href="https://www.facebook.com/profile.php?id=61580662049886" class="facebook me-2" target="_blank">
+            <i class="fab fa-facebook-f"></i>
         </a>
-        <a href="index.html#services" class="tm-btn inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-surface-white text-on-surface text-sm font-bold border border-gray-200 shadow-sm hover:border-primary hover:text-primary transition-all">
-          All Services
+        <a href="https://www.instagram.com/techmiss3" class="instagram me-2" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/techmiss3" class="twitter me-2" target="_blank">
+  <i class="fab fa-twitter"></i>
+</a>
+
+        <a href="whatsapp://send?phone=919380729681" class="whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
         </a>
       </div>
     </div>
@@ -254,19 +126,35 @@ html.dark div.from-surface-orange-soft\/60{--tw-gradient-from:#33271f var(--tw-g
   </div>
 </section>
 
-<!-- OTHER SERVICES -->
-<section class="w-full bg-surface-white section-pad">
-  <div class="max-w-[1180px] mx-auto px-gutter space-y-10">
-    <div class="max-w-2xl mx-auto text-center space-y-3">
-      <p class="text-xs font-extrabold text-primary uppercase tracking-wider">Also From Tech Miss3</p>
-      <h2 class="text-3xl md:text-4xl font-bold text-on-surface">Explore our other services</h2>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <a href="ai-based-business-solutions.html" class="group bg-bg-canvas border border-gray-100 rounded-3xl p-8 shadow-sm space-y-3 reveal tm-card flex flex-col justify-between">
-        <div class="space-y-3">
-          <div class="w-12 h-12 rounded-2xl bg-primary text-white flex items-center justify-center shadow-md"><span class="material-symbols-outlined text-[24px]">smart_toy</span></div>
-          <h3 class="text-lg font-bold text-on-surface">AI Business Solutions</h3>
-          <p class="text-sm text-on-surface-variant leading-relaxed">Automation, chatbots, and analytics that cut repetitive work out of your operations.</p>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Tech Miss3" height="50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown">
+        Products
+    </a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="pointscheduler.html">PointScheduler</a></li>
+        <li><a class="dropdown-item" href="irongate.html">IronGate Security (Upcoming)</a></li>
+        <!-- Add more products here in the future -->
+    </ul>
+</li>
+
+                    <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+
+
+                </ul>
+            </div>
         </div>
         <span class="inline-flex items-center gap-1.5 text-primary font-bold text-sm pt-4 group-hover:gap-2.5 transition-all">Learn more <span class="material-symbols-outlined text-[16px]">arrow_forward</span></span>
       </a>
@@ -282,20 +170,20 @@ html.dark div.from-surface-orange-soft\/60{--tw-gradient-from:#33271f var(--tw-g
   </div>
 </section>
 
-<!-- CONTACT -->
-<section class="w-full bg-bg-canvas section-pad" id="contact">
-  <div class="max-w-[1180px] mx-auto px-gutter">
-    <div class="bg-white border border-gray-100 rounded-3xl p-8 lg:p-14 shadow-lg reveal">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-        <div class="space-y-5">
-          <p class="text-xs font-extrabold text-primary uppercase tracking-wider">Get In Touch</p>
-          <h2 class="text-3xl md:text-4xl font-bold text-on-surface leading-tight">Tell us what you need built.</h2>
-          <p class="text-lg text-on-surface-variant">Share a few details about your project and we&rsquo;ll get back to you with a free, no-obligation quote. We typically respond within one business day.</p>
-          <div class="space-y-2 text-sm text-on-surface-variant pt-2">
-            <p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">call</span><a href="tel:+919380729681" class="hover:text-primary">+91 9380729681</a></p>
-            <p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">mail</span><a href="mailto:contact.trainhead@gmail.com" class="hover:text-primary">contact.trainhead@gmail.com</a></p>
-            <p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">chat</span><a href="whatsapp://send?phone=919380729681" class="hover:text-primary">Chat on WhatsApp</a></p>
-          </div>
+    <!-- Additional Showcase -->
+    <section class="additional-showcase mt-5 py-5" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center mb-4 sub-heading-orange">Explore Our Mobile Expertise</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
+                    <img src="img/representation-user-experience-interface-design.jpg" alt="User Experience Design" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <p>Discover our portfolio of innovative mobile apps, crafted to deliver exceptional user experiences and robust functionality for businesses across industries.</p>
+                    <a href="pointscheduler.html" class="btn btn-green mt-3">View More Projects</a>
+
+                </div>
+            </div>
         </div>
         <form id="contact-form" class="space-y-3">
           <div>
@@ -322,157 +210,42 @@ html.dark div.from-surface-orange-soft\/60{--tw-gradient-from:#33271f var(--tw-g
   </div>
 </section>
 
-</main>
+    
 
-<!-- FOOTER -->
-<footer class="w-full bg-zinc-900 text-zinc-300 section-pad border-t border-zinc-800">
-  <div class="max-w-[1180px] mx-auto px-gutter">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-      <div class="space-y-3">
-        <div class="flex items-center gap-2">
-          <img src="img/logo.png" alt="Tech Miss3 logo" class="h-8 w-auto rounded-md object-contain">
-          <span class="text-lg font-bold text-white">Tech Miss3</span>
-        </div>
-        <p class="text-sm text-zinc-400 leading-relaxed">An Udyam-registered IT partner building AI automation, websites, and mobile apps for growing businesses.</p>
-      </div>
-      <div class="space-y-3">
-        <h2 class="text-white font-semibold text-base">Quick Links</h2>
-        <ul class="text-sm text-zinc-400 space-y-2">
-          <li><a href="index.html#about" class="hover:text-primary transition-colors">About</a></li>
-          <li><a href="index.html#services" class="hover:text-primary transition-colors">Services</a></li>
-          <li><a href="index.html#products" class="hover:text-primary transition-colors">Products</a></li>
-          <li><a href="index.html#faq" class="hover:text-primary transition-colors">FAQ</a></li>
-          <li><a href="careers.html" class="hover:text-primary transition-colors">Careers</a></li>
-        </ul>
-      </div>
-      <div class="space-y-3">
-        <h2 class="text-white font-semibold text-base">Services</h2>
-        <ul class="text-sm text-zinc-400 space-y-2">
-          <li><a href="ai-based-business-solutions.html" class="hover:text-primary transition-colors">AI Business Solutions</a></li>
-          <li><a href="website-development.html" class="hover:text-primary transition-colors">Website Development</a></li>
-          <li><a href="mobile-app-development.html" class="hover:text-primary transition-colors">Mobile App Development</a></li>
-          <li><a href="pointscheduler.html" class="hover:text-primary transition-colors">PointScheduler</a></li>
-        </ul>
-      </div>
-      <div class="space-y-3">
-        <h2 class="text-white font-semibold text-base">Contact</h2>
-        <ul class="text-sm text-zinc-400 space-y-2">
-          <li><a href="tel:+919380729681" class="hover:text-primary transition-colors">+91 9380729681</a></li>
-          <li><a href="mailto:contact.trainhead@gmail.com" class="hover:text-primary transition-colors">contact.trainhead@gmail.com</a></li>
-          <li><a href="#contact" class="hover:text-primary transition-colors">Contact form</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="pt-8 border-t border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-zinc-500">
-      <p>&copy; 2025 Tech Miss3 | All Rights Reserved</p>
-      <span>Udyam-Registered MSME</span>
-    </div>
-  </div>
-</footer>
 
+
+    <!-- AOS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-  (function () {
-    const btn = document.getElementById('mobile-menu-btn');
-    const menu = document.getElementById('mobile-menu');
-    if (!btn || !menu) return;
-    btn.addEventListener('click', function () {
-      const isOpen = !menu.classList.contains('hidden');
-      menu.classList.toggle('hidden');
-      btn.setAttribute('aria-expanded', String(!isOpen));
-    });
-    menu.querySelectorAll('a').forEach(function (a) {
-      a.addEventListener('click', function () { menu.classList.add('hidden'); });
-    });
-  })();
+    AOS.init();
 
-  // Scroll reveal with per-group cascade stagger
-  (function () {
-    const items = document.querySelectorAll('.reveal');
-    if (!items.length) return;
-    if (!('IntersectionObserver' in window)) {
-      items.forEach(function (el) { el.classList.add('is-visible'); });
-      return;
+    function scrollToContact() {
+        document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
     }
-    const groupIndex = new Map();
-    items.forEach(function (el) {
-      const parent = el.parentElement;
-      const i = groupIndex.get(parent) || 0;
-      if (!el.style.getPropertyValue('--reveal-delay')) {
-        el.style.setProperty('--reveal-delay', (Math.min(i, 6) * 75) + 'ms');
-      }
-      groupIndex.set(parent, i + 1);
-    });
-    const observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (!entry.isIntersecting) return;
-        const el = entry.target;
-        el.classList.add('is-visible');
-        observer.unobserve(el);
-        const delay = parseFloat(el.style.getPropertyValue('--reveal-delay')) || 0;
-        window.setTimeout(function () {
-          el.classList.remove('reveal', 'is-visible');
-          el.style.removeProperty('--reveal-delay');
-          el.style.willChange = 'auto';
-        }, 650 + delay);
-      });
-    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-    items.forEach(function (el) { observer.observe(el); });
-  })();
 </script>
+
+<!-- EmailJS (must load before script.js) -->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script src="script.js"></script>
 <script>
-  // Light/dark theme toggle. Preference is shared across all pages via localStorage.
-  (function () {
-    var root = document.documentElement;
-    var btn = document.getElementById('theme-toggle');
-    var meta = document.querySelector('meta[name="theme-color"]');
-    var lightMeta = meta ? meta.getAttribute('content') : null;
-    function stored() { try { return localStorage.getItem('tm-theme'); } catch (e) { return null; } }
-    function sync() {
-      var dark = root.classList.contains('dark');
-      if (btn) {
-        btn.setAttribute('aria-pressed', String(dark));
-        btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
-      }
-      if (meta && lightMeta) meta.setAttribute('content', dark ? '#131316' : lightMeta);
-    }
-    // The latest requested theme lives here, not in the DOM: during a view transition the DOM
-    // update is deferred, so reading classList on a fast second click would see stale state.
-    var wantDark = root.classList.contains('dark');
-    var transitioning = false;
-    function run() { root.classList.toggle('dark', wantDark); sync(); }
-    function apply(dark, persist) {
-      wantDark = dark;
-      if (persist) { try { localStorage.setItem('tm-theme', dark ? 'dark' : 'light'); } catch (e) {} }
-      if (transitioning) { run(); return; }                 // never stack transitions; land the latest choice now
-      if (root.classList.contains('dark') === dark) { sync(); return; }
-      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      if (!document.startViewTransition || reduce || document.hidden) { run(); return; }
-      transitioning = true;
-      var t = document.startViewTransition(run);
-      var settle = function () { transitioning = false; run(); };
-      t.finished.then(settle, settle);
-      if (t.ready) t.ready.catch(function () {});           // a skipped transition must not surface as an error
-    }
-    sync();
-    if (btn) btn.addEventListener('click', function () { apply(!wantDark, true); });
-    if (window.matchMedia) {
-      var mq = window.matchMedia('(prefers-color-scheme: dark)');
-      var onSystem = function (e) { if (!stored()) apply(e.matches, false); };
-      if (mq.addEventListener) mq.addEventListener('change', onSystem);
-      else if (mq.addListener) mq.addListener(onSystem);
-    }
-    window.addEventListener('storage', function (e) {
-      if (e.key === 'tm-theme' && e.newValue) apply(e.newValue === 'dark', false);
-    });
-    // Pages restored from the back/forward cache keep their old class; re-sync with storage.
-    window.addEventListener('pageshow', function (e) {
-      if (!e.persisted) return;
-      var t = stored();
-      if (t) apply(t === 'dark', false);
-    });
-  })();
+emailjs.init("DoUP9lSL9aiQN2bKR");
 </script>
+
+<!-- Main JS (uses universal sendEmail function) -->
+<script src="script.js"></script>
+
+<!-- Load Footer -->
+<script>
+  fetch('footer.html')
+    .then(r => r.text())
+    .then(html => document.body.insertAdjacentHTML('beforeend', html))
+    .catch(err => console.warn(err));
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
 </body>
+
+
 </html>

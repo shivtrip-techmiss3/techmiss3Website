@@ -104,18 +104,51 @@ h2, h3, h4 {
     background-color: var(--tm-accent-light) !important;
 }
 
-/* Social icons */
-.top-bar a.facebook,
-.top-bar a.instagram,
-.top-bar a.whatsapp,
-.top-bar a.twitter i {
-    color: #ffffff;
+/* Real Twitter Blue color */
+.top-bar a.twitter {
+    color: #1DA1F2;  /* Official Twitter Blue */
 }
 
+
+/* Remove underline/underscore from social icons */
 .top-bar a {
     text-decoration: none;
 }
 
 .top-bar a::after {
     content: none;
+}
+
+
+
+
+
+/* Restore Bootstrap Navigation Behavior */
+.navbar-collapse {
+    display: none;
+}
+
+.navbar-collapse.collapse.show {
+    display: block !important;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+/* Prevent service-style.css from overriding nav alignment */
+.navbar-nav {
+    flex-direction: column !important;
+}
+
+
+/* =============================
+   FIX NAVBAR LAYOUT ON DESKTOP
+   ============================= */
+@media (min-width: 992px) {
+    .navbar-nav {
+        flex-direction: row !important;
+        align-items: center !important;
+        gap: 25px;
+    }
 }
