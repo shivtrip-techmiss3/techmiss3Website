@@ -1,59 +1,46 @@
 :root {
-    --tm-primary: #c1541f;
-    --tm-primary-dark: #983f16;
-    --tm-accent: #c1541f;
-    --tm-accent-light: #e07a3f;
-    --tm-ink: #211c19;
+    --saffron: #ff9933;
     --white: #ffffff;
-    --primary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --green: #138808;
+    --primary-font: 'Arial', sans-serif;
 }
 
 body {
     font-family: var(--primary-font);
-    background: #faf7f3;
+    background: var(--white);
     margin: 0;
     padding: 0;
-    color: var(--tm-ink);
+    color: #333;
 }
 
 h2, h3, h4 {
-    color: var(--tm-primary) !important;
+    color: var(--saffron) !important; /* All subheadings orange */
 }
 
 .btn, .custom-btn-black, .btn-primary {
-    background-color: var(--tm-accent) !important;
+    background-color: var(--green) !important; /* All buttons green */
     color: var(--white) !important;
-    border-radius: 999px;
-    padding: 12px 24px;
+    border-radius: 5px;
+    padding: 10px 20px;
     text-decoration: none;
-    border: none;
-    font-weight: 700;
-    transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .btn:hover, .custom-btn-black:hover, .btn-primary:hover {
-    background-color: var(--tm-accent-light) !important;
-    transform: translateY(-2px);
-}
-
-.service-detail-section i.text-black,
-.additional-showcase i.text-black {
-    color: var(--tm-primary) !important;
+    background-color: #0f5a05 !important; /* Slightly darker green on hover */
 }
 
 .idea-card i {
-    color: var(--tm-accent) !important;
-    font-size: 3.2em;
+    color: var(--saffron) !important; /* Icons orange */
+    font-size: 3.2em; /* slightly bigger icons */
 }
 
 .service-detail-section, .featured-solution-section, .ai-ideas-section {
-    padding: 60px 20px;
+    padding: 50px 20px;
 }
 
 .service-detail-section img, .featured-solution-section img {
     width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 18px 40px rgba(33, 28, 25, 0.12);
+    border-radius: 10px;
 }
 
 .ai-ideas-section .idea-card {
@@ -74,7 +61,7 @@ h2, h3, h4 {
 }
 
 .contact-section h2 {
-    color: var(--tm-primary) !important;
+    color: var(--saffron);
     margin-bottom: 20px;
 }
 
@@ -83,26 +70,28 @@ h2, h3, h4 {
     width: 100%;
     padding: 15px;
     margin: 10px 0;
-    border-radius: 10px;
+    border-radius: 5px;
     box-sizing: border-box;
-    border: 1px solid #ddd4e8;
-    font-family: inherit;
+    border: 1px solid #ccc;
 }
 
 .contact-section button {
-    background-color: var(--tm-accent) !important;
+    background-color: var(--green) !important;
     color: var(--white) !important;
     border: none;
     padding: 12px 25px;
-    border-radius: 999px;
+    border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
-    font-weight: 700;
 }
 
 .contact-section button:hover {
-    background-color: var(--tm-accent-light) !important;
+    background-color: #0f5a05 !important;
 }
+/* Social icons colors */
+.top-bar a.facebook { color: #3b5998; }   /* Facebook Blue */
+.top-bar a.instagram { color: #C13584; }  /* Instagram Pink */
+.top-bar a.whatsapp { color: #25D366; }   /* WhatsApp Green */
 
 /* Real Twitter Blue color */
 .top-bar a.twitter {
