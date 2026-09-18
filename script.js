@@ -1,45 +1,35 @@
-// Contact form -> EmailJS. Used by index.html and the three service pages.
-var TM_PUBLIC_KEY = "DoUP9lSL9aiQN2bKR";
-var TM_SERVICE_ID = "service_h6u79mw";
-var TM_TEMPLATE_ID = "template_1d0u42b";
-var TM_INBOX = "contact.trainhead@gmail.com";
-var TM_COOLDOWN_MS = 30000;
+// Slideshow logic
+let slideIndex = 1;
+let timer;
+showSlides(slideIndex);
 
-var tmSending = false;
-var tmLastSentAt = 0;
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
 
-(function () {
-    if (typeof emailjs !== 'undefined') emailjs.init(TM_PUBLIC_KEY);
-})();
-
-function tmStatus(form, message, ok) {
-    var el = document.getElementById('form-status');
-    if (!el && form) {
-        el = document.createElement('p');
-        el.id = 'form-status';
-        el.setAttribute('role', 'status');
-        el.setAttribute('aria-live', 'polite');
-        el.className = 'text-sm font-semibold text-center pt-1';
-        form.appendChild(el);
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("slide");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
     }
-    if (!el) return;
-    el.textContent = message || '';
-    el.style.color = ok ? '#16a34a' : '#dc2626';
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].classList.add("active");
+    dots[slideIndex - 1].className += " active";
+    timer = setTimeout(() => { showSlides(slideIndex += 1); }, 5000); // 5 seconds per slide
 }
 
-// Rate limits (429), provider outages (5xx) and dropped connections are worth one more try.
-// Configuration errors (400/404) are not: retrying would fail the same way.
-function tmIsRetryable(err) {
-    var s = err && typeof err.status === 'number' ? err.status : 0;
-    return s === 0 || s === 429 || s >= 500;
+function pauseSlides() {
+    clearTimeout(timer);
 }
 
-function tmSendWithRetry(params) {
-    return emailjs.send(TM_SERVICE_ID, TM_TEMPLATE_ID, params).catch(function (err) {
-        if (!tmIsRetryable(err)) throw err;
-        return new Promise(function (resolve) { setTimeout(resolve, 1500 + Math.random() * 1500); })
-            .then(function () { return emailjs.send(TM_SERVICE_ID, TM_TEMPLATE_ID, params); });
-    });
+function resumeSlides() {
+    timer = setTimeout(() => { showSlides(slideIndex += 1); }, 5000);
 }
 
 
