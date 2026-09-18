@@ -1,0 +1,26 @@
+# Tech Miss3
+
+> Tech Miss3 is an Udyam-registered IT solutions company that builds AI-based business automation, responsive websites, and mobile apps (Android/iOS) for small and medium businesses. It also builds and maintains its own product, PointScheduler.
+
+Tech Miss3 works as a digital business solution partner rather than a one-off vendor: every engagement includes a discovery call, a clear scope, timeline and quote agreed before work starts, design, development and QA, and post-launch support.
+
+## Services
+- AI Based Business Solutions — workflow automation, chatbots/virtual assistants, forecasting and analytics, document processing: https://techmiss3.com/ai-based-business-solutions.html
+- Website Development — custom, responsive, SEO-friendly websites, web applications, and e-commerce/CMS integrations: https://techmiss3.com/website-development.html
+- Mobile App Development — native Android/iOS and Flutter cross-platform apps, Play Store/App Store launch support: https://techmiss3.com/mobile-app-development.html
+
+## Products
+- PointScheduler — therapy centre management software built by Tech Miss3, covering scheduling, patient records, therapist rosters, session notes, packages and billing, across web and mobile: https://techmiss3.com/pointscheduler.html
+
+## Technologies
+AI/ML, Node.js, React, Flutter, Java, Android, Kotlin, Jenkins, Git, cloud deployment tooling.
+
+## Company facts
+- Udyam-registered MSME (India)
+- Free initial consultation, bookable directly through the website
+- Careers page: https://techmiss3.com/careers.html
+
+## Contact
+- Phone: +91 9380729681
+- Email: contact.trainhead@gmail.com
+- Website: https://techmiss3.com/
