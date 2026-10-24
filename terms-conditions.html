@@ -1,85 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms & Conditions - Tech Miss3</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>(function(){try{var t=localStorage.getItem('tm-theme-v2');if(t==='dark'){document.documentElement.classList.add('dark');}else{document.documentElement.classList.remove('dark');}}catch(e){document.documentElement.classList.remove('dark');}})();</script>
+  <title>Terms & Conditions | PointScheduler by Tech Miss3</title>
+  <meta name="description" content="Terms and Conditions for PointScheduler clinic management software and Tech Miss3 healthcare technology solutions.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Tech Miss3">
+  <link rel="canonical" href="https://techmiss3.com/terms-conditions.html">
+  <meta name="theme-color" content="#2563EB">
+
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&amp;display=block" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          primary: { DEFAULT: "#2563EB", hover: "#1d4ed8", light: "#EFF6FF" },
+          turquoise: { DEFAULT: "#0D9488", light: "#F0FDFA" },
+          accent: { orange: "#F97316" },
+          "bg-canvas": "rgb(var(--tm-bg-canvas) / <alpha-value>)",
+          "surface-white": "rgb(var(--tm-surface-white) / <alpha-value>)",
+          "on-surface": "rgb(var(--tm-on-surface) / <alpha-value>)",
+          "on-surface-variant": "rgb(var(--tm-on-surface-variant) / <alpha-value>)",
+          "text-muted": "rgb(var(--tm-text-muted) / <alpha-value>)"
+        },
+        spacing: { gutter: "1.5rem" },
+        fontFamily: { sans: ["Inter", "sans-serif"] }
+      }
+    }
+  };
+  </script>
+  <style>
+    body { margin: 0; overscroll-behavior: none; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24; vertical-align: middle; }
+    :root {
+      --tm-bg-canvas: 248 250 252;
+      --tm-surface-white: 255 255 255;
+      --tm-on-surface: 15 23 42;
+      --tm-on-surface-variant: 71 85 105;
+      --tm-text-muted: 100 116 139;
+    }
+    html.dark {
+      --tm-bg-canvas: 11 19 34;
+      --tm-surface-white: 19 29 49;
+      --tm-on-surface: 248 250 252;
+      --tm-on-surface-variant: 148 163 184;
+      --tm-text-muted: 100 116 139;
+    }
+    .theme-icon-to-light { display: none; }
+    html.dark .theme-icon-to-dark { display: none; }
+    html.dark .theme-icon-to-light { display: inline-block; }
+  </style>
 </head>
-<body>
+<body class="bg-bg-canvas text-on-surface font-sans antialiased overflow-x-hidden">
+<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:top-2 focus:left-2">Skip to main content</a>
 
-<div class="container" style="padding:40px; max-width:900px; margin:auto;">
-    <h1>Terms & Conditions</h1>
-    <p>Last Updated: <strong>November 2025</strong></p>
+<!-- HEADER -->
+<header class="fixed top-0 w-full z-50 shadow-[0_1px_8px_rgba(0,0,0,0.05)]">
+  <div class="h-[56px] bg-surface-white/95 backdrop-blur-xl border-b border-gray-100 dark:border-gray-800">
+    <div class="h-full max-w-[1080px] mx-auto px-4 sm:px-gutter flex items-center justify-between gap-3">
+      <a href="index.html" class="flex items-center gap-2.5 shrink-0">
+        <img src="img/logo.png" alt="Tech Miss3 logo" class="h-[26px] w-auto rounded-md object-contain shadow-sm shadow-blue-500/20">
+        <span class="text-[15px] font-extrabold tracking-tight text-on-surface">PointScheduler</span>
+        <span class="text-[10px] font-semibold text-slate-400 border-l border-slate-300 dark:border-slate-700 pl-2 hidden sm:inline">by Tech Miss3</span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-1">
+        <a href="index.html" class="text-xs font-semibold text-on-surface-variant hover:text-blue-600 rounded-full px-2.5 py-1.5 transition-colors">Home</a>
+        <a href="about.html" class="text-xs font-semibold text-on-surface-variant hover:text-blue-600 rounded-full px-2.5 py-1.5 transition-colors">About TechMiss3</a>
+        <a href="pointscheduler.html" class="text-xs font-semibold text-on-surface-variant hover:text-blue-600 rounded-full px-2.5 py-1.5 transition-colors">PointScheduler</a>
+        <a href="careers.html" class="text-xs font-semibold text-on-surface-variant hover:text-blue-600 rounded-full px-2.5 py-1.5 transition-colors">Careers</a>
+        <a href="faq.html" class="text-xs font-semibold text-on-surface-variant hover:text-blue-600 rounded-full px-2.5 py-1.5 transition-colors">FAQ</a>
+        <a href="index.html#contact" class="text-xs font-semibold text-on-surface-variant hover:text-blue-600 rounded-full px-2.5 py-1.5 transition-colors">Contact Us</a>
+      </nav>
+      <div class="flex items-center gap-1.5">
+        <button type="button" id="theme-toggle" class="w-8 h-8 flex items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 text-on-surface hover:text-blue-600 transition-colors cursor-pointer" aria-label="Switch to dark mode">
+          <span class="material-symbols-outlined text-[17px] theme-icon-to-dark" aria-hidden="true">dark_mode</span>
+          <span class="material-symbols-outlined text-[17px] theme-icon-to-light" aria-hidden="true">light_mode</span>
+        </button>
+        <a href="https://wa.me/919380729681?text=Hi%2C%20I%20want%20to%20schedule%20a%20demo." target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center justify-center text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white px-3.5 py-1.5 rounded-full shadow-[0_4px_14px_rgba(37,99,235,0.28)] transition-all">
+          <span>Book a Demo</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
 
-    <p>
-        Welcome to <strong>Tech Miss3</strong>. By accessing our website, using our services, or engaging with our 
-        digital solutions, you agree to the following Terms & Conditions.
-    </p>
+<main id="main-content" class="pt-[80px] pb-16">
+  <div class="max-w-[860px] mx-auto px-4 sm:px-gutter">
+    <div class="mb-8 space-y-2 border-b border-gray-200 dark:border-gray-800 pb-6">
+      <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-blue-50 dark:bg-blue-950/70 border border-blue-200 dark:border-blue-800 text-blue-700 dark:text-blue-300 text-[10.5px] font-extrabold uppercase tracking-wider">
+        <span>Terms of Service</span>
+      </div>
+      <h1 class="text-2xl sm:text-3xl font-extrabold text-on-surface tracking-tight">Terms and Conditions</h1>
+      <p class="text-xs sm:text-sm text-on-surface-variant">Last Updated: <strong>January 2026</strong> &bull; Effective for PointScheduler and Tech Miss3 Services</p>
+    </div>
 
-    <h2>1. Acceptance of Terms</h2>
-    <p>
-        By using our website or services, you acknowledge that you have read and agree to these Terms.
-        If you do not agree, please discontinue use immediately.
-    </p>
+    <div class="space-y-6 text-xs sm:text-[13.5px] leading-relaxed text-slate-700 dark:text-slate-300">
+      <section class="space-y-2">
+        <h2 class="text-base sm:text-lg font-bold text-on-surface">1. Acceptance of Terms</h2>
+        <p>By accessing or using <strong>PointScheduler</strong> (web application, clinician mobile applications, and guardian interfaces) or engaging services provided by <strong>Tech Miss3</strong>, you agree to comply with and be bound by these Terms and Conditions. If you represent a clinic, child development centre, hospital, or enterprise, you warrant that you possess the requisite authority to bind your organization to these Terms.</p>
+      </section>
 
-    <h2>2. Use of Services</h2>
-    <p>You agree not to use our services for any unlawful or harmful activities.</p>
-    <p>You must not:</p>
-    <ul>
-        <li>Attempt to hack, modify, or disrupt the website</li>
-        <li>Upload malicious scripts or harmful data</li>
-        <li>Violate intellectual property rights of Tech Miss3 or third parties</li>
-    </ul>
+      <section class="space-y-2">
+        <h2 class="text-base sm:text-lg font-bold text-on-surface">2. Description of Platform &amp; Services</h2>
+        <p>PointScheduler provides healthcare scheduling, multi-specialty session management (Occupational Therapy, Speech Therapy, Special Education, Applied Behavior Analysis, Physiotherapy), room allocation, standardized billing, SOAP therapy notes, and role-based operational oversight for pediatric clinics and rehabilitation centres.</p>
+      </section>
 
-    <h2>3. Intellectual Property</h2>
-    <p>
-        All content, including logos, designs, code, text, and graphics, are owned by Tech Miss3 unless stated otherwise.
-        Unauthorized use, reproduction, or distribution is strictly prohibited.
-    </p>
+      <section class="space-y-2">
+        <h2 class="text-base sm:text-lg font-bold text-on-surface">3. Trial Subscriptions &amp; Commercial Terms</h2>
+        <p><strong>3.1 Introductory Trial:</strong> PointScheduler may offer an introductory evaluation trial (such as a 7-day trial at ₹99). The trial allows access to scheduling and management features to evaluate clinical workflow fit.</p>
+        <p><strong>3.2 Commercial Subscriptions:</strong> Ongoing access is provided via monthly or annual subscription agreements. Invoices are issued with GST compliance as applicable under Indian commercial regulations.</p>
+        <p><strong>3.3 Cancellation:</strong> Clinics may cancel subscriptions at the end of their active billing term with no punitive exit fees. Data export assistance will be provided as outlined in Section 6.</p>
+      </section>
 
-    <h2>4. Project & Service Terms</h2>
-    <p>
-        Project timelines, costs, deliverables, and policies are communicated directly to clients based on the nature of the service.
-    </p>
-    <ul>
-        <li>Advance payments are non-refundable unless agreed</li>
-        <li>Final delivery is provided after full payment</li>
-        <li>Revisions are as per the agreed project plan</li>
-    </ul>
+      <section class="space-y-2">
+        <h2 class="text-base sm:text-lg font-bold text-on-surface">4. Clinic Responsibilities &amp; Role-Based Access</h2>
+        <p>Subscribing clinics are responsible for:</p>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>Assigning appropriate Role-Based Access Control (RBAC) tiers to their clinicians, therapists, and front-desk personnel.</li>
+          <li>Maintaining confidentiality of credentials and two-factor authentication tokens.</li>
+          <li>Ensuring necessary patient or guardian consent is obtained for session documentation and pediatric clinical records.</li>
+        </ul>
+      </section>
 
-    <h2>5. Limitation of Liability</h2>
-    <p>
-        Tech Miss3 is not liable for any losses caused by:
-    </p>
-    <ul>
-        <li>Incorrect use of our website or services</li>
-        <li>Third-party technology failures</li>
-        <li>Delays due to external factors (hosting, server issues, etc.)</li>
-    </ul>
+      <section class="space-y-2">
+        <h2 class="text-base sm:text-lg font-bold text-on-surface">5. Clinical Practice &amp; Medical Disclaimer</h2>
+        <p>PointScheduler is an administrative, operations, scheduling, and billing management software platform. It is not an automated medical diagnostic tool or emergency dispatch system. Medical, therapeutic, and diagnostic decisions remain exclusively the responsibility of certified practitioners and clinic leadership.</p>
+      </section>
 
-    <h2>6. Third-Party Services</h2>
-    <p>
-        Some services may use third-party tools or integrations. We are not responsible for third-party performance or actions.
-    </p>
+      <section class="space-y-2">
+        <h2 class="text-base sm:text-lg font-bold text-on-surface">6. Data Ownership &amp; Portability</h2>
+        <p>Subscribing clinics retain full legal ownership over all clinical records, therapy goals, patient master records, and financial books entered into PointScheduler. Tech Miss3 acts solely as a data processor. Clinics may request an export of their database in structured spreadsheet or JSON format at any time during active service or within 30 days of subscription termination.</p>
+      </section>
 
-    <h2>7. Termination</h2>
-    <p>
-        We reserve the right to restrict access to our website or services if any terms are violated.
-    </p>
+      <section class="space-y-2">
+        <h2 class="text-base sm:text-lg font-bold text-on-surface">7. Intellectual Property</h2>
+        <p>PointScheduler, the PointScheduler brand, system architecture, database schemas, interfaces, source code, and design tokens remain the intellectual property of Tech Miss3. Clinics are granted a revocable, non-exclusive license to use the software during active subscription periods.</p>
+      </section>
 
-    <h2>8. Changes to Terms</h2>
-    <p>
-        We may update these Terms & Conditions at any time. Updated versions will be posted on this page.
-    </p>
+      <section class="space-y-2">
+        <h2 class="text-base sm:text-lg font-bold text-on-surface">8. Governing Law &amp; Dispute Resolution</h2>
+        <p>These Terms shall be governed by and construed in accordance with the laws of India. Any disputes arising under or relating to these terms shall be subject to the exclusive jurisdiction of the competent courts in India.</p>
+      </section>
 
-    <h2>9. Contact Us</h2>
-    <p>
-        For questions regarding these Terms, contact us at:<br>
-        <strong>Email:</strong> contact.techmiss3@gmail.com<br>
-        <strong>Phone:</strong> +91 9380729681
-    </p>
-</div>
+      <section class="space-y-2">
+        <h2 class="text-base sm:text-lg font-bold text-on-surface">9. Official Contact Details</h2>
+        <p>For questions or operational notices regarding these Terms, contact our legal and customer operations office:</p>
+        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 space-y-1 text-xs sm:text-sm">
+          <p><strong>Organization:</strong> Tech Miss3 (PointScheduler Healthcare Operations)</p>
+          <p><strong>Email:</strong> <a href="mailto:contact@techmiss3.com" class="text-blue-600 dark:text-blue-400 font-semibold hover:underline">contact@techmiss3.com</a></p>
+          <p><strong>Direct Helpline:</strong> <a href="tel:+919380729681" class="text-blue-600 dark:text-blue-400 font-semibold hover:underline">+91 9380729681</a> &bull; <a href="tel:+917017079892" class="text-blue-600 dark:text-blue-400 font-semibold hover:underline">+91 7017079892</a></p>
+          <p><strong>Official Address:</strong> House 49, Sizzle White Willow, 51/1, Bendiganahalli Village, Bidarahalli Hobli, Bengaluru, Karnataka - 560049, India</p>
+          <p><strong>Official WhatsApp:</strong> <a href="https://wa.me/919380729681?text=Hi%2C%20I%20have%20a%20terms%20query%20regarding%20PointScheduler." target="_blank" rel="noopener noreferrer" class="text-emerald-600 font-semibold hover:underline">Connect on WhatsApp</a></p>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>
 
+<!-- FOOTER -->
+<footer class="w-full bg-zinc-900 text-zinc-300 py-8 border-t border-zinc-800">
+  <div class="max-w-[1080px] mx-auto px-4 sm:px-gutter">
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-400">
+      <div class="flex items-center gap-2">
+        <img src="img/logo.png" alt="Tech Miss3 logo" class="h-[22px] w-auto rounded object-contain">
+        <span class="font-bold text-white">PointScheduler</span>
+        <span>by Tech Miss3</span>
+      </div>
+      <div class="flex flex-wrap items-center gap-4 text-xs">
+        <a href="index.html" class="hover:text-blue-400">Home</a>
+        <a href="pointscheduler.html" class="hover:text-blue-400">Platform</a>
+        <a href="privacy-policy.html" class="hover:text-blue-400">Privacy Policy</a>
+        <a href="terms-conditions.html" class="text-white font-semibold hover:text-blue-400">Terms &amp; Conditions</a>
+        <a href="cancellation-policy.html" class="hover:text-blue-400">Refund &amp; Cancellation Policy</a>
+        <a href="faq.html" class="hover:text-blue-400">FAQ</a>
+        <a href="mailto:contact@techmiss3.com" class="hover:text-blue-400">contact@techmiss3.com</a>
+      </div>
+    </div>
+    <div class="pt-4 mt-4 border-t border-zinc-800/80 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-zinc-500">
+      <p>&copy; 2026 Tech Miss3 | PointScheduler. All Rights Reserved.</p>
+      <span>Udyam-Registered MSME &bull; Specialized Healthcare Operations Software</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Theme toggle
+  (function () {
+    var root = document.documentElement;
+    var btn = document.getElementById('theme-toggle');
+    function sync() {
+      var dark = root.classList.contains('dark');
+      if (btn) btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+    }
+    sync();
+    if (btn) {
+      btn.addEventListener('click', function () {
+        var isDark = root.classList.toggle('dark');
+        try { localStorage.setItem('tm-theme-v2', isDark ? 'dark' : 'light'); } catch (e) {}
+        sync();
+      });
+    }
+  })();
+</script>
 </body>
 </html>
