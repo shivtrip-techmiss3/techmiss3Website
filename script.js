@@ -2,7 +2,7 @@
 var TM_PUBLIC_KEY = "DoUP9lSL9aiQN2bKR";
 var TM_SERVICE_ID = "service_h6u79mw";
 var TM_TEMPLATE_ID = "template_1d0u42b";
-var TM_INBOX = "contact.trainhead@gmail.com";
+var TM_INBOX = "contact@techmiss3.com";
 var TM_COOLDOWN_MS = 30000;
 
 var tmSending = false;

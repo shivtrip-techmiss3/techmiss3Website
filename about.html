@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script>(function(){var d=false;try{var t=localStorage.getItem('tm-theme');d=t==='dark';}catch(e){}if(d)document.documentElement.classList.add('dark');})();</script>
+<script>(function(){try{var t=localStorage.getItem('tm-theme-v2');if(t==='dark'){document.documentElement.classList.add('dark');}else{document.documentElement.classList.remove('dark');}}catch(e){document.documentElement.classList.remove('dark');}})();</script>
 
     <title>About Tech Miss3 | Healthcare Technology &amp; Digital Solutions Partner</title>
     <meta name="description" content="Tech Miss3 is an Udyam-registered healthcare technology and IT solutions partner. Creators of PointScheduler, delivering AI automation, web, and mobile solutions.">
@@ -474,8 +474,8 @@ html.dark .info-modal{background:rgba(20,30,50,.96);border:1px solid rgba(255,25
           </div>
           <div class="space-y-2 text-sm text-on-surface-variant">
             <p class="flex items-center gap-2"><span class="material-symbols-outlined text-blue-600 text-[18px]">call</span><a href="tel:+919380729681" class="hover:text-blue-600">+91 9380729681</a></p>
-            <p class="flex items-center gap-2"><span class="material-symbols-outlined text-blue-600 text-[18px]">mail</span><a href="mailto:contact.trainhead@gmail.com" class="hover:text-blue-600">contact.trainhead@gmail.com</a></p>
-            <p class="flex items-center gap-2"><span class="material-symbols-outlined text-blue-600 text-[18px]">chat</span><a href="whatsapp://send?phone=919380729681" class="hover:text-blue-600">Chat on WhatsApp</a></p>
+            <p class="flex items-center gap-2"><span class="material-symbols-outlined text-blue-600 text-[18px]">mail</span><a href="mailto:contact@techmiss3.com" class="hover:text-blue-600">contact@techmiss3.com</a></p>
+            <p class="flex items-center gap-2"><span class="material-symbols-outlined text-blue-600 text-[18px]">chat</span><a href="https://wa.me/919380729681" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600">Chat on WhatsApp</a></p>
           </div>
         </div>
 
@@ -530,7 +530,7 @@ html.dark .info-modal{background:rgba(20,30,50,.96);border:1px solid rgba(255,25
           <a href="https://twitter.com/techmiss3" target="_blank" rel="noopener" aria-label="X (Twitter)" class="w-9 h-9 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-blue-600 transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-7.2l-5.6-6.9L4 22H1l8.1-9.3L1 2h7.4l5.1 6.3L18.9 2Zm-1.3 18h1.8L7.5 4H5.6l12 16Z"/></svg>
           </a>
-          <a href="whatsapp://send?phone=919380729681" target="_blank" rel="noopener" aria-label="WhatsApp" class="w-9 h-9 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-blue-600 transition-colors">
+          <a href="https://wa.me/919380729681" target="_blank" rel="noopener" aria-label="WhatsApp" class="w-9 h-9 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-blue-600 transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.5 3.5A11 11 0 0 0 2.2 16.9L1 22l5.2-1.4A11 11 0 1 0 20.5 3.5Zm-8.5 17a9 9 0 0 1-4.6-1.3l-.3-.2-3.1.8.8-3-.2-.3A9 9 0 1 1 12 20.5Zm5-6.6c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6l.4-.5c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.3s1 2.7 1.1 2.9c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.5-.3Z"/></svg>
           </a>
         </div>
@@ -539,11 +539,13 @@ html.dark .info-modal{background:rgba(20,30,50,.96);border:1px solid rgba(255,25
         <h5 class="text-white font-semibold">Quick Links</h5>
         <ul class="text-sm text-zinc-400 space-y-2">
           <li><a href="index.html" class="hover:text-blue-400 transition-colors">Home</a></li>
-          <li><a href="about.html" class="hover:text-blue-400 transition-colors">About TechMiss3</a></li>
-          <li><a href="pointscheduler.html" class="hover:text-blue-400 transition-colors">PointScheduler</a></li>
+          <li><a href="pointscheduler.html" class="hover:text-blue-400 transition-colors">PointScheduler Platform</a></li>
           <li><a href="index.html#parent-app" class="hover:text-blue-400 transition-colors">Parent App</a></li>
+          <li><a href="about.html" class="hover:text-blue-400 transition-colors">About TechMiss3</a></li>
           <li><a href="careers.html" class="hover:text-blue-400 transition-colors">Careers</a></li>
           <li><a href="faq.html" class="hover:text-blue-400 transition-colors">FAQ</a></li>
+          <li><a href="privacy-policy.html" class="hover:text-blue-400 transition-colors">Privacy Policy</a></li>
+          <li><a href="terms-conditions.html" class="hover:text-blue-400 transition-colors">Terms &amp; Conditions</a></li>
         </ul>
       </div>
       <div class="space-y-3">
@@ -558,14 +560,21 @@ html.dark .info-modal{background:rgba(20,30,50,.96);border:1px solid rgba(255,25
         <h5 class="text-white font-semibold">Contact</h5>
         <ul class="text-sm text-zinc-400 space-y-2">
           <li><a href="tel:+919380729681" class="hover:text-blue-400 transition-colors">+91 9380729681</a></li>
-          <li><a href="mailto:contact.trainhead@gmail.com" class="hover:text-blue-400 transition-colors">contact.trainhead@gmail.com</a></li>
-          <li><a href="https://calendar.app.google/uZr1w45ioXHAYqoV6" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors">Book a Demo</a></li>
+          <li><a href="mailto:contact@techmiss3.com" class="hover:text-blue-400 transition-colors">contact@techmiss3.com</a></li>
+          <li><a href="https://wa.me/919380729681?text=Hi%2C%20I%20want%20to%20schedule%20a%20demo." target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors">Schedule Demo (WhatsApp)</a></li>
+          <li><a href="https://calendar.app.google/uZr1w45ioXHAYqoV6" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors">Google Calendar Scheduler</a></li>
         </ul>
       </div>
     </div>
     <div class="pt-8 border-t border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-zinc-500">
-      <p>&copy; 2025 Tech Miss3 | All Rights Reserved</p>
-      <span>Udyam-Registered MSME</span>
+      <p>&copy; 2026 Tech Miss3 | All Rights Reserved</p>
+      <div class="flex items-center gap-3 text-xs text-zinc-400">
+        <a href="privacy-policy.html" class="hover:text-blue-400 transition-colors">Privacy Policy</a>
+        <span class="text-zinc-600">&bull;</span>
+        <a href="terms-conditions.html" class="hover:text-blue-400 transition-colors">Terms &amp; Conditions</a>
+        <span class="text-zinc-600">&bull;</span>
+        <span>Udyam-Registered MSME</span>
+      </div>
     </div>
   </div>
 </footer>
@@ -665,7 +674,7 @@ html.dark .info-modal{background:rgba(20,30,50,.96);border:1px solid rgba(255,25
     var btn = document.getElementById('theme-toggle');
     var meta = document.querySelector('meta[name="theme-color"]');
     var lightMeta = meta ? meta.getAttribute('content') : null;
-    function stored() { try { return localStorage.getItem('tm-theme'); } catch (e) { return null; } }
+    function stored() { try { return localStorage.getItem('tm-theme-v2'); } catch (e) { return null; } }
     function sync() {
       var dark = root.classList.contains('dark');
       if (btn) {
@@ -679,7 +688,7 @@ html.dark .info-modal{background:rgba(20,30,50,.96);border:1px solid rgba(255,25
     function run() { root.classList.toggle('dark', wantDark); sync(); }
     function apply(dark, persist) {
       wantDark = dark;
-      if (persist) { try { localStorage.setItem('tm-theme', dark ? 'dark' : 'light'); } catch (e) {} }
+      if (persist) { try { localStorage.setItem('tm-theme-v2', dark ? 'dark' : 'light'); } catch (e) {} }
       if (transitioning) { run(); return; }
       if (root.classList.contains('dark') === dark) { sync(); return; }
       var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -692,14 +701,8 @@ html.dark .info-modal{background:rgba(20,30,50,.96);border:1px solid rgba(255,25
     }
     sync();
     if (btn) btn.addEventListener('click', function () { apply(!wantDark, true); });
-    if (window.matchMedia) {
-      var mq = window.matchMedia('(prefers-color-scheme: dark)');
-      var onSystem = function (e) { if (!stored()) apply(e.matches, false); };
-      if (mq.addEventListener) mq.addEventListener('change', onSystem);
-      else if (mq.addListener) mq.addListener(onSystem);
-    }
     window.addEventListener('storage', function (e) {
-      if (e.key === 'tm-theme' && e.newValue) apply(e.newValue === 'dark', false);
+      if (e.key === 'tm-theme-v2' && e.newValue) apply(e.newValue === 'dark', false);
     });
     window.addEventListener('pageshow', function (e) {
       if (!e.persisted) return;
