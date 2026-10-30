@@ -11,13 +11,19 @@ Tech Miss3 works as a digital business solution partner rather than a one-off ve
 
 ## Products
 - PointScheduler — therapy centre management software built by Tech Miss3, covering scheduling, patient records, therapist rosters, session notes, packages and billing, across web and mobile: https://techmiss3.com/pointscheduler.html
+- Introductory PointScheduler trial: ₹99 for 15 days.
+- The website describes mobile app access for the therapy team and shows a mobile therapist-app preview. The separate guardian-facing PointScheduler Parent App is marked Coming Soon/in development; its described features are not presented as currently available.
 
 ## Technologies
 AI/ML, Node.js, React, Flutter, Java, Android, Kotlin, Jenkins, Git, cloud deployment tooling.
 
 ## Company facts
 - Udyam-registered MSME (India)
-- Free initial consultation, bookable directly through the website
+- Free initial consultation, described as a discovery call. The About page's "Book a Consultation" link opens the Google Calendar scheduler: https://calendar.app.google/uZr1w45ioXHAYqoV6
+- The FAQ identifies this scheduler as a 30-minute PointScheduler demo scheduler. The site does not clarify whether the calendar also books general discovery calls.
+- General inquiries can be sent through the About page contact form: https://techmiss3.com/about.html#contact
+- About Tech Miss3: https://techmiss3.com/about.html
+- Product and company FAQ: https://techmiss3.com/faq.html
 - Careers page: https://techmiss3.com/careers.html
 
 ## Contact
