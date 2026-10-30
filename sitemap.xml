@@ -40,4 +40,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://techmiss3.com/privacy-policy.html</loc>
+  </url>
+  <url>
+    <loc>https://techmiss3.com/terms-conditions.html</loc>
+  </url>
+  <url>
+    <loc>https://techmiss3.com/cancellation-policy.html</loc>
+  </url>
 </urlset>
