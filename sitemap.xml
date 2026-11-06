@@ -2,51 +2,102 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://techmiss3.com/</loc>
-    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://techmiss3.com/about.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://techmiss3.com/pointscheduler.html</loc>
-    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://techmiss3.com/ai-based-business-solutions.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://techmiss3.com/pricing.html</loc>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://techmiss3.com/website-development.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://techmiss3.com/child-development-centre-software.html</loc>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://techmiss3.com/mobile-app-development.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://techmiss3.com/occupational-therapy-software.html</loc>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://techmiss3.com/careers.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://techmiss3.com/speech-therapy-software.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://techmiss3.com/autism-aba-therapy-software.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://techmiss3.com/special-education-software.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://techmiss3.com/physiotherapy-clinic-software.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://techmiss3.com/psychology-counselling-software.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://techmiss3.com/therapy-appointment-scheduling.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://techmiss3.com/therapy-billing-software.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://techmiss3.com/therapy-wallet-payments.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://techmiss3.com/therapy-goals-progress-tracking.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://techmiss3.com/therapy-centre-hr.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://techmiss3.com/therapy-centre-expenses.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://techmiss3.com/parent-app.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://techmiss3.com/data-protection.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://techmiss3.com/pointscheduler-vs-spreadsheets.html</loc>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://techmiss3.com/faq.html</loc>
-    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://techmiss3.com/about.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://techmiss3.com/careers.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://techmiss3.com/privacy-policy.html</loc>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://techmiss3.com/terms-conditions.html</loc>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://techmiss3.com/cancellation-policy.html</loc>
+    <priority>0.3</priority>
   </url>
 </urlset>
