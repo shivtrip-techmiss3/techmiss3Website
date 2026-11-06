@@ -1,11 +1,10 @@
 # PointScheduler by Tech Miss3
 
-> PointScheduler is child therapy centre software for Child Development Centres (CDCs) and therapy centres in India. It runs appointments, billing, family wallets, goals and progress (lesson plans and assessments), HR (attendance, leave and salary) and expenses in one app, on Android, iOS and web, with an admin panel for reports. It is built by Tech Miss3, a Bengaluru-based, Udyam-registered HealthTech company.
+> PointScheduler is child therapy centre software for Child Development Centres (CDCs) and therapy centres in India. It runs appointments, billing, prepaid wallets, goals and progress (lesson plans and assessments), HR (attendance, leave and salary) and expenses in one app, on Android, iOS and web, with an admin panel for reports. It is built by Tech Miss3, a Bengaluru-based, Udyam-registered HealthTech company.
 
 PointScheduler is therapy centre management software: scheduling software, billing software, progress-tracking software and staff HR software for centres that treat children.
 
 ## Specialisations
-- Child Development Centres (multi-therapy): https://techmiss3.com/specialisations/child-development-centre-software.html
 - Occupational therapy, sensory integration, ADL: https://techmiss3.com/specialisations/occupational-therapy-software.html
 - Speech and language therapy: https://techmiss3.com/specialisations/speech-therapy-software.html
 - Autism, ABA and behaviour therapy: https://techmiss3.com/specialisations/autism-aba-therapy-software.html
@@ -15,24 +14,23 @@ PointScheduler is therapy centre management software: scheduling software, billi
 - 20 specialisations are built in, and centres can add their own.
 
 ## Features
-- Appointments: single and recurring sessions (daily, weekly, monthly, up to 365), group sessions, consultations for walk-ins, assessment visits; blocks double-booking of a therapist or child and flags times outside working hours; free cancellations per month then a cancellation fee: https://techmiss3.com/features/therapy-appointment-scheduling.html
+- Appointments: single and recurring sessions (daily, weekly or monthly), group sessions, consultations for walk-ins, assessment visits; blocks double booking of a therapist or child and blocks times outside working hours; free cancellations per month then a cancellation fee: https://techmiss3.com/features/therapy-appointment-scheduling.html
 - Billing: per-session fees (one fee or per therapy), packages, group, consultation, assessment, cancellation and no-show fees; monthly, consultation, assessment, package, package payment and insurance bills with the centre's logo, signature, payment QR and invoice numbering: https://techmiss3.com/features/therapy-billing-software.html
-- Wallet & Finances: prepaid family wallets deducted per completed session, top-ups with receipts, low-balance alerts, controlled dues with an Allow Dues report: https://techmiss3.com/features/therapy-wallet-payments.html
+- Wallet & Finances: a prepaid wallet for each child, deducted per completed session, top-ups with receipts, low-balance alerts, controlled dues listed in one report: https://techmiss3.com/features/therapy-wallet-payments.html
 - Goals & Progress: lesson plans with goals by area and sub-domain, durations, statuses, home activities and senior review; assessment visits and scored standard assessments: https://techmiss3.com/features/therapy-goals-progress-tracking.html
-- HR (HIRA): staff profiles, attendance by QR, geofence or face recognition, leave, holidays and monthly salary: https://techmiss3.com/features/therapy-centre-hr.html
+- HR (HIRA): staff profiles, attendance by QR code, location or face recognition, leave, holidays and monthly salary: https://techmiss3.com/features/therapy-centre-hr.html
 - Expenses: categories, bill photos, who paid, reimbursements: https://techmiss3.com/features/therapy-centre-expenses.html
-- WhatsApp updates to parents from the centre's own number on Growth and Enterprise plans
+- WhatsApp updates to parents from the centre's own number
 - Parent App: in development: https://techmiss3.com/parent-app.html
-- Not available today: room or equipment scheduling, online payment gateway
 
 ## Plans and pricing
 - 15-day trial: ₹99, including setup, an onboarding call and WhatsApp support: https://techmiss3.com/pricing.html
-- Plans after the trial: Solo (1 admin, 1 therapist), Growth (up to 3 admins, 10 therapists, WhatsApp), Enterprise (up to 50 admins, 100 therapists, WhatsApp); monthly or annual, prices on request; nothing charged automatically
+- Plans after the trial: Solo, Growth and Enterprise, monthly or annual, prices on request
 
 ## Data protection
-- Every record carries the organisation and centre ID and every request is filtered by them
-- Role-based access with seven roles plus custom roles; therapists never see money screens
-- Passwords stored as bcrypt hashes; HTTPS; hosted on Railway; daily backups
+- Every record is tied to the centre and kept apart from other centres
+- Role-based access for every team member plus custom roles; therapists never see money screens
+- Passwords never stored as plain text; consent recorded with the centre's own form; data backed up
 - Details: https://techmiss3.com/data-protection.html
 
 ## Other pages
