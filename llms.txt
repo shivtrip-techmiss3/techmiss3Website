@@ -5,22 +5,22 @@
 PointScheduler is therapy centre management software: scheduling software, billing software, progress-tracking software and staff HR software for centres that treat children.
 
 ## Specialisations
-- Child Development Centres (multi-therapy): https://techmiss3.com/child-development-centre-software.html
-- Occupational therapy, sensory integration, ADL: https://techmiss3.com/occupational-therapy-software.html
-- Speech and language therapy: https://techmiss3.com/speech-therapy-software.html
-- Autism, ABA and behaviour therapy: https://techmiss3.com/autism-aba-therapy-software.html
-- Special education: https://techmiss3.com/special-education-software.html
-- Physiotherapy: https://techmiss3.com/physiotherapy-clinic-software.html
-- Psychology and counselling (clinical psychology, CBT, psychotherapy, play therapy): https://techmiss3.com/psychology-counselling-software.html
+- Child Development Centres (multi-therapy): https://techmiss3.com/specialisations/child-development-centre-software.html
+- Occupational therapy, sensory integration, ADL: https://techmiss3.com/specialisations/occupational-therapy-software.html
+- Speech and language therapy: https://techmiss3.com/specialisations/speech-therapy-software.html
+- Autism, ABA and behaviour therapy: https://techmiss3.com/specialisations/autism-aba-therapy-software.html
+- Special education: https://techmiss3.com/specialisations/special-education-software.html
+- Physiotherapy: https://techmiss3.com/specialisations/physiotherapy-clinic-software.html
+- Psychology and counselling (clinical psychology, CBT, psychotherapy, play therapy): https://techmiss3.com/specialisations/psychology-counselling-software.html
 - 20 specialisations are built in, and centres can add their own.
 
 ## Features
-- Appointments: single and recurring sessions (daily, weekly, monthly, up to 365), group sessions, consultations for walk-ins, assessment visits; blocks double-booking of a therapist or child and flags times outside working hours; free cancellations per month then a cancellation fee: https://techmiss3.com/therapy-appointment-scheduling.html
-- Billing: per-session fees (one fee or per therapy), packages, group, consultation, assessment, cancellation and no-show fees; monthly, consultation, assessment, package, package payment and insurance bills with the centre's logo, signature, payment QR and invoice numbering: https://techmiss3.com/therapy-billing-software.html
-- Wallet & Finances: prepaid family wallets deducted per completed session, top-ups with receipts, low-balance alerts, controlled dues with an Allow Dues report: https://techmiss3.com/therapy-wallet-payments.html
-- Goals & Progress: lesson plans with goals by area and sub-domain, durations, statuses, home activities and senior review; assessment visits and scored standard assessments: https://techmiss3.com/therapy-goals-progress-tracking.html
-- HR (HIRA): staff profiles, attendance by QR, geofence or face recognition, leave, holidays and monthly salary: https://techmiss3.com/therapy-centre-hr.html
-- Expenses: categories, bill photos, who paid, reimbursements: https://techmiss3.com/therapy-centre-expenses.html
+- Appointments: single and recurring sessions (daily, weekly, monthly, up to 365), group sessions, consultations for walk-ins, assessment visits; blocks double-booking of a therapist or child and flags times outside working hours; free cancellations per month then a cancellation fee: https://techmiss3.com/features/therapy-appointment-scheduling.html
+- Billing: per-session fees (one fee or per therapy), packages, group, consultation, assessment, cancellation and no-show fees; monthly, consultation, assessment, package, package payment and insurance bills with the centre's logo, signature, payment QR and invoice numbering: https://techmiss3.com/features/therapy-billing-software.html
+- Wallet & Finances: prepaid family wallets deducted per completed session, top-ups with receipts, low-balance alerts, controlled dues with an Allow Dues report: https://techmiss3.com/features/therapy-wallet-payments.html
+- Goals & Progress: lesson plans with goals by area and sub-domain, durations, statuses, home activities and senior review; assessment visits and scored standard assessments: https://techmiss3.com/features/therapy-goals-progress-tracking.html
+- HR (HIRA): staff profiles, attendance by QR, geofence or face recognition, leave, holidays and monthly salary: https://techmiss3.com/features/therapy-centre-hr.html
+- Expenses: categories, bill photos, who paid, reimbursements: https://techmiss3.com/features/therapy-centre-expenses.html
 - WhatsApp updates to parents from the centre's own number on Growth and Enterprise plans
 - Parent App: in development: https://techmiss3.com/parent-app.html
 - Not available today: room or equipment scheduling, online payment gateway
