@@ -804,12 +804,14 @@ html.dark div.from-surface-orange-soft\/60{--tw-gradient-from:#33271f var(--tw-g
         <span>PointScheduler &bull; Product walkthrough</span>
       </div>
     </div>
-    <!-- Wide gradient frame from md up with the 9:16 Short centred in it; on phones the frame is the Short itself. -->
-    <div class="relative w-full max-w-[360px] md:max-w-none mx-auto aspect-[9/16] md:aspect-video rounded-3xl overflow-hidden bg-gradient-to-br from-[#0b1730] via-[#13275a] to-[#0b1730] shadow-[0_25px_60px_-15px_rgba(15,23,42,0.35)] ring-1 ring-slate-900/10 dark:ring-white/10">
-      <div class="relative h-full aspect-[9/16] mx-auto bg-black">
+    <!-- Wide gradient frame from md up with the 4:5 video centred in it; on phones the frame is the video itself.
+         oar2.jpg is YouTube's full-res 1080x1350 frame (hqdefault is a blurry, letterboxed 480x360).
+         referrerpolicy is required: YouTube refuses embeds without a Referer (Error 153). -->
+    <div class="relative w-full max-w-[420px] md:max-w-none mx-auto aspect-[4/5] md:aspect-video rounded-3xl overflow-hidden bg-gradient-to-br from-[#0b1730] via-[#13275a] to-[#0b1730] shadow-[0_25px_60px_-15px_rgba(15,23,42,0.35)] ring-1 ring-slate-900/10 dark:ring-white/10">
+      <div class="relative h-full aspect-[4/5] mx-auto bg-black">
         <button type="button" class="group absolute inset-0 w-full h-full cursor-pointer" aria-label="Play PointScheduler product walkthrough video"
-          onclick="this.outerHTML='<iframe class=&quot;absolute inset-0 w-full h-full&quot; src=&quot;https://www.youtube-nocookie.com/embed/ePoaAw-4YmY?autoplay=1&amp;rel=0&amp;playsinline=1&quot; title=&quot;PointScheduler product walkthrough&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen></iframe>'">
-          <img src="https://i.ytimg.com/vi/ePoaAw-4YmY/hqdefault.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+          onclick="this.outerHTML='<iframe class=&quot;absolute inset-0 w-full h-full&quot; src=&quot;https://www.youtube-nocookie.com/embed/ePoaAw-4YmY?autoplay=1&amp;rel=0&amp;playsinline=1&quot; title=&quot;PointScheduler product walkthrough&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen></iframe>'">
+          <img src="https://i.ytimg.com/vi/ePoaAw-4YmY/oar2.jpg" alt="" loading="lazy" width="1080" height="1350" class="absolute inset-0 w-full h-full object-cover">
           <span class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
             <span class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-red-600 group-hover:bg-red-500 group-hover:scale-110 transition-all flex items-center justify-center shadow-xl">
               <span class="material-symbols-outlined text-white text-[40px] sm:text-[48px]" aria-hidden="true">play_arrow</span>
