@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>(function(){try{var t=localStorage.getItem('tm-theme-v2');if(t==='dark'){document.documentElement.classList.add('dark');}else{document.documentElement.classList.remove('dark');}}catch(e){document.documentElement.classList.remove('dark');}})();</script>
 
-    <title>About Tech Miss3 | Healthcare Technology &amp; Digital Solutions Partner</title>
-    <meta name="description" content="Tech Miss3 is an Udyam-registered healthcare technology and IT solutions partner. Creators of PointScheduler, delivering AI automation, web, and mobile solutions.">
-    <meta name="keywords" content="Tech Miss3, About Tech Miss3, PointScheduler, Healthcare software India, CDC software, AI business solutions, website development, mobile app development, Udyam registered IT company">
+    <title>About Tech Miss3 | HealthTech Company Behind PointScheduler</title>
+    <meta name="description" content="Tech Miss3 is a Udyam-registered HealthTech company in Bengaluru and the creator of PointScheduler, child therapy centre software.">
+    <meta name="keywords" content="Tech Miss3, About Tech Miss3, PointScheduler, Healthcare software India, CDC software, therapy centre software, HealthTech company India, Udyam registered">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Tech Miss3">
     <link rel="canonical" href="https://techmiss3.com/about.html">
@@ -16,8 +16,8 @@
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Tech Miss3">
-    <meta property="og:title" content="About Tech Miss3 | Healthcare Technology &amp; Digital Solutions Partner">
-    <meta property="og:description" content="Udyam-registered IT solutions partner building PointScheduler for pediatric therapy, alongside AI automation, web, and mobile solutions.">
+    <meta property="og:title" content="About Tech Miss3 | HealthTech Company Behind PointScheduler">
+    <meta property="og:description" content="Tech Miss3 is a Udyam-registered HealthTech company in Bengaluru and the creator of PointScheduler, child therapy centre software.">
     <meta property="og:image" content="https://techmiss3.com/img/hero1.jpg">
     <meta property="og:url" content="https://techmiss3.com/about.html">
     <meta name="twitter:card" content="summary_large_image">
@@ -102,45 +102,118 @@ html.dark .info-modal{background:rgba(20,30,50,.96);border:1px solid rgba(255,25
 <body class="bg-bg-canvas text-on-surface font-sans antialiased overflow-x-hidden">
 <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:top-2 focus:left-2">Skip to main content</a>
 
-<!-- HEADER -->
-<header class="fixed top-0 w-full z-50 shadow-[0_1px_8px_rgba(0,0,0,0.05)]">
-  <div class="h-[72px] bg-surface-white/95 backdrop-blur-xl border-b border-gray-100 dark:border-slate-800">
-    <div class="h-full max-w-[1240px] mx-auto px-4 sm:px-gutter flex items-center justify-between gap-4">
-      <a href="index.html" class="flex items-center gap-3 shrink-0">
-        <img src="img/logo.png" alt="Tech Miss3 logo" class="h-8 w-auto rounded-lg object-contain shadow-sm shadow-orange-500/20">
-        <span class="text-lg font-extrabold tracking-tight text-on-surface">Tech Miss3</span>
+<!-- SITE HEADER (shared across pages; carries its own menu CSS + JS) -->
+<header class="fixed top-0 w-full z-50">
+  <style>
+    .ps-menu-panel{visibility:hidden;opacity:0;transform:translate(-50%,6px);transition:opacity .18s ease,transform .18s ease,visibility .18s}
+    .ps-menu:hover .ps-menu-panel,.ps-menu.is-open .ps-menu-panel{visibility:visible;opacity:1;transform:translate(-50%,0)}
+    .ps-menu:hover .ps-menu-caret,.ps-menu.is-open .ps-menu-caret{transform:rotate(180deg)}
+    .hdr-btn{transition:transform .22s cubic-bezier(.16,1,.3,1)}.hdr-btn:hover{transform:translateY(-1px)}
+    @media (prefers-reduced-motion:reduce){.ps-menu-panel,.hdr-btn{transition:none}}
+  </style>
+  <div class="h-[60px] bg-white/85 dark:bg-slate-900/85 backdrop-blur-xl border-b border-slate-200/80 dark:border-slate-800 shadow-[0_1px_3px_rgba(0,0,0,0.03)]">
+    <div class="relative h-full max-w-[1120px] mx-auto px-4 sm:px-6 flex items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-2.5 shrink-0 group">
+        <img src="img/logo.png" alt="Tech Miss3 logo" class="h-[28px] w-auto rounded-lg object-contain transition-transform group-hover:scale-105">
+        <div class="flex flex-col text-left">
+          <span class="text-[15px] font-black tracking-tight text-slate-900 dark:text-white leading-tight">PointScheduler</span>
+          <span class="text-[9.5px] font-bold text-blue-600 dark:text-blue-400 tracking-wider uppercase leading-none">by Tech Miss3</span>
+        </div>
       </a>
-      <nav class="hidden lg:flex items-center gap-1">
-        <a href="index.html" class="text-sm font-semibold text-on-surface-variant hover:text-blue-600 rounded-full px-3.5 py-2 transition-colors">Home</a>
-        <a href="about.html" class="text-sm font-bold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/60 rounded-full px-4 py-2 transition-colors" aria-current="page">About Tech Miss3</a>
-        <a href="pointscheduler.html" class="text-sm font-semibold text-on-surface-variant hover:text-blue-600 rounded-full px-3.5 py-2 transition-colors">PointScheduler</a>
-        <a href="index.html#parent-app" class="text-sm font-semibold text-on-surface-variant hover:text-blue-600 rounded-full px-3.5 py-2 transition-colors">Parent App</a>
-        <a href="careers.html" class="text-sm font-semibold text-on-surface-variant hover:text-blue-600 rounded-full px-3.5 py-2 transition-colors">Careers</a>
-        <a href="faq.html" class="text-sm font-semibold text-on-surface-variant hover:text-blue-600 rounded-full px-3.5 py-2 transition-colors">FAQ</a>
-        <a href="index.html#contact" class="text-sm font-semibold text-on-surface-variant hover:text-blue-600 rounded-full px-3.5 py-2 transition-colors">Contact Us</a>
+      <nav class="hidden lg:flex items-center gap-1 bg-slate-100/70 dark:bg-slate-800/60 p-1 rounded-full border border-slate-200/60 dark:border-slate-700/60" aria-label="Main">
+        <div class="ps-menu" id="ps-menu">
+          <button type="button" id="ps-menu-btn" aria-expanded="false" aria-controls="ps-menu-panel" class="inline-flex items-center gap-0.5 text-xs font-semibold text-slate-600 dark:text-slate-300 hover:text-blue-600 rounded-full pl-3.5 pr-2.5 py-1.5 transition-colors">
+            PointScheduler
+            <span class="material-symbols-outlined ps-menu-caret text-[16px] transition-transform" aria-hidden="true">expand_more</span>
+          </button>
+          <div id="ps-menu-panel" class="ps-menu-panel absolute left-1/2 top-[calc(100%-14px)] pt-[18px] w-[760px] max-w-[calc(100vw-2rem)] z-50">
+            <div class="rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 shadow-[0_24px_60px_-20px_rgba(15,23,42,0.35)] p-4">
+              <div class="grid grid-cols-2 gap-5">
+                <div>
+                  <p class="text-[10.5px] font-extrabold uppercase tracking-wider text-slate-500 dark:text-slate-400 px-2 mb-1">Specialisations</p>
+                  <ul class="space-y-0.5"><li><a href="specialisations/occupational-therapy-software.html" class="flex items-start gap-2.5 p-2 rounded-xl hover:bg-blue-50 dark:hover:bg-slate-800 transition-colors"><span class="material-symbols-outlined text-[19px] text-amber-600 dark:text-amber-400" aria-hidden="true">back_hand</span><span><span class="block text-[12.5px] font-bold text-slate-900 dark:text-white leading-tight">Occupational Therapy</span><span class="block text-[11px] text-slate-500 dark:text-slate-400">OT, sensory integration and ADL</span></span></a></li><li><a href="specialisations/speech-therapy-software.html" class="flex items-start gap-2.5 p-2 rounded-xl hover:bg-blue-50 dark:hover:bg-slate-800 transition-colors"><span class="material-symbols-outlined text-[19px] text-purple-600 dark:text-purple-400" aria-hidden="true">record_voice_over</span><span><span class="block text-[12.5px] font-bold text-slate-900 dark:text-white leading-tight">Speech & Language Therapy</span><span class="block text-[11px] text-slate-500 dark:text-slate-400">Sessions, home practice and goals</span></span></a></li><li><a href="specialisations/autism-aba-therapy-software.html" class="flex items-start gap-2.5 p-2 rounded-xl hover:bg-blue-50 dark:hover:bg-slate-800 transition-colors"><span class="material-symbols-outlined text-[19px] text-emerald-600 dark:text-emerald-400" aria-hidden="true">extension</span><span><span class="block text-[12.5px] font-bold text-slate-900 dark:text-white leading-tight">Autism, ABA & Behaviour</span><span class="block text-[11px] text-slate-500 dark:text-slate-400">Intensive programmes and packages</span></span></a></li><li><a href="specialisations/special-education-software.html" class="flex items-start gap-2.5 p-2 rounded-xl hover:bg-blue-50 dark:hover:bg-slate-800 transition-colors"><span class="material-symbols-outlined text-[19px] text-indigo-600 dark:text-indigo-400" aria-hidden="true">school</span><span><span class="block text-[12.5px] font-bold text-slate-900 dark:text-white leading-tight">Special Education</span><span class="block text-[11px] text-slate-500 dark:text-slate-400">Learning plans, groups and reviews</span></span></a></li><li><a href="specialisations/physiotherapy-clinic-software.html" class="flex items-start gap-2.5 p-2 rounded-xl hover:bg-blue-50 dark:hover:bg-slate-800 transition-colors"><span class="material-symbols-outlined text-[19px] text-orange-600 dark:text-orange-400" aria-hidden="true">directions_run</span><span><span class="block text-[12.5px] font-bold text-slate-900 dark:text-white leading-tight">Physiotherapy</span><span class="block text-[11px] text-slate-500 dark:text-slate-400">Packages, walk-ins and receipts</span></span></a></li><li><a href="specialisations/psychology-counselling-software.html" class="flex items-start gap-2.5 p-2 rounded-xl hover:bg-blue-50 dark:hover:bg-slate-800 transition-colors"><span class="material-symbols-outlined text-[19px] text-rose-600 dark:text-rose-400" aria-hidden="true">psychology</span><span><span class="block text-[12.5px] font-bold text-slate-900 dark:text-white leading-tight">Psychology & Counselling</span><span class="block text-[11px] text-slate-500 dark:text-slate-400">Assessments, CBT and consultations</span></span></a></li></ul>
+                </div>
+                <div>
+                  <p class="text-[10.5px] font-extrabold uppercase tracking-wider text-slate-500 dark:text-slate-400 px-2 mb-1">Features</p>
+                  <ul class="space-y-0.5"><li><a href="features/therapy-appointment-scheduling.html" class="flex items-start gap-2.5 p-2 rounded-xl hover:bg-blue-50 dark:hover:bg-slate-800 transition-colors"><span class="material-symbols-outlined text-[19px] text-blue-600 dark:text-blue-400" aria-hidden="true">calendar_month</span><span><span class="block text-[12.5px] font-bold text-slate-900 dark:text-white leading-tight">Appointments</span><span class="block text-[11px] text-slate-500 dark:text-slate-400">Recurring sessions, clash checks</span></span></a></li><li><a href="features/therapy-billing-software.html" class="flex items-start gap-2.5 p-2 rounded-xl hover:bg-blue-50 dark:hover:bg-slate-800 transition-colors"><span class="material-symbols-outlined text-[19px] text-emerald-600 dark:text-emerald-400" aria-hidden="true">receipt_long</span><span><span class="block text-[12.5px] font-bold text-slate-900 dark:text-white leading-tight">Billing</span><span class="block text-[11px] text-slate-500 dark:text-slate-400">Monthly, package and assessment bills</span></span></a></li><li><a href="features/therapy-wallet-payments.html" class="flex items-start gap-2.5 p-2 rounded-xl hover:bg-blue-50 dark:hover:bg-slate-800 transition-colors"><span class="material-symbols-outlined text-[19px] text-indigo-600 dark:text-indigo-400" aria-hidden="true">account_balance_wallet</span><span><span class="block text-[12.5px] font-bold text-slate-900 dark:text-white leading-tight">Wallet & Finances</span><span class="block text-[11px] text-slate-500 dark:text-slate-400">Prepaid wallets, top-ups and dues</span></span></a></li><li><a href="features/therapy-goals-progress-tracking.html" class="flex items-start gap-2.5 p-2 rounded-xl hover:bg-blue-50 dark:hover:bg-slate-800 transition-colors"><span class="material-symbols-outlined text-[19px] text-orange-600 dark:text-orange-400" aria-hidden="true">trending_up</span><span><span class="block text-[12.5px] font-bold text-slate-900 dark:text-white leading-tight">Goals & Progress</span><span class="block text-[11px] text-slate-500 dark:text-slate-400">Lesson plans and assessments</span></span></a></li><li><a href="features/therapy-centre-hr.html" class="flex items-start gap-2.5 p-2 rounded-xl hover:bg-blue-50 dark:hover:bg-slate-800 transition-colors"><span class="material-symbols-outlined text-[19px] text-sky-600 dark:text-sky-400" aria-hidden="true">badge</span><span><span class="block text-[12.5px] font-bold text-slate-900 dark:text-white leading-tight">HR (HIRA)</span><span class="block text-[11px] text-slate-500 dark:text-slate-400">Attendance, leave and salary</span></span></a></li><li><a href="features/therapy-centre-expenses.html" class="flex items-start gap-2.5 p-2 rounded-xl hover:bg-blue-50 dark:hover:bg-slate-800 transition-colors"><span class="material-symbols-outlined text-[19px] text-teal-600 dark:text-teal-400" aria-hidden="true">request_quote</span><span><span class="block text-[12.5px] font-bold text-slate-900 dark:text-white leading-tight">Expenses</span><span class="block text-[11px] text-slate-500 dark:text-slate-400">Spend, bills and reimbursements</span></span></a></li></ul>
+                </div>
+              </div>
+              <div class="mt-3 pt-3 border-t border-slate-100 dark:border-slate-800 flex flex-wrap items-center gap-x-5 gap-y-2 px-2">
+                <a href="pointscheduler.html" class="inline-flex items-center gap-1 text-xs font-bold text-blue-600 dark:text-blue-400 hover:underline">PointScheduler overview <span class="material-symbols-outlined text-[15px]" aria-hidden="true">arrow_forward</span></a>
+                <a href="parent-app.html" class="text-xs font-bold text-slate-600 dark:text-slate-300 hover:text-blue-600">Parent App</a>
+                <a href="data-protection.html" class="text-xs font-bold text-slate-600 dark:text-slate-300 hover:text-blue-600">Data protection</a>
+                <a href="pointscheduler-vs-spreadsheets.html" class="text-xs font-bold text-slate-600 dark:text-slate-300 hover:text-blue-600">vs Spreadsheets</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="pricing.html" class="text-xs font-semibold text-slate-600 dark:text-slate-300 hover:text-blue-600 rounded-full px-3 py-1.5 transition-colors">Pricing</a>
+        <a href="parent-app.html" class="text-xs font-semibold text-slate-600 dark:text-slate-300 hover:text-blue-600 rounded-full px-3 py-1.5 transition-colors">Parent App</a>
+        <a href="about.html" class="text-xs font-bold text-blue-700 dark:text-blue-300 bg-white dark:bg-slate-900 shadow-2xs rounded-full px-3.5 py-1.5" aria-current="page">About Tech Miss3</a>
+        <a href="faq.html" class="text-xs font-semibold text-slate-600 dark:text-slate-300 hover:text-blue-600 rounded-full px-3 py-1.5 transition-colors">FAQ</a>
+        <a href="about.html#contact" class="text-xs font-semibold text-slate-600 dark:text-slate-300 hover:text-blue-600 rounded-full px-3 py-1.5 transition-colors">Contact Us</a>
       </nav>
       <div class="flex items-center gap-2">
-        <button type="button" id="theme-toggle" class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-200 dark:border-slate-700 text-on-surface hover:text-blue-600 transition-colors" aria-label="Switch to dark mode" aria-pressed="false"><span class="material-symbols-outlined text-[20px] theme-icon-to-dark" aria-hidden="true">dark_mode</span><span class="material-symbols-outlined text-[20px] theme-icon-to-light" aria-hidden="true">light_mode</span></button>
-        <a href="https://calendar.app.google/uZr1w45ioXHAYqoV6" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center justify-center text-sm font-bold bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-full shadow-[0_4px_16px_rgba(37,99,235,0.3)] hover:shadow-[0_6px_20px_rgba(37,99,235,0.4)] transition-all tm-btn">Book a Demo</a>
-        <button id="mobile-menu-btn" type="button" aria-label="Toggle menu" aria-expanded="false" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-full border border-gray-200 dark:border-slate-700 text-on-surface">
-          <span class="material-symbols-outlined">menu</span>
+        <button type="button" id="theme-toggle" class="w-8 h-8 flex items-center justify-center rounded-full border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" aria-label="Switch to dark mode" aria-pressed="false"><span class="material-symbols-outlined text-[17px] theme-icon-to-dark" aria-hidden="true">dark_mode</span><span class="material-symbols-outlined text-[17px] theme-icon-to-light" aria-hidden="true">light_mode</span></button>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScwc5rB4F2YunyOa0--pJVwO86ZP7odsvQTDFHyWli4v7hP9A/viewform" target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex items-center justify-center text-xs font-extrabold text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-500/40 bg-white dark:bg-slate-900 hover:bg-blue-50 dark:hover:bg-slate-800 px-3.5 py-2 rounded-full hdr-btn">Sign up</a>
+        <a href="https://wa.me/919380729681?text=Hi%2C%20I%20want%20to%20schedule%20a%20demo." target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center justify-center text-xs font-extrabold bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-4 py-2 rounded-full shadow-sm hover:shadow-md hdr-btn ring-1 ring-white/20">Book a Demo</a>
+        <button id="site-nav-btn" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav" class="lg:hidden w-8 h-8 flex items-center justify-center rounded-full border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200">
+          <span class="material-symbols-outlined text-[18px]" aria-hidden="true">menu</span>
         </button>
       </div>
     </div>
-    <div id="mobile-menu" class="hidden lg:hidden bg-surface-white border-b border-gray-100 dark:border-slate-800 px-gutter py-4 space-y-1">
-      <a href="index.html" class="block text-sm font-semibold text-on-surface px-3 py-2 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-950/40">Home</a>
-      <a href="about.html" class="block text-sm font-bold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/60 px-3 py-2 rounded-lg">About Tech Miss3</a>
-      <a href="pointscheduler.html" class="block text-sm font-semibold text-on-surface px-3 py-2 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-950/40">PointScheduler</a>
-      <a href="index.html#parent-app" class="block text-sm font-semibold text-on-surface px-3 py-2 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-950/40">Parent App</a>
-      <a href="careers.html" class="block text-sm font-semibold text-on-surface px-3 py-2 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-950/40">Careers</a>
-      <a href="faq.html" class="block text-sm font-semibold text-on-surface px-3 py-2 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-950/40">FAQ</a>
-      <a href="index.html#contact" class="block text-sm font-semibold text-on-surface px-3 py-2 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-950/40">Contact Us</a>
-      <a href="https://calendar.app.google/uZr1w45ioXHAYqoV6" target="_blank" rel="noopener noreferrer" class="block text-center mt-2 text-sm font-bold bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-full tm-btn shadow-md">Book a Demo</a>
+    <div id="site-nav" class="hidden lg:hidden max-h-[calc(100vh-60px)] overflow-y-auto bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl border-b border-slate-200 dark:border-slate-800 px-4 py-3 space-y-1 shadow-lg">
+      <details class="group/m">
+        <summary class="flex items-center justify-between text-xs font-bold text-slate-800 dark:text-slate-100 px-3 py-2 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+          PointScheduler
+          <span class="material-symbols-outlined text-[18px] transition-transform group-open/m:rotate-180" aria-hidden="true">expand_more</span>
+        </summary>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2 px-3 pt-1 pb-2">
+          <div><p class="text-[10px] font-extrabold uppercase tracking-wider text-slate-500 dark:text-slate-400 py-1">Specialisations</p><a href="specialisations/occupational-therapy-software.html" class="block text-xs text-slate-700 dark:text-slate-200 py-1.5 hover:text-blue-600">Occupational Therapy</a><a href="specialisations/speech-therapy-software.html" class="block text-xs text-slate-700 dark:text-slate-200 py-1.5 hover:text-blue-600">Speech & Language Therapy</a><a href="specialisations/autism-aba-therapy-software.html" class="block text-xs text-slate-700 dark:text-slate-200 py-1.5 hover:text-blue-600">Autism, ABA & Behaviour</a><a href="specialisations/special-education-software.html" class="block text-xs text-slate-700 dark:text-slate-200 py-1.5 hover:text-blue-600">Special Education</a><a href="specialisations/physiotherapy-clinic-software.html" class="block text-xs text-slate-700 dark:text-slate-200 py-1.5 hover:text-blue-600">Physiotherapy</a><a href="specialisations/psychology-counselling-software.html" class="block text-xs text-slate-700 dark:text-slate-200 py-1.5 hover:text-blue-600">Psychology & Counselling</a></div>
+          <div><p class="text-[10px] font-extrabold uppercase tracking-wider text-slate-500 dark:text-slate-400 py-1">Features</p><a href="features/therapy-appointment-scheduling.html" class="block text-xs text-slate-700 dark:text-slate-200 py-1.5 hover:text-blue-600">Appointments</a><a href="features/therapy-billing-software.html" class="block text-xs text-slate-700 dark:text-slate-200 py-1.5 hover:text-blue-600">Billing</a><a href="features/therapy-wallet-payments.html" class="block text-xs text-slate-700 dark:text-slate-200 py-1.5 hover:text-blue-600">Wallet & Finances</a><a href="features/therapy-goals-progress-tracking.html" class="block text-xs text-slate-700 dark:text-slate-200 py-1.5 hover:text-blue-600">Goals & Progress</a><a href="features/therapy-centre-hr.html" class="block text-xs text-slate-700 dark:text-slate-200 py-1.5 hover:text-blue-600">HR (HIRA)</a><a href="features/therapy-centre-expenses.html" class="block text-xs text-slate-700 dark:text-slate-200 py-1.5 hover:text-blue-600">Expenses</a></div>
+          <div class="sm:col-span-2 flex flex-wrap gap-x-4 gap-y-1 pt-1">
+            <a href="pointscheduler.html" class="text-xs font-bold text-blue-600 dark:text-blue-400">Overview</a>
+            <a href="data-protection.html" class="text-xs font-bold text-slate-600 dark:text-slate-300">Data protection</a>
+            <a href="pointscheduler-vs-spreadsheets.html" class="text-xs font-bold text-slate-600 dark:text-slate-300">vs Spreadsheets</a>
+          </div>
+        </div>
+      </details>
+      <a href="pricing.html" class="block text-xs font-semibold text-slate-700 dark:text-slate-200 px-3 py-2 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Pricing</a>
+      <a href="parent-app.html" class="block text-xs font-semibold text-slate-700 dark:text-slate-200 px-3 py-2 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Parent App</a>
+      <a href="about.html" class="block text-xs font-semibold text-slate-700 dark:text-slate-200 px-3 py-2 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">About Tech Miss3</a>
+      <a href="faq.html" class="block text-xs font-semibold text-slate-700 dark:text-slate-200 px-3 py-2 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">FAQ</a>
+      <a href="about.html#contact" class="block text-xs font-semibold text-slate-700 dark:text-slate-200 px-3 py-2 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Contact Us</a>
+      <div class="pt-2">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScwc5rB4F2YunyOa0--pJVwO86ZP7odsvQTDFHyWli4v7hP9A/viewform" target="_blank" rel="noopener noreferrer" class="block w-full text-center text-xs font-bold text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-500/40 px-4 py-2.5 rounded-full">Sign up</a>
+      </div>
+      <a href="https://wa.me/919380729681?text=Hi%2C%20I%20want%20to%20schedule%20a%20demo." target="_blank" rel="noopener noreferrer" class="block text-center mt-2 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white px-4 py-2.5 rounded-full shadow-md">Book a Demo</a>
     </div>
   </div>
+  <script>
+    (function () {
+      // Phone menu
+      var navBtn = document.getElementById('site-nav-btn'), nav = document.getElementById('site-nav');
+      if (navBtn && nav) {
+        navBtn.addEventListener('click', function () {
+          var open = nav.classList.toggle('hidden') === false;
+          navBtn.setAttribute('aria-expanded', String(open));
+        });
+        nav.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { nav.classList.add('hidden'); navBtn.setAttribute('aria-expanded', 'false'); }); });
+      }
+      // PointScheduler menu: CSS opens it on hover; this adds tap/keyboard open, Escape and click-outside close
+      var menu = document.getElementById('ps-menu'), btn = document.getElementById('ps-menu-btn');
+      if (!menu || !btn) return;
+      function setOpen(open) { menu.classList.toggle('is-open', open); btn.setAttribute('aria-expanded', String(open)); }
+      btn.addEventListener('click', function () { setOpen(!menu.classList.contains('is-open')); });
+      document.addEventListener('click', function (e) { if (!menu.contains(e.target)) setOpen(false); });
+      menu.addEventListener('focusout', function (e) { if (!menu.contains(e.relatedTarget)) setOpen(false); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && menu.classList.contains('is-open')) { setOpen(false); btn.focus(); } });
+      menu.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { setOpen(false); }); });
+    })();
+  </script>
 </header>
 
-<main id="main-content" class="pt-[72px]">
+<main id="main-content" class="pt-[60px]">
 
 <!-- ABOUT HERO (MATCHING REFERENCE VIEW 2: TWO-COLUMN BALANCED LAYOUT) -->
 <section class="relative w-full bg-gradient-to-b from-blue-50/80 via-bg-canvas to-surface-white dark:from-slate-900 dark:via-slate-950 dark:to-slate-900 pt-8 pb-10 sm:pt-10 sm:pb-12 overflow-hidden">
@@ -155,7 +228,7 @@ html.dark .info-modal{background:rgba(20,30,50,.96);border:1px solid rgba(255,25
         Building specialized healthcare technology &amp; robust software systems.
       </h1>
       <p class="text-base sm:text-lg text-on-surface-variant leading-relaxed max-w-2xl">
-        Tech Miss3 is an Udyam-registered healthcare software and digital solutions company. As the creators of <strong class="text-on-surface font-semibold">PointScheduler</strong>, we build specialized clinic management tools for Child Development Centres (CDCs) and therapy practices, while providing end-to-end AI automation, responsive web platforms, and mobile apps for growing businesses.
+        Tech Miss3 is an Udyam-registered healthcare software company. As the creators of <strong class="text-on-surface font-semibold">PointScheduler</strong>, we build specialized clinic management tools for Child Development Centres (CDCs) and therapy practices.
       </p>
       <div class="pt-1 flex flex-wrap gap-3.5">
         <a href="#approach" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold shadow-md shadow-blue-600/25 transition-all tm-btn">
@@ -202,11 +275,11 @@ html.dark .info-modal{background:rgba(20,30,50,.96);border:1px solid rgba(255,25
     </div>
     <div class="flex items-center gap-3 p-3.5 sm:p-4 rounded-2xl bg-white dark:bg-slate-800/80 border border-gray-100 dark:border-slate-700/80 reveal tm-card">
       <span class="material-symbols-outlined text-blue-600 text-[26px]">group</span>
-      <div><strong class="block text-sm text-on-surface">Client-Focused</strong><span class="text-xs text-text-muted">Practices &amp; founders served</span></div>
+      <div><strong class="block text-sm text-on-surface">Client-Focused</strong><span class="text-xs text-text-muted">Practices &amp; centres served</span></div>
     </div>
     <div class="flex items-center gap-3 p-3.5 sm:p-4 rounded-2xl bg-white dark:bg-slate-800/80 border border-gray-100 dark:border-slate-700/80 reveal tm-card">
-      <span class="material-symbols-outlined text-orange-600 text-[26px]">hub</span>
-      <div><strong class="block text-sm text-on-surface">3 Domains</strong><span class="text-xs text-text-muted">AI, Web, &amp; Mobile engineering</span></div>
+      <span class="material-symbols-outlined text-orange-600 text-[26px]">health_and_safety</span>
+      <div><strong class="block text-sm text-on-surface">HealthTech Only</strong><span class="text-xs text-text-muted">Software built for healthcare</span></div>
     </div>
     <div class="flex items-center gap-3 p-3.5 sm:p-4 rounded-2xl bg-white dark:bg-slate-800/80 border border-gray-100 dark:border-slate-700/80 reveal tm-card">
       <span class="material-symbols-outlined text-blue-600 text-[26px]">chat</span>
@@ -219,12 +292,12 @@ html.dark .info-modal{background:rgba(20,30,50,.96);border:1px solid rgba(255,25
 <section class="w-full bg-bg-canvas section-pad" id="approach">
   <div class="max-w-4xl mx-auto px-4 sm:px-gutter space-y-5 text-center">
     <p class="text-xs font-extrabold text-blue-600 uppercase tracking-wider">Our Approach</p>
-    <h2 class="text-3xl md:text-4xl font-bold text-on-surface">A digital solutions partner, not just a vendor.</h2>
+    <h2 class="text-3xl md:text-4xl font-bold text-on-surface">A healthcare technology partner, not just a vendor.</h2>
     <p class="text-base sm:text-lg text-on-surface-variant leading-relaxed">
       At Tech Miss3, we believe technology should actively eliminate friction, not introduce more complexity. We began by closely studying therapy centre workflows, identifying how therapists, child development specialists, and clinic directors struggle with disjointed paper registers, double-bookings, and lost milestone journals.
     </p>
     <p class="text-sm sm:text-base text-on-surface-variant leading-relaxed">
-      That workflow insight led to our flagship software, <strong>PointScheduler</strong>. We bring that practical, workflow-first engineering mindset to every client project: from AI-driven operational workflows to high-performance web applications and native mobile apps.
+      That workflow insight led to our flagship software, <strong>PointScheduler</strong>. We bring the same practical, workflow-first mindset to every product we build for healthcare.
     </p>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4 pt-4 text-left">
       <div class="flex items-start gap-3 p-4 rounded-2xl bg-surface-white border border-gray-100 dark:border-slate-800 reveal tm-card">
@@ -233,80 +306,57 @@ html.dark .info-modal{background:rgba(20,30,50,.96);border:1px solid rgba(255,25
       </div>
       <div class="flex items-start gap-3 p-4 rounded-2xl bg-surface-white border border-gray-100 dark:border-slate-800 reveal tm-card">
         <span class="material-symbols-outlined text-blue-600 text-[22px] shrink-0 mt-0.5">check_circle</span>
-        <div><strong class="block text-sm font-bold text-on-surface">End-to-End Delivery</strong><span class="text-xs text-on-surface-variant">From discovery and UI wireframing to production deployment and iterative software maintenance.</span></div>
+        <div><strong class="block text-sm font-bold text-on-surface">End-to-End Support</strong><span class="text-xs text-on-surface-variant">From setup and onboarding to updates and everyday support.</span></div>
       </div>
       <div class="flex items-start gap-3 p-4 rounded-2xl bg-surface-white border border-gray-100 dark:border-slate-800 reveal tm-card">
         <span class="material-symbols-outlined text-blue-600 text-[22px] shrink-0 mt-0.5">check_circle</span>
-        <div><strong class="block text-sm font-bold text-on-surface">AI &amp; Automation Native</strong><span class="text-xs text-on-surface-variant">Streamlining repetitive scheduling, customer support, and diagnostic documentation.</span></div>
+        <div><strong class="block text-sm font-bold text-on-surface">Automation Built In</strong><span class="text-xs text-on-surface-variant">Wallet deductions, WhatsApp reminders and low-balance alerts happen on their own.</span></div>
       </div>
       <div class="flex items-start gap-3 p-4 rounded-2xl bg-surface-white border border-gray-100 dark:border-slate-800 reveal tm-card">
         <span class="material-symbols-outlined text-blue-600 text-[22px] shrink-0 mt-0.5">check_circle</span>
-        <div><strong class="block text-sm font-bold text-on-surface">Formally Registered MSME</strong><span class="text-xs text-on-surface-variant">Transparent milestones, verifiable deliverables, and dedicated communication.</span></div>
+        <div><strong class="block text-sm font-bold text-on-surface">Formally Registered MSME</strong><span class="text-xs text-on-surface-variant">A registered business with a dedicated team you can reach.</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- THREE SERVICE PILLARS -->
+<!-- WHAT WE BUILD -->
 <section class="w-full bg-surface-white section-pad" id="services">
   <div class="max-w-[1180px] mx-auto px-gutter space-y-8">
     <div class="max-w-3xl mx-auto text-center space-y-3">
-      <p class="text-xs font-extrabold text-blue-600 uppercase tracking-wider">IT Services &amp; Capabilities</p>
-      <h2 class="text-3xl md:text-4xl font-bold text-on-surface">Three specialized domains, one accountable team.</h2>
-      <p class="text-base sm:text-lg text-on-surface-variant">From clinical automation to high-performance digital platforms, we cover your entire technology roadmap.</p>
+      <p class="text-xs font-extrabold text-blue-600 uppercase tracking-wider">What We Build</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-on-surface">Software for Healthcare.</h2>
+      <p class="text-base sm:text-lg text-on-surface-variant">Every product we build is for therapy centres, therapists and the children they care for.</p>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <a href="ai-based-business-solutions.html" class="group bg-white dark:bg-slate-800/80 border border-gray-100 dark:border-slate-700/80 rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-md flex flex-col justify-between reveal tm-card">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <a href="pointscheduler.html" class="group bg-white dark:bg-slate-800/80 border border-gray-100 dark:border-slate-700/80 rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-md flex flex-col justify-between reveal tm-card">
         <div class="space-y-4">
           <div class="w-14 h-14 rounded-2xl bg-blue-600 text-white flex items-center justify-center shadow-md shadow-blue-500/20">
-            <span class="material-symbols-outlined text-[28px]">smart_toy</span>
+            <span class="material-symbols-outlined text-[28px]">calendar_month</span>
           </div>
-          <h3 class="text-xl font-bold text-on-surface">AI Based Business Solutions</h3>
-          <p class="text-on-surface-variant text-sm leading-relaxed">Intelligent AI automation, virtual assistants, and document analysis tailored for clinical and business workflows.</p>
+          <h3 class="text-xl font-bold text-on-surface">PointScheduler</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed">Child therapy centre software for appointments, bills, wallets, goals, HR and expenses.</p>
           <ul class="text-sm text-on-surface-variant space-y-1.5 pt-1">
-            <li class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>Workflow &amp; appointment automation</li>
-            <li class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>Conversational AI &amp; customer chatbots</li>
-            <li class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>Predictive insights &amp; reporting</li>
+            <li class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>No double bookings</li>
+            <li class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>Monthly bills and prepaid wallets</li>
+            <li class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>Goals, lesson plans and HR</li>
           </ul>
         </div>
         <span class="inline-flex items-center gap-1.5 text-blue-600 font-bold text-sm pt-5 group-hover:gap-2.5 transition-all">
-          Explore AI Solutions <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+          Explore PointScheduler <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
         </span>
       </a>
 
-      <a href="website-development.html" class="group bg-white dark:bg-slate-800/80 border border-gray-100 dark:border-slate-700/80 rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-md flex flex-col justify-between reveal tm-card">
+      <a href="parent-app.html" class="group bg-white dark:bg-slate-800/80 border border-gray-100 dark:border-slate-700/80 rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-md flex flex-col justify-between reveal tm-card">
         <div class="space-y-4">
           <div class="w-14 h-14 rounded-2xl bg-orange-600 text-white flex items-center justify-center shadow-md shadow-orange-500/20">
-            <span class="material-symbols-outlined text-[28px]">language</span>
+            <span class="material-symbols-outlined text-[28px]">family_restroom</span>
           </div>
-          <h3 class="text-xl font-bold text-on-surface">Web Based Business Solutions</h3>
-          <p class="text-on-surface-variant text-sm leading-relaxed">Modern, responsive, SEO-ready web platforms and practice portals built with rock-solid security and speed.</p>
-          <ul class="text-sm text-on-surface-variant space-y-1.5 pt-1">
-            <li class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-orange-600"></span>Custom clinical &amp; practice portals</li>
-            <li class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-orange-600"></span>SEO &amp; AI-search optimized architectures</li>
-            <li class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-orange-600"></span>Secure booking &amp; client management</li>
-          </ul>
+          <h3 class="text-xl font-bold text-on-surface">PointScheduler Parent App</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed">Coming soon. Parents will see their child's sessions, progress and bills in one place.</p>
         </div>
         <span class="inline-flex items-center gap-1.5 text-orange-600 font-bold text-sm pt-5 group-hover:gap-2.5 transition-all">
-          Explore Web Solutions <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-        </span>
-      </a>
-
-      <a href="mobile-app-development.html" class="group bg-white dark:bg-slate-800/80 border border-gray-100 dark:border-slate-700/80 rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-md flex flex-col justify-between reveal tm-card">
-        <div class="space-y-4">
-          <div class="w-14 h-14 rounded-2xl bg-slate-900 text-white flex items-center justify-center shadow-md">
-            <span class="material-symbols-outlined text-[28px]">smartphone</span>
-          </div>
-          <h3 class="text-xl font-bold text-on-surface">Mobile App Development</h3>
-          <p class="text-on-surface-variant text-sm leading-relaxed">Cross-platform Flutter and native mobile apps for therapists, practitioners, patients, and modern businesses.</p>
-          <ul class="text-sm text-on-surface-variant space-y-1.5 pt-1">
-            <li class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-slate-900 dark:bg-slate-400"></span>Flutter &amp; Native Android/iOS builds</li>
-            <li class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-slate-900 dark:bg-slate-400"></span>Play Store &amp; App Store release guidance</li>
-            <li class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-slate-900 dark:bg-slate-400"></span>Post-launch lifecycle maintenance</li>
-          </ul>
-        </div>
-        <span class="inline-flex items-center gap-1.5 text-slate-800 dark:text-slate-200 font-bold text-sm pt-5 group-hover:gap-2.5 transition-all">
-          Explore Mobile Apps <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+          See the Parent App <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
         </span>
       </a>
     </div>
@@ -318,34 +368,14 @@ html.dark .info-modal{background:rgba(20,30,50,.96);border:1px solid rgba(255,25
   <div class="max-w-[1180px] mx-auto px-gutter space-y-8">
     <div class="max-w-2xl space-y-3">
       <p class="text-xs font-extrabold text-blue-600 uppercase tracking-wider">Client Sectors</p>
-      <h2 class="text-3xl md:text-4xl font-bold text-on-surface">Tailored for healthcare practices &amp; growing enterprises.</h2>
+      <h2 class="text-3xl md:text-4xl font-bold text-on-surface">Tailored for healthcare practices.</h2>
       <p class="text-base sm:text-lg text-on-surface-variant">We adapt directly to your team&rsquo;s operational cadence instead of forcing generic software templates.</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-      <div class="lg:col-span-2 bg-gradient-to-br from-blue-50/70 to-white dark:from-slate-800 dark:to-slate-900 border-2 border-blue-200/80 dark:border-blue-800/80 p-6 sm:p-7 rounded-3xl shadow-sm space-y-3 reveal tm-card">
+      <div class="md:col-span-2 lg:col-span-3 bg-gradient-to-br from-blue-50/70 to-white dark:from-slate-800 dark:to-slate-900 border-2 border-blue-200/80 dark:border-blue-800/80 p-6 sm:p-7 rounded-3xl shadow-sm space-y-3 reveal tm-card">
         <div class="w-12 h-12 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-xl shadow-md shadow-blue-500/20">🩺</div>
         <h3 class="text-xl font-bold text-on-surface">Healthcare, CDCs &amp; Therapy Centres</h3>
         <p class="text-on-surface-variant text-sm leading-relaxed">Child Development Centres, Autism clinics, Speech &amp; OT facilities, and multi-specialty rehab hospitals requiring conflict-free scheduling and clinical milestone tracking.</p>
-      </div>
-      <div class="bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 p-6 sm:p-7 rounded-3xl shadow-sm space-y-2 reveal tm-card">
-        <div class="w-11 h-11 rounded-2xl bg-orange-50 dark:bg-slate-700 text-orange-600 flex items-center justify-center text-xl">🚀</div>
-        <h3 class="text-base sm:text-lg font-bold text-on-surface">Startups &amp; SMEs</h3>
-        <p class="text-sm text-on-surface-variant leading-relaxed">Robust software architecture built to scale from day one without technical debt.</p>
-      </div>
-      <div class="bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 p-6 sm:p-7 rounded-3xl shadow-sm space-y-2 reveal tm-card">
-        <div class="w-11 h-11 rounded-2xl bg-blue-50 dark:bg-slate-700 text-blue-600 flex items-center justify-center text-xl">💼</div>
-        <h3 class="text-base sm:text-lg font-bold text-on-surface">Professional Consultants</h3>
-        <p class="text-sm text-on-surface-variant leading-relaxed">Client booking systems, CRM integrations, and automated client follow-ups.</p>
-      </div>
-      <div class="bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 p-6 sm:p-7 rounded-3xl shadow-sm space-y-2 reveal tm-card">
-        <div class="w-11 h-11 rounded-2xl bg-orange-50 dark:bg-slate-700 text-orange-600 flex items-center justify-center text-xl">🛒</div>
-        <h3 class="text-base sm:text-lg font-bold text-on-surface">Retail &amp; E-commerce</h3>
-        <p class="text-sm text-on-surface-variant leading-relaxed">High-converting online storefronts, inventory integrations, and mobile shopping apps.</p>
-      </div>
-      <div class="bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 p-6 sm:p-7 rounded-3xl shadow-sm space-y-2 reveal tm-card">
-        <div class="w-11 h-11 rounded-2xl bg-blue-50 dark:bg-slate-700 text-blue-600 flex items-center justify-center text-xl">🎓</div>
-        <h3 class="text-base sm:text-lg font-bold text-on-surface">Education &amp; Training</h3>
-        <p class="text-sm text-on-surface-variant leading-relaxed">Enrolment portals, student progress trackers, and interactive LMS interfaces.</p>
       </div>
     </div>
   </div>
@@ -362,110 +392,31 @@ html.dark .info-modal{background:rgba(20,30,50,.96);border:1px solid rgba(255,25
       <div class="bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 rounded-2xl p-5 sm:p-6 space-y-2 shadow-sm reveal tm-card">
         <div class="w-9 h-9 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm">1</div>
         <h4 class="font-bold text-on-surface">Discover</h4>
-        <p class="text-sm text-on-surface-variant">We analyze your daily operational roadblocks, clinical constraints, and software requirements.</p>
+        <p class="text-sm text-on-surface-variant">We understand how your centre works today in a free demo call.</p>
       </div>
       <div class="bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 rounded-2xl p-5 sm:p-6 space-y-2 shadow-sm reveal tm-card">
         <div class="w-9 h-9 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm">2</div>
-        <h4 class="font-bold text-on-surface">Plan &amp; Propose</h4>
-        <p class="text-sm text-on-surface-variant">Clear scope, architectural blueprint, timelines, and transparent milestone estimates upfront.</p>
+        <h4 class="font-bold text-on-surface">Set Up</h4>
+        <p class="text-sm text-on-surface-variant">We set up your centre with your logo, terms and bill details.</p>
       </div>
       <div class="bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 rounded-2xl p-5 sm:p-6 space-y-2 shadow-sm reveal tm-card">
         <div class="w-9 h-9 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm">3</div>
-        <h4 class="font-bold text-on-surface">Design</h4>
-        <p class="text-sm text-on-surface-variant">Figma wireframes and accessible UI tailored to clinician speed and patient clarity.</p>
+        <h4 class="font-bold text-on-surface">Bring Data In</h4>
+        <p class="text-sm text-on-surface-variant">Import your children from Excel, or let parents register by QR code.</p>
       </div>
       <div class="bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 rounded-2xl p-5 sm:p-6 space-y-2 shadow-sm reveal tm-card">
         <div class="w-9 h-9 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm">4</div>
-        <h4 class="font-bold text-on-surface">Build &amp; QA</h4>
-        <p class="text-sm text-on-surface-variant">Type-safe development with sprint reviews, real-device QA, and edge-case testing.</p>
+        <h4 class="font-bold text-on-surface">Train Your Team</h4>
+        <p class="text-sm text-on-surface-variant">An onboarding call walks your team through daily work.</p>
       </div>
       <div class="bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 rounded-2xl p-5 sm:p-6 space-y-2 shadow-sm reveal tm-card">
         <div class="w-9 h-9 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm">5</div>
         <h4 class="font-bold text-on-surface">Launch &amp; Support</h4>
-        <p class="text-sm text-on-surface-variant">Production deployment with structured post-launch support and iterative software updates.</p>
+        <p class="text-sm text-on-surface-variant">Go live with WhatsApp support and regular updates.</p>
       </div>
     </div>
   </div>
 </section>
-
-<!-- TECH STACK CAPSULES -->
-<section class="relative w-full overflow-hidden bg-gradient-to-b from-blue-50/50 via-white to-blue-50/40 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900 section-pad" id="technology">
-  <div class="max-w-[1180px] mx-auto px-gutter space-y-8">
-    <div class="max-w-2xl mx-auto text-center space-y-3">
-      <p class="text-xs font-extrabold text-blue-600 uppercase tracking-wider">Engineered For Performance</p>
-      <h2 class="text-3xl md:text-4xl font-bold text-on-surface">Reliable technologies backing our builds.</h2>
-      <p class="text-sm text-text-muted">Tap a tool to learn how it integrates into our production pipelines.</p>
-    </div>
-    <div class="flex flex-wrap justify-center gap-[14px]" id="tech-stack-grid">
-      <button type="button" class="tech-capsule reveal inline-flex w-max items-center gap-2 bg-white dark:bg-slate-800 border border-blue-100 dark:border-slate-700 rounded-full px-[18px] py-2 shadow-sm" data-name="AI / ML" data-icon="smart_toy" data-desc="Powers predictive scheduling insights, session documentation auto-completion, and conversational automation.">
-        <span class="tm-icon material-symbols-outlined text-[22px] text-blue-600 shrink-0">smart_toy</span>
-        <span class="text-sm font-bold text-on-surface">AI &amp; Automation</span>
-      </button>
-      <button type="button" class="tech-capsule reveal inline-flex w-max items-center gap-2 bg-white dark:bg-slate-800 border border-blue-100 dark:border-slate-700 rounded-full px-[18px] py-2 shadow-sm" data-name="Node.js" data-icon="dns" data-desc="High-throughput asynchronous backend APIs and real-time microservices.">
-        <span class="tm-icon material-symbols-outlined text-[22px] text-blue-600 shrink-0">dns</span>
-        <span class="text-sm font-bold text-on-surface">Node.js</span>
-      </button>
-      <button type="button" class="tech-capsule reveal inline-flex w-max items-center gap-2 bg-white dark:bg-slate-800 border border-blue-100 dark:border-slate-700 rounded-full px-[18px] py-2 shadow-sm" data-name="React" data-icon="hub" data-desc="Dynamic, accessible single-page applications and responsive clinical dashboards.">
-        <span class="tm-icon material-symbols-outlined text-[22px] text-blue-600 shrink-0">hub</span>
-        <span class="text-sm font-bold text-on-surface">React</span>
-      </button>
-      <button type="button" class="tech-capsule reveal inline-flex w-max items-center gap-2 bg-white dark:bg-slate-800 border border-blue-100 dark:border-slate-700 rounded-full px-[18px] py-2 shadow-sm" data-name="Flutter" data-icon="widgets" data-desc="Unified, high-frame-rate native mobile experiences across both Android and iOS devices.">
-        <span class="tm-icon material-symbols-outlined text-[22px] text-blue-600 shrink-0">widgets</span>
-        <span class="text-sm font-bold text-on-surface">Flutter</span>
-      </button>
-      <button type="button" class="tech-capsule reveal inline-flex w-max items-center gap-2 bg-white dark:bg-slate-800 border border-blue-100 dark:border-slate-700 rounded-full px-[18px] py-2 shadow-sm" data-name="Java" data-icon="coffee" data-desc="Enterprise backend logic, secure data transformation, and native integrations.">
-        <span class="tm-icon material-symbols-outlined text-[22px] text-blue-600 shrink-0">coffee</span>
-        <span class="text-sm font-bold text-on-surface">Java</span>
-      </button>
-      <button type="button" class="tech-capsule reveal inline-flex w-max items-center gap-2 bg-white dark:bg-slate-800 border border-blue-100 dark:border-slate-700 rounded-full px-[18px] py-2 shadow-sm" data-name="Android" data-icon="android" data-desc="Native Android applications optimized for clinic tablets and therapist devices.">
-        <span class="tm-icon material-symbols-outlined text-[22px] text-blue-600 shrink-0">android</span>
-        <span class="text-sm font-bold text-on-surface">Android</span>
-      </button>
-      <button type="button" class="tech-capsule reveal inline-flex w-max items-center gap-2 bg-white dark:bg-slate-800 border border-blue-100 dark:border-slate-700 rounded-full px-[18px] py-2 shadow-sm" data-name="Kotlin" data-icon="code" data-desc="Type-safe, concise modern Android development adhering to Google standards.">
-        <span class="tm-icon material-symbols-outlined text-[22px] text-blue-600 shrink-0">code</span>
-        <span class="text-sm font-bold text-on-surface">Kotlin</span>
-      </button>
-      <button type="button" class="tech-capsule reveal inline-flex w-max items-center gap-2 bg-white dark:bg-slate-800 border border-blue-100 dark:border-slate-700 rounded-full px-[18px] py-2 shadow-sm" data-name="Google Play" data-icon="play_circle" data-desc="Full compliance with Google Play Store policies, listing optimization, and phased rollouts.">
-        <span class="tm-icon material-symbols-outlined text-[22px] text-blue-600 shrink-0">play_circle</span>
-        <span class="text-sm font-bold text-on-surface">Google Play</span>
-      </button>
-      <button type="button" class="tech-capsule reveal inline-flex w-max items-center gap-2 bg-white dark:bg-slate-800 border border-blue-100 dark:border-slate-700 rounded-full px-[18px] py-2 shadow-sm" data-name="App Store" data-icon="storefront" data-desc="Apple App Store guidelines validation, TestFlight betas, and seamless approvals.">
-        <span class="tm-icon material-symbols-outlined text-[22px] text-blue-600 shrink-0">storefront</span>
-        <span class="text-sm font-bold text-on-surface">App Store</span>
-      </button>
-      <button type="button" class="tech-capsule reveal inline-flex w-max items-center gap-2 bg-white dark:bg-slate-800 border border-blue-100 dark:border-slate-700 rounded-full px-[18px] py-2 shadow-sm" data-name="Cloud Deployment" data-icon="cloud_upload" data-desc="Scalable cloud architectures with zero-downtime releases and automated backups.">
-        <span class="tm-icon material-symbols-outlined text-[22px] text-blue-600 shrink-0">cloud_upload</span>
-        <span class="text-sm font-bold text-on-surface">Cloud Deployment</span>
-      </button>
-      <button type="button" class="tech-capsule reveal inline-flex w-max items-center gap-2 bg-white dark:bg-slate-800 border border-blue-100 dark:border-slate-700 rounded-full px-[18px] py-2 shadow-sm" data-name="Jenkins CI/CD" data-icon="build" data-desc="Automated linting, building, and unit testing ensuring bug-free releases.">
-        <span class="tm-icon material-symbols-outlined text-[22px] text-blue-600 shrink-0">build</span>
-        <span class="text-sm font-bold text-on-surface">Jenkins</span>
-      </button>
-      <button type="button" class="tech-capsule reveal inline-flex w-max items-center gap-2 bg-white dark:bg-slate-800 border border-blue-100 dark:border-slate-700 rounded-full px-[18px] py-2 shadow-sm" data-name="Git Versioning" data-icon="commit" data-desc="Strict branch management, peer code reviews, and reproducible software states.">
-        <span class="tm-icon material-symbols-outlined text-[22px] text-blue-600 shrink-0">commit</span>
-        <span class="text-sm font-bold text-on-surface">Git</span>
-      </button>
-    </div>
-  </div>
-</section>
-
-<!-- INFO MODAL -->
-<div class="info-modal-backdrop" id="info-modal-backdrop">
-  <div class="info-modal" role="dialog" aria-modal="true" aria-labelledby="info-modal-title">
-    <div class="flex items-start justify-between gap-4 mb-4">
-      <div class="flex items-center gap-3">
-        <div class="w-12 h-12 rounded-2xl flex items-center justify-center bg-blue-50 dark:bg-blue-950 text-blue-600">
-          <span class="material-symbols-outlined text-[24px]" id="info-modal-icon"></span>
-        </div>
-        <h3 class="text-xl font-bold text-on-surface" id="info-modal-title"></h3>
-      </div>
-      <button type="button" id="info-modal-close" class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-gray-100 dark:hover:bg-slate-700 text-on-surface-variant shrink-0" aria-label="Close">
-        <span class="material-symbols-outlined text-[20px]">close</span>
-      </button>
-    </div>
-    <p class="text-on-surface-variant leading-relaxed text-sm" id="info-modal-desc"></p>
-  </div>
-</div>
 
 <!-- CONSULTATION / CONTACT -->
 <section class="w-full bg-bg-canvas section-pad" id="contact">
@@ -476,9 +427,9 @@ html.dark .info-modal{background:rgba(20,30,50,.96);border:1px solid rgba(255,25
           <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 dark:bg-blue-950 border border-blue-200 dark:border-blue-800">
             <span class="text-xs font-extrabold text-blue-600 dark:text-blue-400 uppercase tracking-wider">Start A Conversation</span>
           </div>
-          <h2 class="text-3xl md:text-4xl font-bold text-on-surface leading-tight">Discuss your healthcare tech or digital project with our founders.</h2>
+          <h2 class="text-3xl md:text-4xl font-bold text-on-surface leading-tight">Talk to our founders about PointScheduler for your centre.</h2>
           <p class="text-base sm:text-lg text-on-surface-variant leading-relaxed">
-            Whether you want a walk-through of PointScheduler for your clinic or need custom software engineered, we typically reply within one business day.
+            Whether you want a walk-through of PointScheduler or have a question about your centre, we typically reply within one business day.
           </p>
           <div class="p-4 sm:p-5 rounded-2xl bg-blue-50/60 dark:bg-slate-900 border border-blue-100 dark:border-slate-700 space-y-2">
             <span class="font-bold text-blue-600 dark:text-blue-400 flex items-center gap-2">
@@ -528,84 +479,63 @@ html.dark .info-modal{background:rgba(20,30,50,.96);border:1px solid rgba(255,25
 
 </main>
 
-<!-- FOOTER -->
-<footer class="w-full bg-zinc-900 text-zinc-300 py-10 sm:py-12 lg:py-14 border-t border-zinc-800">
-  <div class="max-w-[1180px] mx-auto px-gutter">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+<!-- SITE FOOTER (shared across pages) -->
+<footer class="w-full bg-zinc-900 text-zinc-300 pt-10 pb-7 border-t border-zinc-800">
+  <div class="max-w-[1120px] mx-auto px-4 sm:px-6">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-6 gap-y-9 pb-9 border-b border-white/10">
       <div class="space-y-3">
-        <div class="flex items-center gap-2">
-          <img src="img/logo.png" alt="Tech Miss3 logo" class="h-8 w-auto rounded-md object-contain">
-          <span class="text-lg font-bold text-white">Tech Miss3</span>
-        </div>
-        <p class="text-sm text-zinc-400 leading-relaxed">An Udyam-registered healthcare technology and software partner building PointScheduler for pediatric clinics alongside custom AI, web, and mobile solutions.</p>
-        <div class="flex items-center gap-3 pt-1">
-          <a href="https://www.facebook.com/profile.php?id=61580662049886" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-blue-600 transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94Z"/></svg>
-          </a>
-          <a href="https://www.instagram.com/techmiss3" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-blue-600 transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.64.42 1.37.47 2.43.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.64.25-1.37.42-2.43.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.45.53C6.09.28 6.82.11 7.88.06 8.94.01 9.28 0 12 0Zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.27A3.27 3.27 0 1 1 12 8.73a3.27 3.27 0 0 1 0 6.54ZM17.65 4.85a1.17 1.17 0 1 0 0 2.34 1.17 1.17 0 0 0 0-2.34Z"/></svg>
-          </a>
-          <a href="https://twitter.com/techmiss3" target="_blank" rel="noopener" aria-label="X (Twitter)" class="w-9 h-9 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-blue-600 transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-7.2l-5.6-6.9L4 22H1l8.1-9.3L1 2h7.4l5.1 6.3L18.9 2Zm-1.3 18h1.8L7.5 4H5.6l12 16Z"/></svg>
-          </a>
-          <a href="https://wa.me/919380729681" target="_blank" rel="noopener" aria-label="WhatsApp" class="w-9 h-9 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-blue-600 transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.5 3.5A11 11 0 0 0 2.2 16.9L1 22l5.2-1.4A11 11 0 1 0 20.5 3.5Zm-8.5 17a9 9 0 0 1-4.6-1.3l-.3-.2-3.1.8.8-3-.2-.3A9 9 0 1 1 12 20.5Zm5-6.6c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6l.4-.5c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.3s1 2.7 1.1 2.9c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.5-.3Z"/></svg>
-          </a>
-        </div>
+        <h2 class="text-[11px] font-extrabold uppercase tracking-[0.14em] text-zinc-200">Product</h2>
+        <ul class="text-[13px] text-zinc-400 space-y-2"><li><a href="index.html" class="hover:text-white transition-colors">Overview</a></li><li><a href="pointscheduler.html" class="hover:text-white transition-colors">PointScheduler</a></li><li><a href="parent-app.html" class="hover:text-white transition-colors">Parent App</a></li><li><a href="https://play.google.com/store/apps/details?id=com.techmiss3.pointscheduller" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Android app</a></li><li><a href="https://pointscheduler-adminpanel-production.up.railway.app" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Admin panel</a></li></ul>
       </div>
       <div class="space-y-3">
-        <h5 class="text-white font-semibold">Quick Links</h5>
-        <ul class="text-sm text-zinc-400 space-y-2">
-          <li><a href="index.html" class="hover:text-blue-400 transition-colors">Home</a></li>
-          <li><a href="pointscheduler.html" class="hover:text-blue-400 transition-colors">PointScheduler Platform</a></li>
-          <li><a href="index.html#parent-app" class="hover:text-blue-400 transition-colors">Parent App</a></li>
-          <li><a href="about.html" class="hover:text-blue-400 transition-colors">About Tech Miss3</a></li>
-          <li><a href="careers.html" class="hover:text-blue-400 transition-colors">Careers</a></li>
-          <li><a href="faq.html" class="hover:text-blue-400 transition-colors">FAQ</a></li>
-          <li><a href="privacy-policy.html" class="hover:text-blue-400 transition-colors">Privacy Policy</a></li>
-          <li><a href="terms-conditions.html" class="hover:text-blue-400 transition-colors">Terms &amp; Conditions</a></li>
-          <li><a href="cancellation-policy.html" class="hover:text-blue-400 transition-colors">Refund and Cancellation Policy</a></li>
-        </ul>
+        <h2 class="text-[11px] font-extrabold uppercase tracking-[0.14em] text-zinc-200">Specialisations</h2>
+        <ul class="text-[13px] text-zinc-400 space-y-2"><li><a href="specialisations/occupational-therapy-software.html" class="hover:text-white transition-colors">Occupational Therapy</a></li><li><a href="specialisations/speech-therapy-software.html" class="hover:text-white transition-colors">Speech & Language Therapy</a></li><li><a href="specialisations/autism-aba-therapy-software.html" class="hover:text-white transition-colors">Autism, ABA & Behaviour</a></li><li><a href="specialisations/special-education-software.html" class="hover:text-white transition-colors">Special Education</a></li><li><a href="specialisations/physiotherapy-clinic-software.html" class="hover:text-white transition-colors">Physiotherapy</a></li><li><a href="specialisations/psychology-counselling-software.html" class="hover:text-white transition-colors">Psychology & Counselling</a></li></ul>
       </div>
       <div class="space-y-3">
-        <h5 class="text-white font-semibold">Services</h5>
-        <ul class="text-sm text-zinc-400 space-y-2">
-          <li><a href="ai-based-business-solutions.html" class="hover:text-blue-400 transition-colors">AI Business Solutions</a></li>
-          <li><a href="website-development.html" class="hover:text-blue-400 transition-colors">Website Development</a></li>
-          <li><a href="mobile-app-development.html" class="hover:text-blue-400 transition-colors">Mobile App Development</a></li>
-        </ul>
+        <h2 class="text-[11px] font-extrabold uppercase tracking-[0.14em] text-zinc-200">Features</h2>
+        <ul class="text-[13px] text-zinc-400 space-y-2"><li><a href="features/therapy-appointment-scheduling.html" class="hover:text-white transition-colors">Appointments</a></li><li><a href="features/therapy-billing-software.html" class="hover:text-white transition-colors">Billing</a></li><li><a href="features/therapy-wallet-payments.html" class="hover:text-white transition-colors">Wallet & Finances</a></li><li><a href="features/therapy-goals-progress-tracking.html" class="hover:text-white transition-colors">Goals & Progress</a></li><li><a href="features/therapy-centre-hr.html" class="hover:text-white transition-colors">HR (HIRA)</a></li><li><a href="features/therapy-centre-expenses.html" class="hover:text-white transition-colors">Expenses</a></li></ul>
       </div>
       <div class="space-y-3">
-        <h5 class="text-white font-semibold">Contact</h5>
-        <ul class="text-sm text-zinc-400 space-y-2">
-          <li><a href="tel:+919380729681" class="hover:text-blue-400 transition-colors">+91 9380729681</a></li>
-          <li><a href="tel:+917017079892" class="hover:text-blue-400 transition-colors">+91 7017079892</a></li>
-          <li><a href="mailto:contact@techmiss3.com" class="hover:text-blue-400 transition-colors">contact@techmiss3.com</a></li>
-          <li class="pt-1 text-xs leading-relaxed text-zinc-400">
-            <span class="block text-white text-xs font-semibold uppercase tracking-wider mb-0.5">Address:</span>
-            <address class="not-italic">
-              House 49, Sizzle White Willow<br>
-              51/1, Bendiganahalli Village, Bidarahalli Hobli<br>
-              Bengaluru, Karnataka - 560049<br>
-              India
-            </address>
-          </li>
-
-
-        </ul>
+        <h2 class="text-[11px] font-extrabold uppercase tracking-[0.14em] text-zinc-200">Resources</h2>
+        <ul class="text-[13px] text-zinc-400 space-y-2"><li><a href="faq.html" class="hover:text-white transition-colors">FAQ</a></li><li><a href="index.html#case-study" class="hover:text-white transition-colors">Case study</a></li><li><a href="pointscheduler-vs-spreadsheets.html" class="hover:text-white transition-colors">PointScheduler vs Spreadsheets</a></li><li><a href="https://calendar.app.google/uZr1w45ioXHAYqoV6" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Book a demo</a></li></ul>
+      </div>
+      <div class="space-y-3">
+        <h2 class="text-[11px] font-extrabold uppercase tracking-[0.14em] text-zinc-200">Company</h2>
+        <ul class="text-[13px] text-zinc-400 space-y-2"><li><a href="about.html" class="hover:text-white transition-colors">About Tech Miss3</a></li><li><a href="careers.html" class="hover:text-white transition-colors">Careers</a></li><li><a href="about.html#contact" class="hover:text-white transition-colors">Contact Us</a></li></ul>
+      </div>
+      <div class="space-y-3">
+        <h2 class="text-[11px] font-extrabold uppercase tracking-[0.14em] text-zinc-200">Trust &amp; Legal</h2>
+        <ul class="text-[13px] text-zinc-400 space-y-2"><li><a href="data-protection.html" class="hover:text-white transition-colors">Data protection</a></li><li><a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a></li><li><a href="terms-conditions.html" class="hover:text-white transition-colors">Terms &amp; Conditions</a></li><li><a href="cancellation-policy.html" class="hover:text-white transition-colors">Refund &amp; Cancellation</a></li></ul>
       </div>
     </div>
-    <div class="pt-8 border-t border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-zinc-500">
-      <p>&copy; 2026 Tech Miss3 | All Rights Reserved</p>
-      <div class="flex flex-wrap items-center gap-3 text-xs text-zinc-400">
-        <a href="privacy-policy.html" class="hover:text-blue-400 transition-colors">Privacy Policy</a>
-        <span class="text-zinc-600">&bull;</span>
-        <a href="terms-conditions.html" class="hover:text-blue-400 transition-colors">Terms &amp; Conditions</a>
-        <span class="text-zinc-600">&bull;</span>
-        <a href="cancellation-policy.html" class="hover:text-blue-400 transition-colors">Refund &amp; Cancellation Policy</a>
-        <span class="text-zinc-600">&bull;</span>
-        <span>Udyam-Registered MSME</span>
+    <div class="pt-7 grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+      <div class="md:col-span-5 space-y-2.5">
+        <a href="index.html" class="inline-flex items-center gap-2">
+          <img src="img/logo.png" alt="Tech Miss3 logo" class="h-[26px] w-auto rounded-md object-contain" loading="lazy">
+          <span class="text-base font-bold text-white">PointScheduler <span class="text-zinc-400 font-semibold text-xs">by Tech Miss3</span></span>
+        </a>
+        <p class="text-xs text-zinc-400 leading-relaxed max-w-sm">Child therapy centre software for CDCs and therapy clinics in India. Built by Tech Miss3, a Bengaluru-based, Udyam-registered HealthTech company.</p>
+        <div class="flex items-center gap-2 pt-1">
+          <a href="https://www.facebook.com/profile.php?id=61580662049886" target="_blank" rel="noopener" aria-label="Facebook" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-blue-600 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94Z"/></svg></a><a href="https://www.instagram.com/techmiss3" target="_blank" rel="noopener" aria-label="Instagram" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-blue-600 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.64.42 1.37.47 2.43.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.64.25-1.37.42-2.43.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.45.53C6.09.28 6.82.11 7.88.06 8.94.01 9.28 0 12 0Zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.27A3.27 3.27 0 1 1 12 8.73a3.27 3.27 0 0 1 0 6.54ZM17.65 4.85a1.17 1.17 0 1 0 0 2.34 1.17 1.17 0 0 0 0-2.34Z"/></svg></a><a href="https://twitter.com/techmiss3" target="_blank" rel="noopener" aria-label="X (Twitter)" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-blue-600 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-7.2l-5.6-6.9L4 22H1l8.1-9.3L1 2h7.4l5.1 6.3L18.9 2Zm-1.3 18h1.8L7.5 4H5.6l12 16Z"/></svg></a>
+          <a href="https://wa.me/919380729681" target="_blank" rel="noopener" aria-label="WhatsApp" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#25D366] transition-colors"><svg class="w-[13px] h-[13px] fill-current shrink-0" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 2.2 16.9L1 22l5.2-1.4A11 11 0 1 0 20.5 3.5Zm-8.5 17a9 9 0 0 1-4.6-1.3l-.3-.2-3.1.8.8-3-.2-.3A9 9 0 1 1 12 20.5Zm5-6.6c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6l.4-.5c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.3s1 2.7 1.1 2.9c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.5-.3Z"/></svg></a>
+        </div>
       </div>
+      <div class="md:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-zinc-400">
+        <div class="space-y-1.5">
+          <p class="text-[11px] font-extrabold uppercase tracking-[0.14em] text-zinc-200">Talk to us</p>
+          <p><a href="tel:+919380729681" class="hover:text-white">+91 9380729681</a></p>
+          <p><a href="tel:+917017079892" class="hover:text-white">+91 7017079892</a></p>
+          <p><a href="mailto:contact@techmiss3.com" class="hover:text-white">contact@techmiss3.com</a></p>
+        </div>
+        <address class="not-italic space-y-1.5 leading-relaxed">
+          <span class="block text-[11px] font-extrabold uppercase tracking-[0.14em] text-zinc-200">Office</span>
+          House 49, Sizzle White Willow, 51/1, Bendiganahalli Village, Bidarahalli Hobli, Bengaluru, Karnataka 560049
+        </address>
+      </div>
+    </div>
+    <div class="mt-7 pt-5 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11.5px] text-zinc-500">
+      <p>&copy; 2026 Tech Miss3. All rights reserved.</p>
+      <p>Udyam-registered MSME &bull; Made in Bengaluru</p>
     </div>
   </div>
 </footer>
@@ -661,40 +591,6 @@ html.dark .info-modal{background:rgba(20,30,50,.96);border:1px solid rgba(255,25
     items.forEach(function (el) { observer.observe(el); });
   })();
 
-  // Tech stack capsule modal
-  (function () {
-    const backdrop = document.getElementById('info-modal-backdrop');
-    if (!backdrop) return;
-    const titleEl = document.getElementById('info-modal-title');
-    const descEl = document.getElementById('info-modal-desc');
-    const iconEl = document.getElementById('info-modal-icon');
-    const closeBtn = document.getElementById('info-modal-close');
-    let lastFocused = null;
-
-    function openModal(capsule) {
-      titleEl.textContent = capsule.dataset.name || '';
-      descEl.textContent = capsule.dataset.desc || '';
-      iconEl.textContent = capsule.dataset.icon || '';
-      lastFocused = document.activeElement;
-      backdrop.classList.add('is-open');
-      closeBtn.focus();
-    }
-    function closeModal() {
-      backdrop.classList.remove('is-open');
-      if (lastFocused) lastFocused.focus();
-    }
-
-    document.querySelectorAll('.tech-capsule').forEach(function (capsule) {
-      capsule.addEventListener('click', function () { openModal(capsule); });
-    });
-    closeBtn.addEventListener('click', closeModal);
-    backdrop.addEventListener('click', function (e) {
-      if (e.target === backdrop) closeModal();
-    });
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && backdrop.classList.contains('is-open')) closeModal();
-    });
-  })();
 </script>
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script src="script.js"></script>
