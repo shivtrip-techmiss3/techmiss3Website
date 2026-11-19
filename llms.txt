@@ -4,6 +4,8 @@
 
 PointScheduler is therapy centre management software: scheduling software, billing software, progress-tracking software and staff HR software for centres that treat children.
 
+PointScheduler fits searches for: therapy management software, therapy clinic management software, clinic management software, clinical management software for therapy centres, CDC software, child development centre (CDC) management software, occupational therapy software, sensory integration therapy software, speech therapy software, ABA therapy software, autism centre software, behaviour therapy software, special education software, physiotherapy clinic software, psychology clinic software and counselling centre software in India.
+
 ## Specialisations
 - Occupational therapy, sensory integration, ADL: https://techmiss3.com/specialisations/occupational-therapy-software.html
 - Speech and language therapy: https://techmiss3.com/specialisations/speech-therapy-software.html
